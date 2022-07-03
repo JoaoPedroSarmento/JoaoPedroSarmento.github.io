@@ -1,0 +1,713 @@
+header {
+    background-color: #161b22;
+    padding-top: 15px;
+
+}
+body {
+
+    background-color: #0d1117;
+
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+    background: #1d1e22;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #30363d;
+
+
+}
+#title1 {
+    color: red;
+    font-style: oblique;
+    margin-left: 505px;
+    cursor: pointer;
+    position: relative;
+    top: -9px;
+
+    width: 30px;
+    animation: infinite infinito2 6s;
+
+
+}
+
+@keyframes infinito2 {
+
+    20% {
+        text-shadow: 2px 2px 13px black;
+        text-decoration: line-through white;
+    }
+
+
+}
+
+.bord{
+
+border: 2px solid white;
+border-radius: 40px;
+text-align: center;
+margin: 0px 20px;
+}
+
+.tabela{
+position: sticky;
+top: 20px;
+}
+
+#title2 {
+
+
+    color: white;
+    font-style: oblique;
+    margin-top: -28px;
+    margin-left: 543px;
+    position: relative;
+    top: -7px;
+    cursor: pointer;
+
+    width: 49px;
+    animation: infinite infinito 3s;
+
+}
+
+
+
+@keyframes infinito {
+
+
+    20% {
+
+        transform: translateY(20deg);
+        text-shadow: 2px 2px 23px black;
+
+    }
+
+}
+
+
+*{
+    text-decoration: none;
+    color:white;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.menu{
+    width: 130px;
+  position: relative;
+   top: -40px;
+    background: #162447;
+
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+    text-align: center;
+}
+.menu .submenu a:hover{
+    padding-left: calc(1rem + 5px);
+}
+
+.menu .submenu a:hover::before{
+    opacity: 1;
+}
+
+.item:target .submenu{
+    max-height: 20rem;
+}
+.menu .btn{
+    display:block;
+    padding: 1rem;
+    border-bottom: solid 1px #1b1b2f;
+    background-color: rgb(1, 4, 9);
+  
+    position: relative;
+}
+
+.menu .submenu {
+    background: #1b1b2f;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height .8s ease-out;
+}
+
+.menu .submenu a{
+    display:block;
+    padding: 1rem;
+    position: relative;
+}
+
+.menu .submenu a::before{
+    content:'';
+    display:block;
+    position: absolute;
+    top:0;
+    left:0;
+    height: 100%;
+    width: 5px;
+    background: #e43f5a;
+    opacity: 0;
+    transition: all .5s;
+}
+
+.menu .submenu a:hover{
+    padding-left: calc(1rem + 5px);
+}
+
+.menu .submenu a:hover::before{
+    opacity: 1;
+}
+
+.item:target .submenu{
+    max-height: 20rem;
+}
+
+
+.menu1{
+
+position: relative;
+background-color: transparent;
+
+}
+
+.portas{
+border: solid 1px;
+border-image-source: linear-gradient(to bottom right,red ,orange);
+border-image-slice: 4;
+max-width: 300px;
+position: relative;
+left: 430px;
+top: -20px;
+padding-top:  8px;
+padding-bottom:  8px;
+
+
+}
+.color{
+
+animation: branco 5s infinite;
+
+}
+
+@keyframes branco{
+
+    0%,40%,100%{
+     text-shadow: red 0px 0px 10px,
+     orange 0px 0px 10px;
+     transition:2s;
+    }
+   20%,50%,60%{
+  text-shadow: none;
+  transition:1s;
+   }
+}
+
+
+.artigo {
+    position: relative;
+    top: 20px;
+    left: 150px;
+    display: inline-table;
+    text-decoration: none;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: 200ms;
+  
+}
+
+
+.and{
+
+font-size: 18px;
+
+}
+
+table{
+border: 2px solid white;
+width: 200px;
+text-align: center;
+background-color: black;
+}
+th{
+border-color: yellow;
+
+}
+td{
+border-color: yellow;
+
+}
+
+.borda {
+    border-top: 1px solid #30363d;
+    margin: 0px 100px;
+}
+* {
+    text-decoration: none;
+    color: white;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.final2 {
+    color: #58a6ff;
+    margin: -20px 222px;
+    font-size: 12px;
+    display: inline-flex;
+    cursor: pointer;
+    list-style: none;
+}
+
+
+
+.final {
+    margin-left: -100px;
+    color: #8b949e;
+    font-size: 12px;
+    pointer-events: none;
+}
+
+
+.final3 {
+    color: #58a6ff;
+    margin-left: 12px;
+    text-decoration: none;
+}
+@media (max-width: 1200px)
+{
+
+    .artigo {
+        position: relative;
+        top: 20px;
+        left: 100px;
+        display: inline-table;
+        text-decoration: none;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     
+        
+    }
+.portas{
+    border-width: 1px;
+    border-style: solid;
+    border-color: initial;
+    border-image-source: linear-gradient(to right bottom, red, orange);
+    border-image-slice: 1;
+    max-width: 300px;
+    position: relative;
+    left: 300px;
+    top: -20px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+        h1{
+
+        font-size: 30px;
+        }
+    .and{
+font-size: 18px;
+
+    }
+    #title1 {
+        color: red;
+        font-style: oblique;
+        margin-left: 403px;
+        cursor: pointer;
+       
+        position: relative;
+        top: -8px;
+        width: 30px;
+        animation: infinite infinito2 6s;
+    
+    
+    }
+    #title2 {
+
+
+        color: white;
+        font-style: oblique;
+        margin-top: -28px;
+        margin-left: 443px;
+        position: relative;
+        top: -7px;
+        cursor: pointer;
+        width: 49px;
+        animation: infinite infinito 3s;
+    
+    }
+
+    #img1{
+
+
+        width: 400px;
+    }
+}
+
+
+
+
+
+
+
+@media (max-width: 900px)
+{
+
+    .artigo {
+        position: relative;
+        top: 20px;
+        left: 100px;
+        display: inline-table;
+        text-decoration: none;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     
+        
+    }
+.portas{
+    border-width: 1px;
+    border-style: solid;
+    border-color: initial;
+    border-image-source: linear-gradient(to right bottom, red, orange);
+    border-image-slice: 1;
+    max-width: 300px;
+    position: relative;
+    left: 200px;
+    top: -20px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+        h1{
+
+        font-size: 29px;
+        }
+    .and{
+font-size: 14px;
+
+    }
+    #title1 {
+        color: red;
+        font-style: oblique;
+        margin-left: 303px;
+        cursor: pointer;
+       
+        position: relative;
+        top: -8px;
+        width: 30px;
+        animation: infinite infinito2 6s;
+    
+    
+    }
+    #title2 {
+
+
+        color: white;
+        font-style: oblique;
+        margin-top: -28px;
+        margin-left: 343px;
+        position: relative;
+        top: -7px;
+        cursor: pointer;
+        width: 49px;
+        animation: infinite infinito 3s;
+    
+    }
+
+    #img1{
+
+
+        width: 400px;
+    }
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 800px)
+{
+
+    .artigo {
+        position: relative;
+        top: 20px;
+        left: 100px;
+        display: inline-table;
+        text-decoration: none;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     
+        
+    }
+.portas{
+    border-width: 1px;
+    border-style: solid;
+    border-color: initial;
+    border-image-source: linear-gradient(to right bottom, red, orange);
+    border-image-slice: 1;
+    max-width: 300px;
+    position: relative;
+    left: 200px;
+    top: -20px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+        h1{
+
+        font-size: 29px;
+        }
+    .and{
+font-size: 14px;
+
+    }
+    #title1 {
+        color: red;
+        font-style: oblique;
+        margin-left: 303px;
+        cursor: pointer;
+       
+        position: relative;
+        top: -8px;
+        width: 30px;
+        animation: infinite infinito2 6s;
+    
+    
+    }
+    #title2 {
+
+
+        color: white;
+        font-style: oblique;
+        margin-top: -28px;
+        margin-left: 343px;
+        position: relative;
+        top: -7px;
+        cursor: pointer;
+        width: 49px;
+        animation: infinite infinito 3s;
+    
+    }
+
+    #img1{
+
+
+        width: 400px;
+    }
+}
+
+
+
+@media(max-width:750px) {
+    .artigo {
+        position: relative;
+        top: 20px;
+        left: 20px;
+        display: inline-table;
+        text-decoration: none;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     
+        
+    }
+.portas{
+    border-width: 1px;
+    border-style: solid;
+    border-color: initial;
+    border-image-source: linear-gradient(to right bottom, red, orange);
+    border-image-slice: 1;
+    max-width: 300px;
+    position: relative;
+    left: 100px;
+    top: -20px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+        h1{
+
+        font-size: 29px;
+        }
+    .and{
+font-size: 14.7px;
+
+    }
+    #title1 {
+        color: red;
+        font-style: oblique;
+        margin-left: 303px;
+        cursor: pointer;
+       
+        position: relative;
+        top: -8px;
+        width: 30px;
+        animation: infinite infinito2 6s;
+    
+    
+    }
+    #title2 {
+
+
+        color: white;
+        font-style: oblique;
+        margin-top: -28px;
+        margin-left: 342px;
+        position: relative;
+        top: -7px;
+        cursor: pointer;
+        width: 49px;
+        animation: infinite infinito 3s;
+    
+    }
+
+    #img1{
+
+
+        width: 500px;
+    }
+}
+
+
+
+
+
+@media(max-width:700px) {
+    .artigo {
+        position: relative;
+        top: 20px;
+        left: 0px;
+        display: inline-table;
+        text-decoration: none;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     
+        
+    }
+.portas{
+    border-width: 1px;
+    border-style: solid;
+    border-color: initial;
+    border-image-source: linear-gradient(to right bottom, red, orange);
+    border-image-slice: 1;
+    max-width: 300px;
+    position: relative;
+    left: 100px;
+    top: -20px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+        h1{
+
+        font-size: 29px;
+        }
+    .and{
+font-size: 14.7px;
+
+    }
+    #title1 {
+        color: red;
+        font-style: oblique;
+        margin-left: 303px;
+        cursor: pointer;
+       
+        position: relative;
+        top: -8px;
+        width: 30px;
+        animation: infinite infinito2 6s;
+    
+    
+    }
+    #title2 {
+
+
+        color: white;
+        font-style: oblique;
+        margin-top: -28px;
+        margin-left: 342px;
+        position: relative;
+        top: -7px;
+        cursor: pointer;
+        width: 49px;
+        animation: infinite infinito 3s;
+    
+    }
+
+    #img1{
+
+
+        width: 500px;
+    }
+}
+
+
+@media only screen and (max-width: 600px)
+{
+
+    .artigo {
+        position: relative;
+        top: 20px;
+        left: 0px;
+        display: inline-table;
+        text-decoration: none;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     
+        
+    }
+.portas{
+    border-width: 1px;
+    border-style: solid;
+    border-color: initial;
+    border-image-source: linear-gradient(to right bottom, red, orange);
+    border-image-slice: 1;
+    max-width: 300px;
+    position: relative;
+    left: 100px;
+    top: -20px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+        h1{
+
+        font-size: 25px;
+        }
+    .and{
+font-size: 14px;
+
+    }
+    #title1 {
+        color: red;
+        font-style: oblique;
+        margin-left: 183px;
+        cursor: pointer;
+       
+        position: relative;
+        top: -8px;
+        width: 30px;
+        animation: infinite infinito2 6s;
+    
+    
+    }
+    #title2 {
+
+
+        color: white;
+        font-style: oblique;
+        margin-top: -28px;
+        margin-left: 220px;
+        position: relative;
+        top: -7px;
+        cursor: pointer;
+        width: 49px;
+        animation: infinite infinito 3s;
+    
+    }
+
+    #img1{
+
+
+        width: 400px;
+    }
+}
+
+
+
+

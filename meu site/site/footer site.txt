@@ -1,0 +1,58 @@
+<br>
+<br> 
+<footer>
+    <div class="borda"></div>
+    <br>
+  <br> 
+
+    <ul class="final2">
+        <li> <img  alt="logo" class="imgfinal" width="20px" style="margin-top:-4px; margin-left:-130px ;"
+                src="https://joaosarmento12345.github.io/meu%20site/imagens/icone_do_site.png"> </li>
+        <li class="final"> © 2022 bycode </li>
+        <li> <a href="#" class="final3"> inicio  </a></li>
+     
+        <li> <a href="https://www.instagram.com/jp_._._1/" class="final3"> instagram </a></li>
+
+    </ul>
+</footer>
+
+
+
+
+
+.borda {
+    border-top: 1px solid #30363d;
+    margin: 0px 100px;
+}
+* {
+    text-decoration: none;
+    color: white;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.final2 {
+    color: #58a6ff;
+    margin: -20px 222px;
+    font-size: 12px;
+    display: inline-flex;
+    cursor: pointer;
+    list-style: none;
+}
+
+
+
+.final {
+    margin-left: -100px;
+    color: #8b949e;
+    font-size: 12px;
+    pointer-events: none;
+}
+
+
+.final3 {
+    color: #58a6ff;
+    margin-left: 12px;
+    text-decoration: none;
+}

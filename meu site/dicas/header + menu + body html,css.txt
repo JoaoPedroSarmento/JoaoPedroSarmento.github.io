@@ -1,0 +1,109 @@
+    
+
+
+
+
+
+
+
+
+
+
+
+<div class="menu1">
+        <div class="menu">
+            <li class="item" id="mn1">
+                <a class="btn" href="#mn1">Menu </a>
+                <div class="submenu">
+                    <a href="https://joaosarmento12345.github.io/index/index.html">Página inicial </a>
+                    <a href="#">Blogs</a>
+                    <a href="https://www.instagram.com/jp_._._1/">Instagram </a>
+                    <a href="https://joaosarmento12345.github.io/conteudo/dicas.html">Sites dev </a>
+                    <a href="#">fechar</a>
+                </div>
+            </li>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+*{
+    text-decoration: none;
+    color:white;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.menu{
+    width: 130px;
+  position: relative;
+   top: -40px;
+    background: #162447;
+
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+    text-align: center;
+}
+
+.menu .btn{
+    display:block;
+    padding: 1rem;
+    border-bottom: solid 1px #1b1b2f;
+    background-color: rgb(1, 4, 9);
+  
+    position: relative;
+}
+
+.menu .submenu {
+    background: #1b1b2f;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height .8s ease-out;
+}
+
+.menu .submenu a{
+    display:block;
+    padding: 1rem;
+    position: relative;
+}
+
+.menu .submenu a::before{
+    content:'';
+    display:block;
+    position: absolute;
+    top:0;
+    left:0;
+    height: 100%;
+    width: 5px;
+    background: #e43f5a;
+    opacity: 0;
+    transition: all .5s;
+}
+
+.menu .submenu a:hover{
+    padding-left: calc(1rem + 5px);
+}
+
+.menu .submenu a:hover::before{
+    opacity: 1;
+}
+
+.item:target .submenu{
+    max-height: 20rem;
+}
+
+
+.menu1{
+
+position: relative;
+background-color: transparent;
+
+}
+
