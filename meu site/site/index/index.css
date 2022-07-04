@@ -398,6 +398,208 @@ background-color: transparent;
 
 }
 @media(max-width:1200px) {
+    #title2 {
+
+
+        color: white;
+        font-style: oblique;
+        margin-top: -28px;
+        margin-left: 410px;
+        position: relative;
+        top: -7px;
+        cursor: pointer;
+        width: 49px;
+        animation: infinite infinito 3s;
+    
+    }
+    #title1{
+
+        margin-left: 370px;
+    }
+
+
+    header {
+        position: relative;
+        pointer-events: none;
+    }
+
+    .block {
+        text-align: center;
+        background-color: black;
+        color: white;
+        padding: 15px;
+        margin: 12px 0px;
+        border-top: 1px solid red;
+        border-bottom: 1px solid red;
+
+    }
+
+    .texto {
+
+        font-family: Arial, Helvetica, sans-serif;
+
+        font-weight: 200;
+        font-size: 1.2rem;
+    }
+
+
+
+
+    .quadro {
+        width: 0px;
+        border-left: 1px groove white;
+        margin-left: 42px;
+
+    }
+
+    .text {
+
+        font-size: 15px;
+    }
+
+    .escrever {
+        font-size: 14px;
+        line-height: 22px;
+        font-family: monospace;
+        width: 410px;
+    }
+
+    h3 {
+        border-bottom: 1px solid red;
+        width: 200px;
+
+    }
+
+    .bottom1 {
+        border-bottom: 1px groove orange;
+        width: 38px;
+
+    }
+
+    .bottom2 {
+        border-bottom: 1px groove blue;
+        width: 30px;
+
+    }
+
+    .bottom3 {
+        border-bottom: 1px groove #6e7681;
+        width: 30px;
+
+    }
+
+
+}
+
+
+
+
+@media(max-width:900px) {
+    #title2 {
+
+
+        color: white;
+        font-style: oblique;
+        margin-top: -28px;
+        margin-left: 310px;
+        position: relative;
+        top: -7px;
+        cursor: pointer;
+        width: 49px;
+        animation: infinite infinito 3s;
+    
+    }
+    #title1{
+
+        margin-left: 270px;
+    }
+
+
+    header {
+        position: relative;
+        pointer-events: none;
+    }
+
+    .block {
+        text-align: center;
+        background-color: black;
+        color: white;
+        padding: 15px;
+        margin: 12px 0px;
+        border-top: 1px solid red;
+        border-bottom: 1px solid red;
+
+    }
+
+    .texto {
+
+        font-family: Arial, Helvetica, sans-serif;
+
+        font-weight: 200;
+        font-size: 1.0rem;
+    }
+
+    .main {
+
+        gap: 0.1rem;
+        margin-right: 1000px;
+
+    }
+
+
+
+    .quadro {
+        width: 0px;
+        border-left: 1px groove white;
+        margin-left: -42px;
+
+    }
+
+    .text {
+
+        font-size: 12px;
+    }
+
+    .escrever {
+        font-size: 14px;
+        line-height: 22px;
+        font-family: monospace;
+        width: 410px;
+    }
+
+    h3 {
+        border-bottom: 1px solid red;
+        width: 200px;
+
+    }
+
+    .bottom1 {
+        border-bottom: 1px groove orange;
+        width: 38px;
+
+    }
+
+    .bottom2 {
+        border-bottom: 1px groove blue;
+        width: 30px;
+
+    }
+
+    .bottom3 {
+        border-bottom: 1px groove #6e7681;
+        width: 30px;
+
+    }
+
+
+}
+
+
+
+
+
+@media only screen and (max-width: 500px)
+{
 
     header {
         position: relative;
