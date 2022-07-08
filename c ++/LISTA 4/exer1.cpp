@@ -1,102 +1,135 @@
 #include<iostream>
 #include<conio.h>
-#include<math.h>
 using namespace std;
 
-void  minuscula(char letra)
+bool minuscula(char letra )
 {
-
- if(letra >= 'a' && letra <='z')
- {
- cout<<"Essa letra e minuscula\n";
-
- }
+	bool retorna;
+	retorna = false;
+	if(letra >='a' && letra <='z')
+	{
+	  
+	  retorna = true;
+	 
+	
+	}
+	return retorna;
+	
 }
- 
-void  maiuscula(char letra)
+
+bool  maiuscula(char letra)
 {
+
+bool retorna = false;
 
  if(letra >= 'A' && letra <='Z')
  {
- 
- cout<<"Essa letra e maiuscula\n";
+ retorna = true;
+  
 }
- 
+return retorna;
 }
 
-
-void let(char letra)
+bool letra1(char letra )
 {
-
- if(letra >= 'a' && letra <='z'  || letra >='A' && letra <='Z'  )
- {
- cout<<"Esse caractere e uma letra \n";
-
- }
+bool retorna = false;
 
 
+if(letra >= 'a' && letra <='z'  || letra >='A' && letra <='Z'  )
+retorna = true;
+
+return retorna;
 
 
 
 }
 
 
-void vogal(char l)
+bool vogal(char l)
 {
-	if( l =='a' || l == 'e' ||  l == 'i' || l =='o' || l =='u')	
+	bool retorna;
+	retorna = false;
 	
-	{
-	cout<<"Essa letra e uma vogal\n ";
-	}
-
-
-
+	if( l =='a' || l == 'e' ||  l == 'i' || l =='o' || l =='u' || l =='A' || l == 'E' ||  l == 'I' || l =='O' || l =='U' )
+	retorna = true;
+	
+	return retorna;
+	
 	
 }
 
-
-void consoante(char n)
+bool consoante(char n)
 {
-	
-  if   (n == 'B' || n == 'C' || n == 'D' || n == 'F' || n == 'G' || n == 'H' || n == 'J' || 
+	bool retorno = false;
+	if   (n == 'B' || n == 'C' || n == 'D' || n == 'F' || n == 'G' || n == 'H' || n == 'J' || 
     n == 'K' || n == 'L' || n == 'M' || n == 'N' || n == 'P' || n == 'Q' || n == 'R' || n == 'S' || n == 'T' || 
     n == 'V' || n == 'W' || n == 'X' || n == 'Y' || n == 'Z' || n == 'b' || n == 'c' || n == 'd' || n == 'f' || n == 'g' || 
     n == 'h' || n == 'j' || n == 'k' || n == 'l' || n == 'm' || n == 'n' || n == 'p' || n == 'q' || n == 'r' || n == 's' || 
     n == 't' || n == 'v' || n == 'w' || n == 'x' || n == 'y' || n == 'z')
     {
-        cout << n << " Eh uma consoante. \n";
-        
-   
-    }
-
-
-}
+    	
+    	retorno = true;
+    	
+	}
+	return retorno;
 	
-	void algarismo(char l)
+	
+	
+}
+bool algarismo(char l )
+{
+	bool retorno = false;
+	if( l =='1' || l =='2' || l =='3' || l =='4' || l =='5' || l =='6' || l =='7' || l =='9'  )
 	{
 		
-		if( l =='1' || l =='2' || l =='3' || l =='4' || l =='5' || l =='6' || l =='7' || l =='9'  )
-		{
-			cout<<"Esse caractere e um algarismo\n";
-		}	
-		
-		
+		retorno = true;
 	}
 	
-	
-	
+	return retorno;
+}
+
 
 int main()
 {
 char letra;
 cout<<"Digite um caractere \n";
 cin>>letra;
-minuscula(letra);
-maiuscula(letra);
-let(letra);
-vogal(letra);
-consoante(letra);
-algarismo(letra);
+if(minuscula(letra))
+{
+	cout<<"Esse caracter e uma letra minuscula\n";
+	
+}
+
+if(maiuscula(letra))
+{
+	cout<<"Esse caracter e uma letra maiuscula\n";
+	
+}
+
+if(letra1(letra))
+{
+	
+	cout<<"Esse caracter e uma letra\n";
+	
+}
+
+if(vogal(letra))
+{
+		cout<<"Esse caracter e uma vogal \n";
+	
+}
+if(consoante(letra))
+{
+		cout<<"Esse caracter e uma consoante \n";
+	
+}
+if(algarismo(letra))
+{
+		cout<<"Esse caracter e um algarismo \n";
+	
+}
+
+
 getch();
 
 
