@@ -7,11 +7,15 @@ header {
   padding: 0px;
   margin: 0px;
 }
-
-pre {
-  border: 2px solid white;
+.pre1 {
+  border: 1px solid white;
   max-width: 200px;
 }
+
+.pre2 {
+  border: 1px solid white;
+}
+
 body {
   background-color: #0d1117;
 }
@@ -315,6 +319,16 @@ code {
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   }
 
+    .pre1 {
+    font-size: 12px;
+  }
+
+  .pre2 {
+    border: 1px solid white;
+    width: 340px;
+    padding-right: 10px;
+    font-size: 12px;
+  }
   #title1 {
     color: red;
     font-style: oblique;
