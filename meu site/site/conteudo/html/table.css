@@ -182,17 +182,10 @@ pre {
   border-bottom: 1px solid #58a6ff;
 }
 @media (max-width: 1200px) {
-  .artigo {
-    margin: 0px 100px;
-    display: flex;
-    flex-direction: column;
-    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  }
-
   #title1 {
     color: red;
     font-style: oblique;
-    margin-left: 403px;
+    margin-left: 303px;
     cursor: pointer;
 
     position: relative;
@@ -204,59 +197,14 @@ pre {
     color: white;
     font-style: oblique;
     margin-top: -28px;
-    margin-left: 443px;
+    margin-left: 343px;
     position: relative;
     top: -7px;
     cursor: pointer;
     width: 49px;
     animation: infinite infinito 3s;
   }
-  .final3:hover {
-    border-bottom: 1px solid #58a6ff;
-  }
 }
-
-@media (max-width: 900px) {
-  .artigo {
-    margin: 0px 100px;
-    display: flex;
-    flex-direction: column;
-    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  }
-
-   #title1 {
-        color: red;
-        font-style: oblique;
-        margin-left: 303px;
-        cursor: pointer;
-       
-        position: relative;
-        top: -8px;
-        width: 30px;
-        animation: infinite infinito2 6s;
-    
-    
-    }
-    #title2 {
-
-
-        color: white;
-        font-style: oblique;
-        margin-top: -28px;
-        margin-left: 343px;
-        position: relative;
-        top: -7px;
-        cursor: pointer;
-        width: 49px;
-        animation: infinite infinito 3s;
-    
-    }
-
-  .final3:hover {
-    border-bottom: 1px solid #58a6ff;
-  }
-}
-
 @media (max-width: 800px) {
   .artigo {
     margin: 0px 100px;
@@ -265,33 +213,32 @@ pre {
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   }
 
-    #title1 {
-        color: red;
-        font-style: oblique;
-        margin-left: 303px;
-        cursor: pointer;
-       
-        position: relative;
-        top: -8px;
-        width: 30px;
-        animation: infinite infinito2 6s;
-    
-    
-    }
-    #title2 {
+  #title1 {
+    color: red;
+    font-style: oblique;
+    margin-left: 303px;
+    cursor: pointer;
 
+    position: relative;
+    top: -8px;
+    width: 30px;
+    animation: infinite infinito2 6s;
+  }
+  #title2 {
+    color: white;
+    font-style: oblique;
+    margin-top: -28px;
+    margin-left: 343px;
+    position: relative;
+    top: -7px;
+    cursor: pointer;
+    width: 49px;
+    animation: infinite infinito 3s;
+  }
 
-        color: white;
-        font-style: oblique;
-        margin-top: -28px;
-        margin-left: 343px;
-        position: relative;
-        top: -7px;
-        cursor: pointer;
-        width: 49px;
-        animation: infinite infinito 3s;
-    
-    }
+  .final3:hover {
+    border-bottom: 1px solid #58a6ff;
+  }
 }
 
 @media (max-width: 750px) {
@@ -302,34 +249,28 @@ pre {
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   }
 
-   #title1 {
-        color: red;
-        font-style: oblique;
-        margin-left: 303px;
-        cursor: pointer;
-       
-        position: relative;
-        top: -8px;
-        width: 30px;
-        animation: infinite infinito2 6s;
-    
-    
-    }
-    #title2 {
+  #title1 {
+    color: red;
+    font-style: oblique;
+    margin-left: 303px;
+    cursor: pointer;
 
-
-        color: white;
-        font-style: oblique;
-        margin-top: -28px;
-        margin-left: 342px;
-        position: relative;
-        top: -7px;
-        cursor: pointer;
-        width: 49px;
-        animation: infinite infinito 3s;
-    
-    }
-
+    position: relative;
+    top: -8px;
+    width: 30px;
+    animation: infinite infinito2 6s;
+  }
+  #title2 {
+    color: white;
+    font-style: oblique;
+    margin-top: -28px;
+    margin-left: 342px;
+    position: relative;
+    top: -7px;
+    cursor: pointer;
+    width: 49px;
+    animation: infinite infinito 3s;
+  }
   .final3:hover {
     border-bottom: 1px solid #58a6ff;
   }
@@ -344,32 +285,31 @@ pre {
   }
 
   #title1 {
-        color: red;
-        font-style: oblique;
-        margin-left: 303px;
-        cursor: pointer;
-       
-        position: relative;
-        top: -8px;
-        width: 30px;
-        animation: infinite infinito2 6s;
-    
-    
-    }
-    #title2 {
+    color: red;
+    font-style: oblique;
+    margin-left: 243px;
+    cursor: pointer;
 
+    position: relative;
+    top: -8px;
+    width: 30px;
+    animation: infinite infinito2 6s;
+  }
+  #title2 {
+    color: white;
+    font-style: oblique;
+    margin-top: -28px;
+    margin-left: 283px;
+    position: relative;
+    top: -7px;
+    cursor: pointer;
+    width: 49px;
+    animation: infinite infinito 3s;
+  }
 
-        color: white;
-        font-style: oblique;
-        margin-top: -28px;
-        margin-left: 342px;
-        position: relative;
-        top: -7px;
-        cursor: pointer;
-        width: 49px;
-        animation: infinite infinito 3s;
-    
-    }
+  .final3:hover {
+    border-bottom: 1px solid #58a6ff;
+  }
 }
 
 @media only screen and (max-width: 500px) {
@@ -380,33 +320,29 @@ pre {
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   }
 
-   #title1 {
-        color: red;
-        font-style: oblique;
-        margin-left: 303px;
-        cursor: pointer;
-       
-        position: relative;
-        top: -8px;
-        width: 30px;
-        animation: infinite infinito2 6s;
-    
-    
-    }
-    #title2 {
+  #title1 {
+    color: red;
+    font-style: oblique;
+    margin-left: 243px;
+    cursor: pointer;
 
+    position: relative;
+    top: -8px;
+    width: 30px;
+    animation: infinite infinito2 6s;
+  }
+  #title2 {
+    color: white;
+    font-style: oblique;
+    margin-top: -28px;
+    margin-left: 283px;
+    position: relative;
+    top: -7px;
+    cursor: pointer;
+    width: 49px;
+    animation: infinite infinito 3s;
+  }
 
-        color: white;
-        font-style: oblique;
-        margin-top: -28px;
-        margin-left: 342px;
-        position: relative;
-        top: -7px;
-        cursor: pointer;
-        width: 49px;
-        animation: infinite infinito 3s;
-    
-    }
   artigo {
     margin: 0px 80px;
     display: flex;
