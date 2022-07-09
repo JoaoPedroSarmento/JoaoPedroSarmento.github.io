@@ -207,48 +207,6 @@ code {
   border-bottom: 1px solid #58a6ff;
 }
 @media (max-width: 1200px) {
-  .artigo {
-    margin: 0px 100px;
-    display: flex;
-    flex-direction: column;
-    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  }
-
-  #title1 {
-    color: red;
-    font-style: oblique;
-    margin-left: 403px;
-    cursor: pointer;
-
-    position: relative;
-    top: -8px;
-    width: 30px;
-    animation: infinite infinito2 6s;
-  }
-  #title2 {
-    color: white;
-    font-style: oblique;
-    margin-top: -28px;
-    margin-left: 443px;
-    position: relative;
-    top: -7px;
-    cursor: pointer;
-    width: 49px;
-    animation: infinite infinito 3s;
-  }
-  .final3:hover {
-    border-bottom: 1px solid #58a6ff;
-  }
-}
-
-@media (max-width: 900px) {
-  .artigo {
-    margin: 0px 100px;
-    display: flex;
-    flex-direction: column;
-    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  }
-
   #title1 {
     color: red;
     font-style: oblique;
@@ -271,11 +229,7 @@ code {
     width: 49px;
     animation: infinite infinito 3s;
   }
-  .final3:hover {
-    border-bottom: 1px solid #58a6ff;
-  }
 }
-
 @media (max-width: 800px) {
   .artigo {
     margin: 0px 100px;
@@ -306,6 +260,7 @@ code {
     width: 49px;
     animation: infinite infinito 3s;
   }
+
   .final3:hover {
     border-bottom: 1px solid #58a6ff;
   }
@@ -319,16 +274,6 @@ code {
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   }
 
-    .pre1 {
-    font-size: 12px;
-  }
-
-  .pre2 {
-    border: 1px solid white;
-    width: 340px;
-    padding-right: 10px;
-    font-size: 12px;
-  }
   #title1 {
     color: red;
     font-style: oblique;
@@ -356,7 +301,7 @@ code {
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 600px) {
   .artigo {
     margin: 0px 100px;
     display: flex;
@@ -367,7 +312,7 @@ code {
   #title1 {
     color: red;
     font-style: oblique;
-    margin-left: 303px;
+    margin-left: 243px;
     cursor: pointer;
 
     position: relative;
@@ -379,19 +324,20 @@ code {
     color: white;
     font-style: oblique;
     margin-top: -28px;
-    margin-left: 342px;
+    margin-left: 283px;
     position: relative;
     top: -7px;
     cursor: pointer;
     width: 49px;
     animation: infinite infinito 3s;
   }
+
   .final3:hover {
     border-bottom: 1px solid #58a6ff;
   }
 }
 
-@media only screen and (max-width: 300px) {
+@media only screen and (max-width: 500px) {
   .artigo {
     margin: 0px 100px;
     display: flex;
@@ -402,7 +348,7 @@ code {
   #title1 {
     color: red;
     font-style: oblique;
-    margin-left: 183px;
+    margin-left: 243px;
     cursor: pointer;
 
     position: relative;
@@ -414,13 +360,14 @@ code {
     color: white;
     font-style: oblique;
     margin-top: -28px;
-    margin-left: 220px;
+    margin-left: 283px;
     position: relative;
     top: -7px;
     cursor: pointer;
     width: 49px;
     animation: infinite infinito 3s;
   }
+
   artigo {
     margin: 0px 80px;
     display: flex;
