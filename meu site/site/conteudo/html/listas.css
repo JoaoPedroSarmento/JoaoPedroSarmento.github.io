@@ -237,7 +237,13 @@ code {
     flex-direction: column;
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   }
-
+  .pre2{
+   font-size:12px;
+    
+  }
+.pre1{
+    font-size:12px;
+  }
   #title1 {
     color: red;
     font-style: oblique;
@@ -272,6 +278,13 @@ code {
     display: flex;
     flex-direction: column;
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+  ]  .pre2{
+   font-size:12px;
+    
+  }
+.pre1{
+    font-size:12px;
   }
 
   #title1 {
@@ -308,6 +321,13 @@ code {
     flex-direction: column;
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   }
+    .pre2{
+   font-size:12px;
+    
+  }
+.pre1{
+    font-size:12px;
+  }
 
   #title1 {
     color: red;
@@ -338,13 +358,19 @@ code {
 }
 
 @media only screen and (max-width: 500px) {
-  .artigo {
+    .artigo {
     margin: 0px 100px;
     display: flex;
     flex-direction: column;
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   }
-
+  .pre2{
+   font-size:12px;
+    
+  }
+.pre1{
+    font-size:12px;
+  }
   #title1 {
     color: red;
     font-style: oblique;
