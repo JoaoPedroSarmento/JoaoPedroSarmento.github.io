@@ -224,28 +224,34 @@ pre {
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   }
 
-  #title1 {
-    color: red;
-    font-style: oblique;
-    margin-left: 303px;
-    cursor: pointer;
+   #title1 {
+        color: red;
+        font-style: oblique;
+        margin-left: 303px;
+        cursor: pointer;
+       
+        position: relative;
+        top: -8px;
+        width: 30px;
+        animation: infinite infinito2 6s;
+    
+    
+    }
+    #title2 {
 
-    position: relative;
-    top: -8px;
-    width: 30px;
-    animation: infinite infinito2 6s;
-  }
-  #title2 {
-    color: white;
-    font-style: oblique;
-    margin-top: -28px;
-    margin-left: 343px;
-    position: relative;
-    top: -7px;
-    cursor: pointer;
-    width: 49px;
-    animation: infinite infinito 3s;
-  }
+
+        color: white;
+        font-style: oblique;
+        margin-top: -28px;
+        margin-left: 343px;
+        position: relative;
+        top: -7px;
+        cursor: pointer;
+        width: 49px;
+        animation: infinite infinito 3s;
+    
+    }
+
   .final3:hover {
     border-bottom: 1px solid #58a6ff;
   }
@@ -259,31 +265,33 @@ pre {
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   }
 
-  #title1 {
-    color: red;
-    font-style: oblique;
-    margin-left: 303px;
-    cursor: pointer;
+    #title1 {
+        color: red;
+        font-style: oblique;
+        margin-left: 303px;
+        cursor: pointer;
+       
+        position: relative;
+        top: -8px;
+        width: 30px;
+        animation: infinite infinito2 6s;
+    
+    
+    }
+    #title2 {
 
-    position: relative;
-    top: -8px;
-    width: 30px;
-    animation: infinite infinito2 6s;
-  }
-  #title2 {
-    color: white;
-    font-style: oblique;
-    margin-top: -28px;
-    margin-left: 343px;
-    position: relative;
-    top: -7px;
-    cursor: pointer;
-    width: 49px;
-    animation: infinite infinito 3s;
-  }
-  .final3:hover {
-    border-bottom: 1px solid #58a6ff;
-  }
+
+        color: white;
+        font-style: oblique;
+        margin-top: -28px;
+        margin-left: 343px;
+        position: relative;
+        top: -7px;
+        cursor: pointer;
+        width: 49px;
+        animation: infinite infinito 3s;
+    
+    }
 }
 
 @media (max-width: 750px) {
@@ -294,28 +302,34 @@ pre {
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   }
 
-  #title1 {
-    color: red;
-    font-style: oblique;
-    margin-left: 303px;
-    cursor: pointer;
+   #title1 {
+        color: red;
+        font-style: oblique;
+        margin-left: 303px;
+        cursor: pointer;
+       
+        position: relative;
+        top: -8px;
+        width: 30px;
+        animation: infinite infinito2 6s;
+    
+    
+    }
+    #title2 {
 
-    position: relative;
-    top: -8px;
-    width: 30px;
-    animation: infinite infinito2 6s;
-  }
-  #title2 {
-    color: white;
-    font-style: oblique;
-    margin-top: -28px;
-    margin-left: 342px;
-    position: relative;
-    top: -7px;
-    cursor: pointer;
-    width: 49px;
-    animation: infinite infinito 3s;
-  }
+
+        color: white;
+        font-style: oblique;
+        margin-top: -28px;
+        margin-left: 342px;
+        position: relative;
+        top: -7px;
+        cursor: pointer;
+        width: 49px;
+        animation: infinite infinito 3s;
+    
+    }
+
   .final3:hover {
     border-bottom: 1px solid #58a6ff;
   }
@@ -330,33 +344,35 @@ pre {
   }
 
   #title1 {
-    color: red;
-    font-style: oblique;
-    margin-left: 303px;
-    cursor: pointer;
+        color: red;
+        font-style: oblique;
+        margin-left: 303px;
+        cursor: pointer;
+       
+        position: relative;
+        top: -8px;
+        width: 30px;
+        animation: infinite infinito2 6s;
+    
+    
+    }
+    #title2 {
 
-    position: relative;
-    top: -8px;
-    width: 30px;
-    animation: infinite infinito2 6s;
-  }
-  #title2 {
-    color: white;
-    font-style: oblique;
-    margin-top: -28px;
-    margin-left: 342px;
-    position: relative;
-    top: -7px;
-    cursor: pointer;
-    width: 49px;
-    animation: infinite infinito 3s;
-  }
-  .final3:hover {
-    border-bottom: 1px solid #58a6ff;
-  }
+
+        color: white;
+        font-style: oblique;
+        margin-top: -28px;
+        margin-left: 342px;
+        position: relative;
+        top: -7px;
+        cursor: pointer;
+        width: 49px;
+        animation: infinite infinito 3s;
+    
+    }
 }
 
-@media only screen and (max-width: 300px) {
+@media only screen and (max-width: 500px) {
   .artigo {
     margin: 0px 100px;
     display: flex;
@@ -364,28 +380,33 @@ pre {
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   }
 
-  #title1 {
-    color: red;
-    font-style: oblique;
-    margin-left: 183px;
-    cursor: pointer;
+   #title1 {
+        color: red;
+        font-style: oblique;
+        margin-left: 303px;
+        cursor: pointer;
+       
+        position: relative;
+        top: -8px;
+        width: 30px;
+        animation: infinite infinito2 6s;
+    
+    
+    }
+    #title2 {
 
-    position: relative;
-    top: -8px;
-    width: 30px;
-    animation: infinite infinito2 6s;
-  }
-  #title2 {
-    color: white;
-    font-style: oblique;
-    margin-top: -28px;
-    margin-left: 220px;
-    position: relative;
-    top: -7px;
-    cursor: pointer;
-    width: 49px;
-    animation: infinite infinito 3s;
-  }
+
+        color: white;
+        font-style: oblique;
+        margin-top: -28px;
+        margin-left: 342px;
+        position: relative;
+        top: -7px;
+        cursor: pointer;
+        width: 49px;
+        animation: infinite infinito 3s;
+    
+    }
   artigo {
     margin: 0px 80px;
     display: flex;
