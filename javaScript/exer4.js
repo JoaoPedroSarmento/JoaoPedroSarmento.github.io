@@ -1,3 +1,5 @@
+const momentMin = require("./moment.min");
+
 let partida = prompt("Digite a data de partida(formata DD/MM/YYYY) ");
 
 let converte = moment(partida, "DD/MM/YYYY");
