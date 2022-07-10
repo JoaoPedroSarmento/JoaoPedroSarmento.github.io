@@ -3,7 +3,7 @@ let idade = prompt("Digite a sua idade :  \n");
 switch (idade) {
   case "1":
   case "2":
-    alert("Você ainda é um bebe\n ");
+    alert("Você ainda é um bebê\n ");
     break;
   case "3":
   case "4":
