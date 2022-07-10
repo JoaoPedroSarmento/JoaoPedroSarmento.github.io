@@ -5,7 +5,7 @@ switch (texto) {
     console.log("Nave mais resistente");
     break;
   case "Raptor":
-    console.log("Nave masi rápida");
+    console.log("Nave mais rápida");
     break;
   case "Enterprise":
     console.log("Nave da frota estrelar");
