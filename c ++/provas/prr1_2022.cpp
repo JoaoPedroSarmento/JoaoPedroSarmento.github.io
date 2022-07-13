@@ -2,8 +2,8 @@
 #include<conio.h>//inclui o getch() que faz com que, quando o programa for executado ele n feche
 
 
-using namespace std;/* para usar os recursos de entrada e saída da biblioteca iostream em C++, é preciso incluir o comando using namespace std;
- Este comando serve para definir um "espaço de nomes", ou namespace.*/
+using namespace std;/* para usar os recursos de entrada e saÃ­da da biblioteca iostream em C++, Ã© preciso incluir o comando using namespace std;
+ Este comando serve para definir um "espaÃ§o de nomes", ou namespace.*/
  
  void piscina(float &c,float &l , float p)
  {
