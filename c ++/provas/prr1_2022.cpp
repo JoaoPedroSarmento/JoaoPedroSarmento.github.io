@@ -1,5 +1,5 @@
 #include<iostream>//bibiotleca que inclui o cout
-#include<conio.h>//inclui o getch() que faz com que, quando o programa for executado ele n feche
+#include<conio.h>//inclui o getch()  faz com que, quando o programa for executado ele n feche
 
 
 using namespace std;/* para usar os recursos de entrada e saída da biblioteca iostream em C++, é preciso incluir o comando using namespace std;
