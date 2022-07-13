@@ -1,8 +1,8 @@
-#include<math.h>
-#include<conio.h>
 #include<iostream>
+#include<conio.h>
 
 using namespace std;
+
 float retorna(float n1, float n2, char  n3)
 {
 	if(n3 == '+')
