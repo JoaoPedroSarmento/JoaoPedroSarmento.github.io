@@ -19,7 +19,7 @@ int main()
 	string nome;
 	
 	cout<<"Digite seu nome\n";
-    cin>>nome;
+        cin>>nome;
 	retorna_nome(nome);
 	getch();
 		
