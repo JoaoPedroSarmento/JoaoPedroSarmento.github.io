@@ -23,7 +23,7 @@ int expressao(char z )
 
 int main()
 {
- float x,y,retornando;
+ float x,y;
 	char Z;
 	
 	cout<<"ENTRE COM O PRIMEIRO NUMERO ----->\n";
