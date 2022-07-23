@@ -40,9 +40,9 @@ int main()
     F = 	Fahrenheit_para_celcius(f);
     FK =  celcius_para_kelvin(f);
     FK2 = Fahrenheit_para_kelvin (f);
-	cout<<"Valor convertido em celcius  "<<F<<"\n";
-	cout<<"Valor convertido de celcius para   kelvin  "<<FK<<"\n";
-	cout<<"Valor convertido de fahrenheit  para   kelvin  "<<FK2<<"\n";
+    cout<<"Valor convertido em celcius  "<<F<<"\n";
+    cout<<"Valor convertido de celcius para   kelvin  "<<FK<<"\n";
+    cout<<"Valor convertido de fahrenheit  para   kelvin  "<<FK2<<"\n";
 	
 	
 	
