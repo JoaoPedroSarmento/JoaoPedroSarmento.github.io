@@ -2,7 +2,7 @@
 #include<conio.h>
 using namespace std;
 
-int comparaDatas(int dia, int mes, int ano, int dia2,int mes2,int ano2)
+int comparaDatas(int dia, int mes, int ano, int dia2,int mes2,int ano2) //Comparar datas 
 {
 
 	if(ano2 > ano || ano2 == ano && mes2 > mes || ano2 == ano && mes2 == mes && dia2 > dia)
@@ -21,7 +21,7 @@ int comparaDatas(int dia, int mes, int ano, int dia2,int mes2,int ano2)
 	
 }
 
-int datas(int dia, int mes, int ano, int dia2,int mes2,int ano2,int &idade)
+int datas(int dia, int mes, int ano, int dia2,int mes2,int ano2,int &idade) // Faz o cálculo da idade da pessoa de acordo com o dia/mês/ano digitado 
 {   int  aux;
 
 	if( (ano2 > ano && mes2 > mes ) || ( ano2 > ano && mes2 == mes && dia2 > dia )  || ( ano2 > ano && mes2 == mes && dia2 == dia) )
