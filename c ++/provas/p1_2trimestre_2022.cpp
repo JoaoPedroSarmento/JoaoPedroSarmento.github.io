@@ -19,7 +19,7 @@ int pedraPapelTesoura (int mao1, int mao2)
     if ( ( mao2 == tesoura && mao1 == tesoura ) || ( mao2 == papel && mao1 == papel ) ||( mao2 == pedra && mao1== pedra )  )    return 0;
    
    else 
-   return -1;  /*Coloquei isso para caso o usuário digitar um número que não seja 0,5,2 ass : João Pedro  */
+   return -1;  /*Coloquei isso para caso o usuÃ¡rio digitar um nÃºmero que nÃ£o seja 0,5,2 ass : JoÃ£o Pedro  */
 
 }
 int main()
