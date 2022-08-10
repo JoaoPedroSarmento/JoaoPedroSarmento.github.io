@@ -1,10 +1,6 @@
-// 5 , 8 , 9 e 11
-
 #include<iostream>
 #include<conio.h>
-
 using namespace std;
-
 
 int main()
 {
