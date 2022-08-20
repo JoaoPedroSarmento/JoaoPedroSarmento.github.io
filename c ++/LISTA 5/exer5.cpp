@@ -9,12 +9,12 @@ int fibonacci(int q)
   int anterior , atual, proximo;
   
   anterior = 0;
-  atual = 1;
-  proximo = 0;	
+  atual = 0;
+  proximo = 1;	
       	for(cont; cont <= q; cont++)
 	{
-	      cout<<"\t"<<proximo<<endl;
-		proximo =  atual + anterior;
+	      cout<<"\t"<<atual<<endl;
+		proximo =  proximo + anterior;
 		anterior = atual;
 		atual = proximo;
 		
