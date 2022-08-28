@@ -39,7 +39,7 @@ function MesEscolhido() {
   }
 }
 function RetornaOmes(mes) {
-  if (mes > 12) {
+  if (mes > 12 || mes < 1) {
     while (1) {
       let NaoeMes = document.querySelector("#mes");
       NaoeMes.innerText = " ANIMAL --- > mês " + mes + " não existe ";
