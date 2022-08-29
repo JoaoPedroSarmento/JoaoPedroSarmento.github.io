@@ -3,19 +3,12 @@
 
 using namespace std;
 
-bool divisivel (int numero1,int numero2)
+bool divisivel (int n,int n2)
 {
   bool retorno;
   retorno = false;
   
-  if( numero1 % numero2  == 0   )
-  {
-  	
-  	retorno = true;
-  }
-	return retorno;
-	
- 
+  return (n % n2 == 0  ) ? retorno = true : retorno; 
 }
 
 int main()
@@ -27,38 +20,14 @@ int main()
 	
 	cout<<"Digite o segundo numero\n";
 	cin>>n2;
-	
-	if(divisivel(n1,n2))
+	switch(divisivel(n1,n2))
 	{
-		
-		cout<<n1<<" e divisivel por "<<n2<<"\n\n";
-		
+		case true : cout <<n1 << " e divisivel por -- > " << n2 << endl ;
+		break;
+		default : 
+		  cout <<n1 << " ao  e divisivel por -- > " << n2 << endl ; 
 	}
-	else{
-		
-		cout<<n1<<"  nao e divisivel por  "<<n2<<"\n\n";
-		
-	}
-	
-	if(n1 % n2 == 0)
-	{
-		
-		
-		cout<<n1<<"  e par \n\n";
-		
-	}
-	
-	else{
-		
-		cout<<n1<<" e impar \n\n";
-		
-	}
+	  (n1 % 2 == 0  || n2 % 2 == 0 ) ? cout << "um numero e par " : cout << " um numero e impar";
 	getch();
-	
-	
-	
-}
-	
-	
-	
 
+}
