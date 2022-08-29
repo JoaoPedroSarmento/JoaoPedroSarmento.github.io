@@ -1,36 +1,23 @@
 #include<iostream>
-
+#include<conio.h>
 using namespace std;
 
-int meses( int mes )
+int IndicaMes( int mes )
 {
-	if( mes == 1) return 1;
-	
-	else 
-	if(mes == 2) return 2;
-	
-		else 
-	if(mes == 3) return 3;
-		else 
-	if(mes == 4 ) return 4;
-		else 
-	if(mes == 5) return 5;
-		else 
-	if(mes == 6) return 6;
-		else 
-	if(mes == 7) return 7;
-		else 
-	if(mes == 8 ) return 8;
-		else 
-	if(mes == 9 ) return 9;
-		else 
-	if(mes == 10) return 10;
-		else 
-	if(mes == 11 ) return 11;
-		else 
-	if(mes == 12) return 12;
-	else
-	return  -1;
+	int resultado = -1;
+( mes == 1)  ? resultado =  1 : resultado;
+( mes == 2)  ? resultado =  2 : resultado;
+( mes == 3)  ? resultado =  3 : resultado;
+( mes == 4)  ? resultado =  4 : resultado;
+( mes == 5)  ? resultado =  5 : resultado;
+( mes == 6)  ? resultado =  6 : resultado;
+( mes == 7)  ? resultado =  7 : resultado;
+( mes == 8)  ? resultado =  8 : resultado;
+( mes == 9)  ? resultado =  9 : resultado;
+( mes == 10) ? resultado =  10: resultado;
+( mes == 11) ? resultado =  11: resultado;
+( mes == 12) ? resultado =  12: resultado;
+return resultado;
 }
 
 int main()
@@ -39,7 +26,7 @@ int main()
 	cout<<"Digite um mes de acordo com seu numero (1 a 12 )";
 	cin>>mes;
 
-	switch(meses(mes))
+	switch(IndicaMes(mes))
 	{
 	case 1:
 			cout<<"JANEIRO";
@@ -83,8 +70,5 @@ int main()
 			  cout<<"Isso nao e um mes ";
 		}
 		
-		
+		getch();
 	}
-	
-	
-
