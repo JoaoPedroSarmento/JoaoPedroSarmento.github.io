@@ -1,136 +1,71 @@
 #include<iostream>
-
+#include<conio.h>
 using namespace std;
-
-int posicao(char l)
+int PosicaoDaLetra(char l)
 {
-	if(l == 'a' || l == 'A') return 1;
+	int retorno = 0;
+	(l == 'a' || l == 'A') ? retorno = 1 : retorno;
+ 
+	( l == 'b' || l =='B')  ? retorno = 2 : retorno;
+	 
+	( l == 'c' || l =='C')   ? retorno = 3 : retorno;
 	
-	else 
-	if( l == 'b' || l =='B') return 2;
-	else 
-	if( l == 'c' || l =='C') return 3;
+	(l ==  'd' || l == 'D')  ? retorno = 4 : retorno;
 	
-	else
-	if(l ==  'd' || l == 'D') return 4;
+	(l == 'e'|| l == 'E') ? retorno = 5 : retorno;
 	
-	else
-	if(l == 'e'|| l == 'E') return 5;
+	(l == 'f' || l =='F')  ? retorno = 6 : retorno;
+		
+	(l == 'g' || l =='G')  ? retorno = 7 : retorno;
+		 
+	(l == 'h' || l =='H') ? retorno = 8 : retorno;
 	
-	else 
-	if(l == 'f' || l =='F') return 6;
+	(l == 'i' || l =='I')  ? retorno = 9 : retorno;
 	
-		else 
-	if(l == 'g' || l =='G') return 7;
+	(l == 'j' || l =='J') ? retorno = 10 : retorno;
 	
-		else 
-	if(l == 'h' || l =='H') return 8;
-	
-		else 
-	if(l == 'i' || l =='I') return 9;
-	
-		else 
-	if(l == 'j' || l =='J') return 10;
-	
-		else 
-	if(l == 'k' || l =='K') return 11;
-	
-		else 
-	if(l == 'l' || l =='L') return 12;
-	
-		else 
-	if(l == 'm' || l =='M') return 13;
-	
-		else 
-	if(l == 'n' || l =='N') return 14;
-	
-		else 
-	if(l == 'o' || l =='O') return 15;
-	
-		else 
-	if(l == 'p' || l =='P') return 16;
-	
-		else 
-	if(l == 'q' || l =='Q') return 17;
-	
-		else 
-	if(l == 'r' || l =='R') return 18;
-	
-		else 
-	if(l == 's' || l =='S') return 19;
-	
-		else 
-	if(l == 't' || l =='T') return 20;
-	
-		else 
-	if(l == 'u' || l =='U') return 21;
-	
-		else 
-	if(l == 'v' || l =='V') return 22;
-	
-		else 
-	if(l == 'w' || l =='W') return 23;
-	
-		else 
-	if(l == 'x' || l =='X') return 24;
-	
-		else 
-	if(l == 'y' || l =='Y') return 25;
-	
-		else 
-	if(l == 'z' || l =='Z') return 26;
-	
-	else
-	return 0;
-	
-	
-	
-	
-	
-}
+	(l == 'k' || l =='K')  ? retorno = 11 : retorno;
 
+	(l == 'l' || l =='L')  ? retorno = 12 : retorno;
+	
+	(l == 'm' || l =='M') ? retorno = 13 : retorno;
+	 
+	(l == 'n' || l =='N')  ? retorno = 14 : retorno;
+	
+	(l == 'o' || l =='O')  ? retorno = 15 : retorno;
+	
+	(l == 'p' || l =='P')  ? retorno = 16: retorno;
+	 
+	(l == 'q' || l =='Q') ? retorno = 17 : retorno;
+
+	(l == 'r' || l =='R')  ? retorno = 18 : retorno;
+
+	(l == 's' || l =='S') ? retorno = 19 : retorno;
+	
+	(l == 't' || l =='T')  ? retorno = 20 : retorno;
+	
+	(l == 'u' || l =='U')  ? retorno = 21 : retorno;
+		
+	(l == 'v' || l =='V')  ? retorno = 22 : retorno;
+	 
+	(l == 'w' || l =='W')  ? retorno = 23 : retorno;
+	
+	(l == 'x' || l =='X') ? retorno = 24 : retorno;
+	
+	(l == 'y' || l =='Y')  ? retorno = 25 : retorno;
+	
+	(l == 'z' || l =='Z')  ? retorno = 26  : retorno;
+	
+	 return retorno;
+}
 int main()
 {
-    char L;
-    int pos;
+    char letra;
 	cout<<"Digite uma letra";
-	cin>>L;
-	
-   pos = posicao(L);
-	switch(pos)
-	{
-		case 1:
-		case 2:
-		case 4:
-		case 5:
-		case 6:
-		case 7:			
-		case 8:																					
-		case 9:
-	    case 10:
-	   	case 11:
-	   	case 12:
-	   	case 13:
-	   	case 14:
-	   	case 15:
-	   	case 16:
-	   	case 17:
-	   	case 18:
-	 	case 19:
-	   	case 20:
-	   	case 21:
-	   	case 22:
-	   	case 23:
-	   	case 24:
-	   	case 25:
-	   	case 26:
-	   	cout<<"A letra "<<L<<"  esta na posicao "<<pos<<" do alfabeto";
-	   	break;
-	   	default :
-	   		cout<<"isso nao e uma letra\n";
-        
-	}
-	
-	
-}
+	cin>>letra;
+   
+   int posicao =  PosicaoDaLetra(letra);
 
+	(posicao >= 1 && posicao <= 26 ) ?  cout << " A letra " << letra << "  esta na posicao " << posicao << " do alfabeto" : cout << "isso nao e uma letra\n";
+   getch();
+}
