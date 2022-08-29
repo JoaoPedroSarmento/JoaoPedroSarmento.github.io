@@ -2,11 +2,10 @@
 #include<conio.h>
 using namespace std;
 
-int  fabs1(float n)
+bool fabs1(float n)
 {
 	bool retorno = false;
-   (n < 0 ) ? retorno =   true : retorno =  false;
-   return retorno;
+  return  (n < 0 ) ? retorno =   true : retorno ;
 }
 
 
