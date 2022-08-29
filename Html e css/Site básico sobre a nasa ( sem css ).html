@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Site sobre o universo</title>
+  </head>
+  <body>
+    <header>
+      <figure>
+        <img
+          width="120px"
+          src="https://www.nasa.gov/sites/default/files/thumbnails/image/nasa-logo-web-rgb.png"
+          alt="LogodaNasa"
+        />
+      </figure>
+
+      <nav>
+        <a href="https://www.nasa.gov/">Site da nasa</a>
+        <a
+          href="https://www.todamateria.com.br/o-que-e-universo/#:~:text=Na%20astronomia%2C%20o%20Universo%20corresponde,%E2%80%9Ctudo%20em%20um%20s%C3%B3%E2%80%9D."
+          >mais curiosidades
+        </a>
+      </nav>
+    </header>
+    <hr />
+    <br />
+    <label for="language">Escolha o ídioma </label>
+    <select id="language">
+      <option value="pt-br">Portuguese</option>
+      <option value="en">english</option>
+      <option value="ger">German</option>
+      <option value="GN">Ghana</option>
+      <option value="ep">spanish</option>
+    </select>
+    <main>
+      <div id="nasa">
+        <h1>O que é a nasa ?</h1>
+        <figure class="img-01-nasa">
+          <img
+            width="300px"
+            src="https://images-na.ssl-images-amazon.com/images/I/6111kA98OPL.png"
+            alt="Nasa-02"
+          />
+        </figure>
+        <p class="Sobrenasa">
+          <strong> Administração Nacional da Aeronáutica e Espaço </strong> é
+          uma agência do governo federal dos Estados Unidos responsável pela
+          pesquisa e desenvolvimento de tecnologias e programas de exploração
+          espacial. Sua missão oficial é "fomentar o futuro na pesquisa,
+          descoberta e exploração espacial".
+        </p>
+      </div>
+
+      <h1>Descobertas :</h1>
+      <div class="nebulosa">
+        <h2>Nebulosa :</h2>
+        <p class="text">Curiosidade sobre <strong>nebulosa</strong> :</p>
+        <ul>
+          <li>
+            Esse tipo de corpo celeste tem a <i> densidade</i> muito baixa. ...
+          </li>
+          <li>
+            Uma nuvem <mark>nebular </mark> do tamanho da terra pesaria alguns
+            quilogramas;
+          </li>
+          <li>
+            O <ins> ser humano </ins> já observou a formação de uma nuvem
+            nebular. ...
+          </li>
+          <li>
+            Em condições ideais, é possível ver a <strong> nebulosa</strong> de
+            Órion.
+          </li>
+        </ul>
+        <figure>
+          <img
+            width="500px"
+            src="https://static.poder360.com.br/2022/07/nebulosa-carina-nasa-12-jul-2022-848x477.png"
+            alt="nebulosa"
+          />
+          <figcaption>Nebulosa</figcaption>
+        </figure>
+      </div>
+    </main>
+    <form method="get">
+      <label for="nome">Insira seu nome </label>
+      <br />
+      <input id="nome" type="text" placeholder="Nome Ex : Jordan" />
+      <br />
+      <br />
+      <label for="tel"
+        >insira seu número (caso queira receber novidades sobre o site )
+      </label>
+      <br />
+      <input placeholder="123456-789" type="tel" id="tel" />
+      <br />
+      <br />
+      <label for="coment">Comentário : </label>
+      <br />
+      <textarea
+        required
+        placeholder="Comente algo "
+        id="coment"
+        cols="50"
+        rows="10"
+        minlength="10"
+        maxlength="100"
+      ></textarea>
+      <br />
+      <input type="submit" value="enviar comentário" />
+      <input type="reset" value="excluir comentário " />
+    </form>
+    <footer>
+      <hr />
+      <figure>
+        <img
+          width="120px"
+          src="https://www.nasa.gov/sites/default/files/thumbnails/image/nasa-logo-web-rgb.png"
+          alt="LogodaNasa"
+        />
+      </figure>
+    </footer>
+  </body>
+</html>
