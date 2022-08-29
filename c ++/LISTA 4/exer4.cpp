@@ -3,57 +3,29 @@
 
 using namespace std;
 
-void maior(float x, float y )
+int MaiorEntreDoisNumeros(float x, float y )
 {
-	if(x > y )
-	{
-		
-		cout<<"O maior entre eles e : "<<x<<"\n\n";
-	}
-	
-	if ( y > x)
-	{
-		
-		cout<<"O maior entre eles e : "<<y<<"\n\n";
-	}
-	
-	
+ int retorno = 0;
+ return (x >= y) ? retorno = x : retorno = y ; 
 }
 
-
-void maior3(float X ,float Y , float z )
+int  MaiorEntreTresNumeros(float x ,float y , float z )
 {
-
-	if(X < z || Y < z)
-	{
-		
-		cout<<"  o maior entre eles e "<<z<<"\n";
-	}
-	if(X > z || Y > z){
-		maior(X,Y);
-		
-	}
-	else{
-		
-		cout<<"Os numeros sao iguais\n";
-	}
-	
-	
-	
+  int retorno =  MaiorEntreDoisNumeros(x,y);
+  return  (retorno > z ) ?  retorno  : z; 	
 }
 
 int main()
 {
-	float n,n1, n2;
-	cout<<"Digite o  primeiro numero\n\n";
+	float n,n2, n3,resultado;
+ 	cout<<"Digite o  primeiro numero\n";
 	cin>>n;
-	
-		cout<<"Digite o  segundo numero\n\n";
-	cin>>n1;
-	
-		cout<<"Digite o   terceiro numero\n\n";
+	cout<<"Digite o  segundo numero\n";
 	cin>>n2;
-	maior3(n,n1,n2);
-	
-	
+	(MaiorEntreDoisNumeros(n,n2)) ? cout << n << " e o maior entre os dois numeros\n " : cout << n2 << " e o maior entre os dois numeros\n";
+	cout<<"Digite o   terceiro numero\n";
+	cin>>n3;
+	resultado =   MaiorEntreTresNumeros(n,n2,n3);
+   ( MaiorEntreTresNumeros(n,n2,n3) ) ?  cout << resultado << " e o maior entre os tres numeros\n " : cout << "";
+
 }
