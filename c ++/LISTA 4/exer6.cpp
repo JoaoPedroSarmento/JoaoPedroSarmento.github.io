@@ -5,28 +5,13 @@ using namespace std;
 int imc(float peso,float altura )
 {
 	float IMC = peso/(altura*altura);
+	int retorno = 4;
+	(IMC < 25) ? retorno =   0 : retorno;
+	(IMC >= 25 && IMC < 30) ? retorno =   1 : retorno;
+	(IMC >= 30 && IMC < 35)	? retorno =  2 : retorno;
+	(IMC >= 35 && IMC < 40) ? retorno =  3 : retorno;
 	
-	if(IMC < 25) return 0;
-	
-	else
-	
-	if(IMC >= 25 && IMC < 30) return 1;
-
-	else 
-
-	if(IMC >= 30 && IMC < 35)	return 2;
-
-	else
-	
-	if(IMC >= 35 && IMC < 40) return 3;
-
-	
-	else return 4;
-	
-	
-	
-	
-	
+	return retorno;
 	
 }
 
@@ -63,10 +48,5 @@ int main()
 			default:
 			cout<<retorno<<", obesidade morbida\n";
 	}
-	
-
 		getch();
-	
 }
-
-
