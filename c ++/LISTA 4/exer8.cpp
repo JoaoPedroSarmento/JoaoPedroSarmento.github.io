@@ -3,16 +3,12 @@
 using namespace std;
 int indetifica_operando(char operando)
 {
-	if(operando == '+') return 0;
-	else
-	if(operando == '-') return 1;
-	else
-	if(operando == '*'|| operando == 'x'|| operando ==  'X') return 2;
-	else
-	if(operando == '/' || operando ==  ':') return 3;
-	
-	
-	
+	int retorno = -1;
+	(operando == '+') ? retorno =  0 : retorno;
+	(operando == '-') ?  retorno =  1 : retorno;
+	(operando == '*'|| operando == 'x'|| operando ==  'X') ? retorno =   2 : retorno;
+	(operando == '/' || operando ==  ':') ? retorno =   3 : retorno ; 
+	return retorno;
 }
 
 
@@ -56,5 +52,5 @@ int main()
 		break;	
 	}
 	
-	
+	getch();
 }
