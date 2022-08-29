@@ -3,15 +3,15 @@
 
 using namespace std;
 
-int MaiorEntreDoisNumeros(float x, float y )
+float MaiorEntreDoisNumeros(float x, float y )
 {
- int retorno = 0;
+ float retorno = 0;
  return (x >= y) ? retorno = x : retorno = y ; 
 }
 
-int  MaiorEntreTresNumeros(float x ,float y , float z )
+float  MaiorEntreTresNumeros(float x ,float y , float z )
 {
-  int retorno =  MaiorEntreDoisNumeros(x,y);
+  float retorno =  MaiorEntreDoisNumeros(x,y);
   return  (retorno > z ) ?  retorno  : z; 	
 }
 
