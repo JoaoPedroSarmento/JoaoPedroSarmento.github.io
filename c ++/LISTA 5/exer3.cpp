@@ -10,11 +10,12 @@ bool numero_primo(int numero)
  for(int i = 1; i <= numero; i ++ )
  {
  
-  if(numero % i == 0 ) contador ++;
-  cout<<"Contador : "<<contador<<endl;
+  (numero % i == 0 ) ? contador ++ : contador;
+
  }
- if(contador == 2 ) retorno = true;
+ (contador == 2 ) ? retorno = true : retorno;
  return retorno;
+ 
 }
 
 int main()
@@ -34,4 +35,3 @@ int main()
     break;
 } 
 } 
-   
