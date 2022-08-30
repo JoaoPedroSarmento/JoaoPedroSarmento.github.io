@@ -1,23 +1,23 @@
 #include<iostream>
 #include<conio.h>
 using namespace std;
- 
- int Fatorial(int n)
- {
-  int i, fatorial = 1 ;
-  for(i = 1  ; i <= n ; i++ )
-  {
-  fatorial = fatorial * i;
-  }    
-  return fatorial;
- }
 
 int main()
 {
-	 int n, resultado;
-	cout<<"Digite um numero ---> ";
-	cin>>n;
-	resultado = Fatorial(n);
-	cout<<"O fatorial de ----> "<<n<<" e ---> "<<resultado;
-    getch();
+	float m;
+	cout<<"Digite a massa de um amterial radioativo\n";
+	cin>>m;
+	int tempo = 0;
+    float gramas = 0.05;
+     for( tempo; m >= gramas; tempo ++ )
+	 {
+	 	
+	 	 cout<<" Tempo : "<<tempo<<" segundo[s]\n";
+		 
+		 (tempo == 50) ?   m = m/2  : tempo; 
+		 (tempo == 50 ) ? tempo = 0 : tempo;
+     } 
+     cout<<"Massa ao final do processo ---> "<<m;  
+	
+      getch();
 }
