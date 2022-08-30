@@ -4,29 +4,25 @@ using namespace std;
 
 int Floor(float n)
 {
-	int Ninteiro = n;
+	int Ninteiro = n; 
+	int resultado = n ;
 	int Ninteiro2 = n -1; 
 	
 	while(Ninteiro <= n)
 	{
-		if(Ninteiro < Ninteiro2 )  return Ninteiro;
-		else
-	    if( Ninteiro == n) return n;
-	    else
-	    return Ninteiro;	 
+	    (Ninteiro == n ) ? resultado = n  :  Ninteiro;
+	   return resultado ; 
 	}
-	
 }
 
 int Ceil(float n)
 {
     int Ninteiro = n;
-	
+	int resultado = n;
 	while(Ninteiro <= n)
 	{
-	    if(Ninteiro == n) return n;
-	    else
-	     return Ninteiro + 1;	 
+	  (Ninteiro == n) ? resultado : resultado  = resultado + 1 ;
+  	return resultado;	 
 	}
 
 }
@@ -42,4 +38,3 @@ int main()
     cout<<"Funcao ceil ---> "<<resultado;
    getch();
 }
-
