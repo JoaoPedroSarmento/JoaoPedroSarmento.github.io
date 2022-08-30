@@ -10,13 +10,7 @@ int main()
 	{
 	 cout<<"Digite um numero inteiro -->";
 	 cin>>n;
-		if(n >= 0 )
-		{
-		 soma = soma + n;
-	    }		
-		if(n < 0)
-		cont++;
-		
+		(n >= 0 ) ? soma = soma + n : cont++;
 	}
 	cout<<"O resultado da soma dos numeros positivos e  ---> "<<soma<<endl;
 	
