@@ -4,24 +4,25 @@ using namespace std;
 
 int ComparaDatas(int dia,int mes, int ano , int dia2 , int mes2 , int ano2 )
 {
-	if( (ano2 > ano  )  || ( ano2 == ano && mes2 > mes )  ||  (  ano2 == ano && mes2 == mes && dia2 > dia )  ) return -1;
-	else
-	if( (ano2 < ano  )  || ( ano2 == ano && mes2 < mes )  ||  (  ano2 == ano && mes2 == mes && dia2 < dia )  ) return 1;
-	return 0 ;
+ int retorno = 0;
+ ((ano2 > ano ) || (ano2 == ano && mes2 > mes ) || (ano2 == ano && mes2 == mes && dia2 > dia )) ? retorno = -1 : retorno;
+  ((ano2 < ano ) || (ano2 == ano && mes2 < mes ) || (ano2 == ano && mes2 == mes && dia2 < dia )) ? retorno = 1 : retorno;
+	return retorno;
 	
 }
 
 int IdadeDaPessoa(int dia,int mes, int ano , int dia2 , int mes2 , int ano2 )
 {
+	int retorno = 0;
 	// A pessoa fez aniversário 
-	if ( ( ano2 > ano && mes2 > mes ) || ( ano2 > ano && mes2 == mes && dia2 > dia ) ) return  ano2 - ano;
-	else
+	 ( ( ano2 > ano && mes2 > mes ) || ( ano2 > ano && mes2 == mes && dia2 > dia ) || (ano2 > ano && mes2 == mes && dia2 == dia) ) ? retorno =  ano2 - ano : retorno;
+	 
 	// A pessoa  não fez aniversário 
-	if (  ( ano2 > ano && mes2 < mes )   || ( ano2 > ano && mes2 == mes && dia2 < dia ) ) return  ( ano2 - ano  )  -1; 
-    else
-     if(ComparaDatas(dia, mes, ano ,dia2, mes2 , ano2) == 1) return -1;
-	 else
-	 return 0;
+	 (  ( ano2 > ano && mes2 < mes )   || ( ano2 > ano && mes2 == mes && dia2 < dia ) ) ? retorno =   ( ano2 - ano  )  -1 : retorno; 
+    
+	 (ComparaDatas(dia, mes, ano ,dia2, mes2 , ano2) == 1) ? retorno =  -1 : retorno;
+    
+	 return retorno;
    
  }
 
@@ -73,5 +74,4 @@ int main()
             
             break;
 		}
-	
 }
