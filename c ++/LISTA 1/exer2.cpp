@@ -4,7 +4,7 @@
 using namespace std; 
 
 
-void retorna_tudo( string nome,int dia,int mes,int ano,float s,char s_ou_n)
+void retorna_dados( string nome,int dia,int mes,int ano,float s,char s_ou_n)
 
 {
 	cout<<"Seu nome e : "<<nome<<"\n\n";
@@ -47,7 +47,7 @@ int main()
     
     
     
-	retorna_tudo(nome,dia,mes,ano,s,s_ou_n);
+	retorna_dados(nome,dia,mes,ano,s,s_ou_n);
 	getch();
 		
 	
