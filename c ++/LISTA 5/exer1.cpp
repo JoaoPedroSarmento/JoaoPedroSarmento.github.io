@@ -2,39 +2,47 @@
 #include<conio.h>
 using namespace std;
 
-int Floor(float n)
+
+float FuncaoFloor( float n)
 {
-	int Ninteiro = n; 
-	int resultado = n ;
-	int Ninteiro2 = n -1; 
-	
-	while(Ninteiro <= n)
+	float i;
+	if( n < 0 )
 	{
-	    (Ninteiro == n ) ? resultado = n  :  Ninteiro;
-	   return resultado ; 
+		for(i = 1; i > n ; i--) ;
+		return i;
 	}
+	else
+	{
+			for(i = 1; i < n ; i++ ) ;
+			if(i > n ) return i -1;
+		
+	}	
 }
 
-int Ceil(float n)
-{
-    int Ninteiro = n;
-	int resultado = n;
-	while(Ninteiro <= n)
-	{
-	  (Ninteiro == n) ? resultado : resultado  = resultado + 1 ;
-  	return resultado;	 
-	}
 
+float FuncaoCeil( float n)
+{
+ 
+    		float i;
+	if( n < 0 )
+	{
+		for(i = 1; i > n ; i--) ;
+		return i + 1 ;
+	}
+	else
+	{
+			for(i = 0; i < n ; i++ ) ;
+		    return i;
+		
+	}	
 }
+
+
 int main()
 {
-	float n, resultado;
-
-    cout<<"Digite um numero --->";
-    cin>>n;
-    resultado = Floor(n);
-    cout<<"Funcao floor ---> "<<resultado<<endl;    
-    resultado = Ceil(n);
-    cout<<"Funcao ceil ---> "<<resultado;
-   getch();
+	float n ;
+	cout << "Digite um numero -- > " ;   
+    cin  >> n ;   
+	cout << "Numero com a funcao floor -- > " << FuncaoFloor(n) << endl ;
+	cout << "Numero com a funcao ceil  -- > " << FuncaoCeil(n)  << endl ;
 }
