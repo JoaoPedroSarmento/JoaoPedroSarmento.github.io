@@ -26,21 +26,26 @@ function Obesidade() {
   const altura = document.querySelector("#altura");
   const a = altura.value;
   const imc = p / (a * a);
+
   switch (RetornaObesidade()) {
     case 0:
-      resultado.textContent = "Ausente da obesidade , " + " imc -- > " + imc;
+      resultado.textContent =
+        "Ausente da obesidade , " + " imc -- > " + parseInt(imc);
       break;
     case 1:
-      resultado.textContent = "Sobrepeso , " + " imc -- > " + imc;
+      resultado.textContent = "Sobrepeso , " + " imc -- > " + parseInt(imc);
       break;
     case 2:
-      resultado.textContent = "Obesidade grau I , " + " imc -- > " + imc;
+      resultado.textContent =
+        "Obesidade grau I , " + " imc -- > " + parseInt(imc);;
       break;
     case 3:
-      resultado.textContent = "Obesidade grau II , " + " imc -- > " + imc;
+      resultado.textContent =
+        "Obesidade grau II , " + " imc -- > " + parseInt(imc);
       break;
     case 4:
-      resultado.textContent = "Gordo pra krlh ( obesidade mórbida ) , " + "imc -- > " + imc;
+      resultado.textContent =
+        "Obesidade mórbida , " + "imc -- > " + parseInt(imc);
       break;
     default:
       resultado.textContent = "Valores inválidos";
