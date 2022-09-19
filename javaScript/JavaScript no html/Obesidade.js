@@ -40,7 +40,7 @@ function Obesidade() {
       resultado.textContent = "Obesidade grau II , " + " imc -- > " + imc;
       break;
     case 4:
-      resultado.textContent = "Obesidade mórbida , " + "imc -- > " + imc;
+      resultado.textContent = "Gordo pra krlh ( obesidade mórbida ) , " + "imc -- > " + imc;
       break;
     default:
       resultado.textContent = "Valores inválidos";
