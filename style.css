@@ -117,7 +117,6 @@ p a:hover {
 h2 a {
   text-decoration: none;
   transition: 1s;
-
   font-weight: 200;
   color: var(--title-color);
   opacity: 0.8;
