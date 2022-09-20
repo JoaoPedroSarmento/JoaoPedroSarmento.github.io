@@ -6,7 +6,7 @@ int main()
 {
 	 float c = 1.50;
 	float ze = 1.10;
-	int tempo = 1;
+	int tempo = 0;
 	for( tempo; ze <= c; tempo++)
 	{
 	  cout<<"Ano : "<<tempo<<endl;
@@ -16,6 +16,6 @@ int main()
       cout<<"Altura de chico "<<c<<" Ano : "<<tempo<<endl;
       
 	}
-	 	cout<<"Tempo demorado ---> "<<tempo -1 <<" anos \n"<<" Altura de ze : "<<ze<<" \n"<<" Altura de chico : "<<c;
+	 	cout<<"Tempo demorado ---> "<<tempo<<" anos \n"<<" Altura de ze : "<<ze<<" \n"<<" Altura de chico : "<<c;
 	 	getch();
 }
