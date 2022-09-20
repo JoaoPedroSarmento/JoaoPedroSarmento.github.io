@@ -5,22 +5,16 @@ using namespace std;
 int main()
 {
 	float m;
-	cout<<"Digite a massa de um amterial radioativo\n";
+	cout<<"Digite a massa de um material radioativo\n";
 	cin>>m;
-	int tempo = 0;
+	int t = 0;
     float gramas = 0.05;
-     for( tempo; m >= gramas; tempo ++ )
+     while( m >= gramas) 
 	 {
-	 	
-	 	 cout<<" Tempo : "<<tempo<<" segundo[s]\n";
-		 if(tempo == 50)
-		 {
-		 	tempo = 0;
-		   m = 	m/2;
-		 }    
-		 
-} 
-     cout<<"Massa ao final do processo ---> "<<m;  
+	 	m = m/2;
+	 	t = t + 50 ;
+     } 
+     cout<<"Tempo ---> "<<t;  
 	
       getch();
 }
