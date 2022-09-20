@@ -272,3 +272,15 @@ img:hover {
   padding: 20px;
   width: 200px;
 }
+
+@media (max-width: 910px) and (min-width: 300px) {
+  #jobs {
+    width: 400px;
+  }
+  .item3,
+  .item4,
+  .item {
+    width: 160%;
+  }
+}
+
