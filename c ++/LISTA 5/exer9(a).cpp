@@ -8,10 +8,10 @@ int main()
 	int q;
 	cout<<"Digite a quantidade dos alunos com menos de 1,70 m de altura --- > ";
     cin>>q;
-   int i = 0 ; 
+   int i = 1 ; 
    int soma = 0;
    int media = 0;
-   for(i; i < q ; i++)
+   for(i; i <= q ; i++)
    {
    	int id;
     cout<<"Informe a idade -- > ";
@@ -19,6 +19,6 @@ int main()
     soma = soma + id;
     media = soma / q;
    }
-	cout<<"Media e --->"<<media;
+	cout<<"Media e ---> "<<media;
 	getch();
 }
