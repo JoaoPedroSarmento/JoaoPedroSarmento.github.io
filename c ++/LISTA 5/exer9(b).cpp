@@ -11,7 +11,7 @@ int main()
 	float  a ;
 	float  soma = 0 ;
    float media;
-	for(int i = 0; i < q ; i++)
+	for(int i = 1; i <= q ; i++)
 	{
 	cout<<"Informe a altura : ";
 	cin>>a;	
