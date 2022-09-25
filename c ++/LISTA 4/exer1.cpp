@@ -35,16 +35,21 @@ int vogal(char l)
 	
 }
 
-int consoante(char n)
+int consoante(char l)
 {
 	int retorno;
-    (n == 'B' || n == 'C' || n == 'D' || n == 'F' || n == 'G' || n == 'H' || n == 'J' || 
-    n == 'K' || n == 'L' || n == 'M' || n == 'N' || n == 'P' || n == 'Q' || n == 'R' || n == 'S' || n == 'T' || 
-    n == 'V' || n == 'W' || n == 'X' || n == 'Y' || n == 'Z' || n == 'b' || n == 'c' || n == 'd' || n == 'f' || n == 'g' || 
-    n == 'h' || n == 'j' || n == 'k' || n == 'l' || n == 'm' || n == 'n' || n == 'p' || n == 'q' || n == 'r' || n == 's' || 
-    n == 't' || n == 'v' || n == 'w' || n == 'x' || n == 'y' || n == 'z')  ? retorno = 1 : retorno = 0 ;
-    
-	return retorno;
+     if ( (  l =='a' ) || ( l == 'A')  )  return retorno = 0;
+	 else
+	 if( ( l == 'e') ||  ( l == 'E'))   return retorno = 0 ;
+	 else
+	 if( ( l == 'i') ||  ( l == 'I')) return retorno = 0 ;
+	 else
+	 if( ( l == 'o') ||  ( l == 'O')) return retorno = 0 ;
+    else
+     if( ( l == 'u') ||  ( l == 'U')) return retorno = 0 ;
+     else
+      return retorno = 1; 
+
 	
 }
 
