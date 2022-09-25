@@ -48,6 +48,8 @@ int consoante(char l)
     else
      if( ( l == 'u') ||  ( l == 'U')) return retorno = 0 ;
      else
+     if   ( ( l =='1'  ) || (  l =='2' )  || (  l =='3' )  || ( l =='4' )  || ( l =='5' )  || ( l =='6' )  || ( l =='7' )  || ( l =='9' )   ) return  retorno = 0;
+     else
       return retorno = 1; 
 
 	
@@ -84,5 +86,7 @@ cin>>carac;
 (algarismo(carac)) ? cout<<"Esse caractere e um algarismo \n" : cout<<"";
 
 getch();
+return 0 ;
 
 }
+
