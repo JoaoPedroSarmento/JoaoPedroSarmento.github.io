@@ -268,13 +268,34 @@ img:hover {
   width: 200px;
 }
 
-@media (max-width: 910px) and (min-width: 300px) {
-  #jobs {
-    width: 400px;
+  @media (max-width: 910px) and (min-width: 500px) {
+    #container {
+
+      margin:  0px auto 0px auto;
+    }
+    .item , .item3 , .item4 
+    {
+      width: 180%;
+    }
+    #projetos
+    {
+      width: 90%;
+    }
   }
-  .item3,
-  .item4,
-  .item {
-    width: 136%;
+
+  @media ( max-width : 500px )
+  {
+    #jobs
+    {
+      width: 80%;
+    }
+    .item , .item3 , .item4 
+    {
+      width: 150%;
+    }
+    #projetos
+    {
+      width: 90%  ;
+    }
   }
-}
+
