@@ -1,0 +1,178 @@
+:root {
+    --color-orange-01: #d47c29;
+    --height-menu: 500px;
+    --width-menu: 400px;
+    --border: 2px solid #fff;
+    --border-02: 2px solid #58a6ff5b;
+    --border-03: 2px solid #58a6ff;
+    --border-04: 2px solid #000;
+    --color-white: #fff;
+    --color-orange-02: #f57926;
+    --color-blue-01: #2629f5;
+    --color-blue-02: #58a6ff;
+    --bg-body-color: #ddd;
+    --color-black: #000;
+    --focus-tag: #58a6ff;
+
+  }
+
+body{
+    background-color: var(--bg-body-color);
+
+}
+html
+{
+    scroll-behavior: smooth;
+}
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ ::selection {
+    color: #7e0935;
+    background-color: var(--color-white);
+  } 
+#container
+{
+ display: flex;
+ flex-direction: row;
+ flex-wrap: wrap;
+ justify-content: space-between;
+ gap: 20px 50px;
+ 
+}
+header{
+    width: 300px;
+    height: 649px;
+    border-radius: 0px 10px 10px 0px;
+    background-color: var(--color-black
+    );
+    color: var(--color-white);
+    border-right: 1px solid var(--color-orange-01);
+    border-bottom: 1px solid var(--color-orange-01);
+}
+
+main 
+{
+    padding: 20px;
+    width: 800px;
+    background-color: var(--color-white);
+}
+h2 
+{
+    text-align: center;
+    padding: 20px 0px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#banner {
+    margin: 20px auto 0px auto;
+    background-image: url("https://joaopedrosarmento.github.io/img/bart.jpg");
+    background-position-y: -1px;
+    background-repeat: round;
+    border: var(--border);
+    width: 80%;
+    min-height: 180px;
+    border-radius: 100%;
+    cursor: pointer;
+    transform: rotatey(45deg);
+  }
+
+  .boxes-01
+  {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 250px;
+    padding: 20px 10px;
+
+}
+.boxes-02
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 50px;
+
+}
+.box
+{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    min-height: 140px;
+    margin: auto;   
+    box-shadow: rgb(0, 0, 0) 0px 1px 3px 0px, rgba(19, 21, 24, 0.349) 0px 0px 0px 1px;
+    
+}
+
+.item , .link-atividade
+{   border-top: var(--border);
+     display: flex;
+     width: 250px;
+     justify-content: center;
+     align-items: center;
+     min-height:100px;  
+}
+
+
+.item3
+{
+    border-bottom: var(--border);
+}
+
+.item a 
+{
+    transition: 0.75s;
+    text-decoration: none;
+    color:var(--color-blue-02);
+}
+
+.item a:hover 
+{
+    color:#7e0935;
+}
+
+.box a 
+{
+    transition: 0.75s;
+    text-decoration: none;
+    color:var(--color-black);
+}
+.link-atividade
+{
+    display: none;
+  
+
+}
+.link-atividade a 
+{
+    text-decoration: none;
+    color:var(--color-blue-02);
+}
+
+.box a:hover 
+{
+    color: var(--color-blue-01);
+}
+@media (max-width : 1166px) {
+  header
+  {
+    height: 740px;
+    border: 1px solid  var(--color-orange-02);
+    margin: 0px auto 0px auto;
+  }
+  main
+ {
+    margin: 0px auto 30px auto;
+
+ }
+ .link-atividade
+ {
+    display:flex;
+    font-size: 12px;
+
+ }
+}
