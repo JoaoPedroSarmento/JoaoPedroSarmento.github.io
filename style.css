@@ -67,9 +67,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 #banner {
-  margin-top: 20px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 20px auto 0px auto;
   background-image: url("/img/bart.jpg");
   background-position-y: -1px;
   background-repeat: round;
