@@ -1,42 +1,48 @@
+@import "./colors/colors.scss";
 
-@mixin text-style ($color , $font-size , $font-family) {
-    color: $color;
-    font-size: $font-size;
-    font-family: $font-family ;
-}
-@mixin boxes-flex ($display , $flex-wrap,$width , $height,$bg-color,$border) {
-    display: $display;
-    flex-wrap: $flex-wrap;
-    width: $width;
-    min-height: $height;
-    background-color: $bg-color;
-    border: $border;
-    gap: 20px;
-    
-}
-@mixin box (){
- width: 300px;
- height: 100px;
- background-color: black;
- border: 1px solid white;
-    
-}
-.text
-{
-    h1 
-    {
-        @include text-style(red, 34px,Arial)
-    }
-    p 
-    {
-      @include text-style(blue, 22px, sans-serif)
-    }
-}
 .boxes
 {
-   @include boxes-flex(flex,wrap,600px,400px,#ddd, 1px solid black) ;
-   .box 
-   {
-   @include box()
-   }
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+ 
+    .box{
+        background-color:$color-dark-gray;
+        width: 500px;
+        height: 200px;
+        border: 2px solid $color-black;
+    }
+}
+
+.boxes-02
+{
+    margin: 20px 0px 0px 0px;
+    display: grid;
+    grid-template-areas: "item1 item2"
+    "item3 item4 ";
+    gap: 20px;
+    justify-content: center;
+    .box-02{
+       width: 200px;
+       height: 200px;
+       border: 2px solid $color-black;
+       background-color: $color-hot-pink;
+    } 
+    .item1 
+    {
+        grid-area: item1;
+    }
+    .item2
+    {
+        grid-area:item2;
+    }
+    .item3
+    {
+        grid-area: item3;
+    }
+    .item4
+    {
+        grid-area: item4;
+    }
 }

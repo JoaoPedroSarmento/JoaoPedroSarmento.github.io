@@ -1,0 +1,40 @@
+.boxes {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.boxes .box {
+  background-color: #A9A9A9;
+  width: 500px;
+  height: 200px;
+  border: 2px solid #000000;
+}
+
+.boxes-02 {
+  margin: 20px 0px 0px 0px;
+  display: grid;
+  grid-template-areas: "item1 item2" "item3 item4 ";
+  gap: 20px;
+  justify-content: center;
+}
+.boxes-02 .box-02 {
+  width: 200px;
+  height: 200px;
+  border: 2px solid #000000;
+  background-color: #FF69B4;
+}
+.boxes-02 .item1 {
+  grid-area: item1;
+}
+.boxes-02 .item2 {
+  grid-area: item2;
+}
+.boxes-02 .item3 {
+  grid-area: item3;
+}
+.boxes-02 .item4 {
+  grid-area: item4;
+}
+
+/*# sourceMappingURL=style.css.map */
