@@ -1,0 +1,42 @@
+
+@mixin text-style ($color , $font-size , $font-family) {
+    color: $color;
+    font-size: $font-size;
+    font-family: $font-family ;
+}
+@mixin boxes-flex ($display , $flex-wrap,$width , $height,$bg-color,$border) {
+    display: $display;
+    flex-wrap: $flex-wrap;
+    width: $width;
+    min-height: $height;
+    background-color: $bg-color;
+    border: $border;
+    gap: 20px;
+    
+}
+@mixin box (){
+ width: 300px;
+ height: 100px;
+ background-color: black;
+ border: 1px solid white;
+    
+}
+.text
+{
+    h1 
+    {
+        @include text-style(red, 34px,Arial)
+    }
+    p 
+    {
+      @include text-style(blue, 22px, sans-serif)
+    }
+}
+.boxes
+{
+   @include boxes-flex(flex,wrap,600px,400px,#ddd, 1px solid black) ;
+   .box 
+   {
+   @include box()
+   }
+}
