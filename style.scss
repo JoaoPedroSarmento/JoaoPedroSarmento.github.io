@@ -166,3 +166,74 @@ main
         } 
     }
 }
+
+@media (max-width : 950px)
+{
+    main 
+    {
+        gap: 50px;
+        justify-content: center;
+        #container-02 
+        {
+             flex-basis: 90%;
+             padding: 20px 0px;
+        } 
+    }
+}
+
+@media (max-width : 400px ) and (min-width : 350px)
+{
+    header
+    {
+        width:80%;
+        .banner 
+        {
+            width: 100%;
+              img 
+              {
+                position: relative;
+                right: 40px;
+                width: 180px;
+                height: 120px;
+              }
+        }
+    }
+}
+
+@media (max-width : 350px ) and (min-width : 326px)
+{
+    header
+    {
+        width:80%;
+        .banner 
+        {
+            width: 100%;
+              img 
+              {
+                position: relative;
+                right: 40px;
+                width: 160px;
+                height: 100px;
+              }
+        }
+    }
+}
+@media (max-width :325px) and (min-width : 300px)
+{
+    header
+    {
+        width:80%;
+        .banner 
+        {
+            width: 100%;
+              img 
+              {
+                position: relative;
+                right: 38px;
+                width: 130px;
+                height: 100px;
+              }
+        }
+    }
+
+}
