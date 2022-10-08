@@ -225,4 +225,10 @@ footer div
 {
     color: rgb(23, 176, 228);
 }
+.title 
+{
+    color: rgb(2, 27, 38);
+    font-size: 28px;
+    text-transform: uppercase
+}
 
