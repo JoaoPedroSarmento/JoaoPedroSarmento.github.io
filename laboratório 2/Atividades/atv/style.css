@@ -1,0 +1,118 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body 
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header , footer
+{
+    background-color: rgb(27, 15, 0);
+    padding: 80px;
+}
+header  .title h2
+{
+    color: #fff;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+} 
+
+nav ul 
+{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+}
+
+nav a 
+{
+    text-decoration: none;
+    color: #fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+a[ href="#1"]
+{
+    padding: 10px;
+    background-color: rgb(175, 20, 59);
+}
+.container-01 , .item , .boxes
+{
+    display: flex;
+    flex-basis: 300px;
+    justify-content: center;
+    flex-direction: column;
+    gap: 40px;
+    position: relative;
+   
+}
+.cont1 
+{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    line-height: 24px;
+}
+.container1  {
+    background-color:  rgb(209, 65, 36);
+    height: 300px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 70px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.box1 
+{
+    display: flex;
+    min-height: 40vh;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.box2 
+> 
+.title 
+{
+    text-align: center;
+    font-size: 23px;
+  position: relative;
+  top: 40px;
+}
+button 
+{
+    padding: 15px;
+    background-color: rgb(175, 20, 59);
+    border: 0;
+    color: #fff;
+}
+p 
+{
+    color: rgb(83, 83, 83);
+}
+
+footer 
+{
+    height: 90px;
+    text-align: center;
+}
+footer .text 
+{
+    height: 60px;
+    border-bottom: 1px solid  rgb(83, 83, 83)
+    ;
+
+}
+.title h3 
+{
+    color: rgb(83, 83, 83);
+}
