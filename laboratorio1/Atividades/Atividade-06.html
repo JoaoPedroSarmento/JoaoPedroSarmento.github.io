@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 6</title>
+</head>
+<body>
+    <form class="formulario" action="clientes.php" method="post" onsubmit="return Cadastrar()">
+        <fieldset>
+            <legend>Cadastro de Clientes</legend>
+        <div>
+            <label for="nome">Nome</label><br>
+            <input type="text" name="nome" size="30" maxlength="50" id="nome" placeholder="Digite seu nome" required>
+        </div>
+        <br>
+        <div>
+            <label for="endereco">Endereço</label><br>
+            <input type="text" name="endereco" size="50" maxlength="50" id="endereco" placeholder="Digite seu endereço" required>
+        </div>
+        <br>
+        <div>
+            <label for="email">Email</label><br>
+            <input type="email" name="email" size="30" maxlength="30" id="email" placeholder="Digite seu email" required>
+        </div>
+        <br>
+        <div>
+        <input type="checkbox" name="news" id="news">
+        <label for="news">Desejo receber newsletter</label>
+        </div>
+        <br>
+        <div>
+            <button type="submit" id="cadastro">Cadastrar</button>
+            <button type="reset">Cancelar</button>
+        </div>
+    </fieldset>
+    
+    </form>
+    
+</body>
+</html>
