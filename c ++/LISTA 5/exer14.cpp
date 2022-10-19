@@ -1,63 +1,35 @@
-#include<iostream>
-#include<conio.h>
-using namespace std;
+#include <iostream>
 
+using namespace std;
 
 int main()
 {
- int n, cont = 0, cont2 = 0;
- char r; // r  = resposta
- cout<<"DIGITE UM NUMERO INTEIRO ---> ";
- cin>>n;
- if( n % 2 == 0 )
- cont++;
- else
- if(n % 2 != 0 )
- cont2++;
- 
- 
- cout<<"Deseja digitar mais um numero ? ";
- cin>>r;
- while(  r != 's')
- {
- cout<<"Programa encerrado\n" ;
- break;
-}
- if(r == 's')
- {
-  while( n  >= 0  )
-{
-	 cout<<"DIGITE UM NUMERO INTEIRO ---> ";
-      cin>>n;
-      if( n % 2 == 0 )
-       cont++;
+   int par = 0 , impar = 0 ,  i = 1 ;
+   int n , r ; 
+   
+   cout << "Digite um numero -- > ";
+   cin  >> n ; 
+   
+   for(i ; i <= n; i++)
+   {
+       if(i % 2 == 0 ) par++;
        else
-        if( n % 2 != 0 )
-        cont2++;
-      else
-      {
-	  
-       cout<<"programa encerrado\n Numeros pares lidos ---> "<<cont<<"\n Numeros impares lidos ---> "<<cont2;
-       break;
+       if(i % 2 != 0 ) impar++;
+       if(i == n )
+       {
+           cout << "Numeros impares -- > " << impar << endl ; 
+           cout<< "numeros pares -- > "<< par << endl ;
+           cout << "Deseja escrever mais algum numero -- > 1 -  sim , outro valor - nao   ";
+           cin >> r ;
+           if(r == 1 )
+           {
+               impar = 0;
+               par = 0;
+               i = 0;
+               cout << "Digite o numero ";
+               cin >> n ;
+               
+           }
        }
-	 cout<<"Deseja digitar mais um numero ? ";
-       cin>>r;
-	if( r != 's')
- {
- cout<<"programa encerrado\n Numeros pares lidos ---> "<<cont<<"\n Numeros impares lidos ---> "<<cont2;
- break;
- }
-	
- } 
- 
- 
-}
- 
- else
- if( r != 's')
- {
- cout<<"programa encerrado\n Numeros pares lidos ---> "<<cont<<"\n Numeros impares lidos ---> "<<cont2;
-  
-}
- getch();
+   }
 }
