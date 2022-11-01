@@ -18,7 +18,16 @@ int main () {
 			if ( k == 7 ) j = 0 ;
 		}
 	} 
-
+	
+	
+	 cout << "\nMatriz"<<endl ; 
+	for ( int i = 0 ;  i < tam ; i++ ){
+		cout << "\n\t";
+		for ( int k = 0 ; k < tam ; k++) {
+			cout << x[k] [i] << "\t" ;
+		}
+	}
+	cout <<"\n";
 	cout << "XADREZ : " << endl ;	
 	cout << "Insira a posicao inicial da peca bispo do xadrez -- > " ; 
 	cout << "LINHA -- > ( max : 7 ) ( min : 0 ) " ;
@@ -27,20 +36,13 @@ int main () {
 	cin  >> c1 ;
 
 	
-	cout << "Insira a posicao que voce deseja mecher na peca torre do xadrez -- > ";
+	cout << "Insira a posicao que voce deseja mecher na peca bispo do xadrez -- > ";
     cout << "LINHA -- > ( max : 7 ) ( min : 0 ) " ;
 	cin  >> l2 ;   
 	cout << "COLUNA -- > ( max : 7 ) ( min : 0 ) " ;
     cin >> c2 ;
     
-	 	 cout << "\nMatriz"<<endl ; 
-	for ( int i = 0 ;  i < tam ; i++ ){
-		cout << "\n\t";
-		for ( int k = 0 ; k < tam ; k++) {
-			cout << x[k] [i] << "\t" ;
-		}
-	}
-	 int cont = 0 ;
+ int cont = 0 ;
 	 int k = c1 ;
 	 cout <<"\n";
 	for ( int i = l1 ; i < tam  ; i++) {
@@ -78,7 +80,7 @@ k = c1;
    }
 	 
 if ( cont == 1 ) {
-	cout << " MOVIMENTO POSSIVEL --- > a peca torre foi da linha " << l1 << " para a linha " << l2 << " e da coluna " << c1 << " para a coluna " << c2 ; 
+	cout << " MOVIMENTO POSSIVEL --- > a peca bispo foi da linha " << l1 << " para a linha " << l2 << " e da coluna " << c1 << " para a coluna " << c2 ; 
 
 }
 
