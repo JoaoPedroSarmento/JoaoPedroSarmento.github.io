@@ -9,13 +9,13 @@ int main () {
     
 	int x[tam] [tam] ;
     
-	int j = 1;
+	int j = 0;
 	
 	for ( int i = 0 ; i < tam ; i++ ) {
 		for ( int k = 0 ; k < tam ; k++) {
 			x[k] [i] = j ;
 			j++;
-			if ( k == 7 ) j = 1 ;
+			if ( k == 7 ) j = 0 ;
 		}
 	} 
 
@@ -41,9 +41,9 @@ int main () {
 		}
 	}
 	 int cont = 0 ;
-	 int k = 0 ;
+	 int k = c1 ;
 	 cout <<"\n";
-	for ( int i = 0 ; i < tam  ; i++) {
+	for ( int i = l1 ; i < tam  ; i++) {
 		
 		if ( i % 2 == 0   ) {
 			 cout <<"\n";
@@ -60,20 +60,20 @@ int main () {
 	  k++;
 	}
 }
-k = 0 ; 
- 	       for ( int i =  tam -1  ; i >  -1  ; i-- ) {
+k = c1; 
+ 	       for ( int i =  l1  ; i >  -1  ; i-- ) {
    	if ( i % 2 == 0 ) {
    		 if ( x [l2] [c2] == x[i] [k] && c2 == k ) {
 	       cont++;
          }
-   		k++;
+   		k--;
 	   }
 	   else 
 	   if ( i % 2 != 0 ) {
 	   	if ( x [l2] [c2] == x[i] [k] && c2 == k ) {
 	       cont++;
          }
-	   	k++;
+	   	k--;
 	   }
    }
 	 
