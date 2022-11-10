@@ -48,7 +48,7 @@ using namespace std ;
     cont++;
    }
   else
-  if( l1 != l2 &&  c1 - 2 == c2 || c1 + 2  == c2 && l1 - 1 == l2 || l1 + 1 == l2) {
+  if(l1 + 1 == l2 && c1 + 2 == c2 || l1 - 1 == l2 && c1 - 2 == c2 || l1 + 1 == l2 && c1 - 2 == c2 ||l1 - 1  == l2 && c1 + 2 == c2  ) {
 
     cont++;
   }
