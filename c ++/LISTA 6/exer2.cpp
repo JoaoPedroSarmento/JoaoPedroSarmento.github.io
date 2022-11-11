@@ -28,17 +28,32 @@ int main ()
         v2[i] = valor ;
 	}
 
-  	for ( int i = 0 ; i < tamL1 ; i++ ){
-        v3 [i] = v1[i];
-	}
-
-	for ( int i = 0 ; i < tamL2 ; i++ ){
-        v3[i + tamL1] = v2[i] ;
-	}
-
-
-
-   for ( int i = 0 ; i < tamL1 +  tamL2 ; i++ ){
+  if ( tamL1 > tamL2 ) {
+    for ( int i = tamL2 ; i < tamL1 ; i++ ){
+        v2[i] = 0 ;
+    }
+    for ( int i = 0 ; i < tamL1 ; i++ ) {
+        v3[i] = v1[i] + v2[i];
+    }
+    for ( int i = 0 ; i < tamL1 ; i++ ){
     cout << v3[i] << endl ;
    }
+  }
+
+  else {
+     for ( int i = tamL1 ; i < tamL2 ; i++ ){
+        v1[i] = 0 ;
+    }
+
+      for ( int i = 0 ; i < tamL2 ; i++ ) {
+        v3[i] = v1[i] + v2[i];
+    }
+    for ( int i = 0 ; i < tamL2 ; i++ ){
+    cout << v3[i] << endl ;
+   }
+
+
+  }
+
+
 }
