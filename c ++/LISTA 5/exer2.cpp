@@ -1,31 +1,51 @@
 #include<iostream>
-#include<conio.h>
 
-using namespace std;
+using namespace std ;
 
-int potencia(float n,float p)
-{ 
-   int i = 1;
-   int potencia  = n;
-	for(i; i < p ;i++)
-	{
-		potencia = potencia * n;
+int potencia( int n , int p) 
+{
+	int ResultadoDaPotencia = 1;  
+    if(p >= 1 )  
+    {
+     
+    	
+    	for(int i = 1; i <= p ; i++  )  
+    	{
+    		ResultadoDaPotencia = ResultadoDaPotencia * n; 
+		} 
+		return ResultadoDaPotencia; 
 	}
-		return potencia;
+	else
+	if( p < 0 )
+	{
+		
+    	
+    	for(int i = -1; i >= p ; i--)  
+    	{
+    		ResultadoDaPotencia = ResultadoDaPotencia * n; 
+		} 
+		
+		  if(p % 2  == 0) 		
+	      return ResultadoDaPotencia; 
+	      
+	      return ResultadoDaPotencia * -1;
+	}
+	
+	
+ 	return 1;
+
 }
 
-
+	
 int main()
 {
-	int n,p;
-	cout<<"Digite o numero ---> ";
-	cin>>n;
-	
-	cout<<"Digite a potencia ---> ";
-	cin>>p;
-	int resultado = potencia(n,p);
-	cout<<"O resultado da potencia e ---> "<<resultado;
-	
-	getch();
-	
+	int n , p ;
+    
+    cout << "Escreva um numero -- > ";
+    cin >> n ;
+    
+    cout << "Escreva a potencia -- > ";
+    cin >> p ;
+    
+    cout << "O resultado da potencia e -- > " <<potencia(n,p);
 }
