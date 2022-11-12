@@ -1,53 +1,54 @@
 #include<iostream>
-#include<conio.h>
-
 using namespace std;
 
-int TipoDoTriangulo(int l1,int l2, int l3)
+int VerificaSeE_UM_triangulo(int l1, int l2, int l3)
 {
-	int retorno;
-	
-
-  (l1 == l2 && l1 == l3 && l2 == l3) ? 	retorno =   1 : retorno; ;
-  
-  (l1 == l2 && l1 != l3  || l1 == l3 && l1 != l2 || l2 == l3 && l2 != l1) ?  retorno =  2 : retorno;  
-  
-  (l1 != l2 && l1 != l3 && l2 != l3) ? retorno = 3 : retorno; 
-  
-  (l1 + l2 < l3 ) ?  retorno = 0 : retorno; 
-
-  return retorno;
+    if( (l1 + l2 < l3   ) || ( l1 + l3 < l2 )   || (  l2 + l3 < l1) )
+    return 0;
+    else
+    return 1;
 }
-
-int main()
+int TipoDoTriangulo(int l1, int l2, int l3)
 
 {
-	 int  l1,l2,l3;
+    if(VerificaSeE_UM_triangulo(l1,l2,l3))
+    {
+    if( !(l1 == l2) && !(l2 == l3) && !(l1 == l3))
+    return 1;
+    if( (l1 == l2 && l1 != l3 && l2 != l3  ) || ( l2 == l3 && l2 != l1 )  || ( l1 == l3 && l1 != l2 ) )
+    return 2;
+    else
+    return 3;
+}
+return 0;
+}
+main()
+{
+    int l1, l2, l3;
 
-	cout<<"Digite o primeiro lado de um triangulo\n";
-	cin>>l1;
-	
-	cout<<"Digite o segundo lado de um triangulo\n";
-	cin>>l2;
-	
-	cout<<"Digite o terceiro lado de um triangulo\n";
-	cin>>l3;
-	switch(TipoDoTriangulo( l1, l2, l3))
-	{
-		case 0 : 
-		cout<<"Nao e um triangulo\n";
-		break;
-		case 1 : 
-		cout<<"Triangulo escaleno\n";
-		break;
-		case 2 :
-	    cout<<"Triangulo isosceles";
-	    break;
+    cout << "Insira o primeiro lado: ";
+    cin  >> l1;
+    cout << "Insira o segundo lado: ";
+    cin  >> l2;
+    cout <<"Insira o terceiro lado: ";
+    cin  >> l3;
 
-	    default :
-	    	cout<<"triangulo equilatero";
-	    	break;
-	}
-	getch();
-	return 0;
+    switch(TipoDoTriangulo(l1,l2,l3))
+    {
+
+        case 1:
+            cout << "Escaleno";
+
+            break;
+        case 2:
+            cout << "Isosceles";
+            break;
+        case 3:
+            cout << "Equilatero";
+            break;
+
+        default :
+            cout << "Nao e um triangulo.";
+            break;
+    }
 }
