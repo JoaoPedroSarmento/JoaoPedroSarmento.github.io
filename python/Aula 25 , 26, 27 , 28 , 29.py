@@ -1,4 +1,4 @@
-"""   
+
 alunos = int(input("Insira a  quantidade de alunos -- > ")) ;
 
 media =  [] ;
@@ -37,7 +37,7 @@ if r == 's' or r == "sim" or r == "Sim" :
     Remove = int(input("Insira o numero de qual deseja remover ! ")) ; 
     auxN.remove(nomes[Remove - 1 ]) ; # .remove() serve para remover algo de uma variável 
 
-"""
+
 # Removendo Numeros 
 
 
