@@ -44,14 +44,11 @@ int main ()
      for ( int i = tamL1 ; i < tamL2 ; i++ ){
         v1[i] = 0 ;
     }
-
+  float soma = 0 ; 
       for ( int i = 0 ; i < tamL2 ; i++ ) {
-        v3[i] = v1[i] + v2[i];
+        soma = soma + v1[i] + v2[i];
     }
-    for ( int i = 0 ; i < tamL2 ; i++ ){
-    cout << v3[i] << endl ;
-   }
-
+   cout << soma ; 
 
   }
 
