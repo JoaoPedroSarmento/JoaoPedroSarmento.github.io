@@ -2,23 +2,27 @@
 
 using namespace std;
 
-void TabelaAscII () {
+char TabelaAscII ( int i  , char &s ) {
 
  char Simbolos ;
 
- for ( int i = 0 ; i < 255 ; i = i + 1 ) {
+ Simbolos = i;
 
-    cout <<  i  << " simbolo " << Simbolos  << "\n";
-    Simbolos ++;
-
- }
-
-
+ s = Simbolos ;
 
 }
 
 int main () {
 
 cout << "MOSTRANDO TABELA ASC|| : ";
-TabelaAscII();
+
+
+int i = 1 ;
+
+char s ;
+for ( i ; i < 255 ; i = i + 1 ) {
+
+    s = TabelaAscII(i , s );
+    cout << i << " - >  "  << s  << endl ;
+}
 }
