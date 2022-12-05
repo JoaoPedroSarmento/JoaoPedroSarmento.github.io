@@ -3,28 +3,26 @@
 #include<math.h>
 using namespace std;
 
-float retorna_r(float r)
-{
-	float v; 
+float VolumeDoRaio(float r) { 
+	
 	const float  ra = 3.141592; 
 	
-	v  =   4/3 * ra  * pow(r,3);            
-	return v;
+	r  =   4/3 * ra  * pow(r,3);            
 	
+	return r ; 
 	
 }
 
-int main()
-
-{
-	float r,retorna;
+int main() { 
 	
-	cout<<"Digite o valor do raio\n\n";
-	cin>>r;
+	float Raio , Volume;
 	
-	retorna = retorna_r(r);
+	cout << "Digite o valor do raio\n\n" ;
+	cin  >> Raio;
 	
-	cout<<r<< " O volume do raio e  :"<<retorna;
+	Volume =  VolumeDoRaio(Raio);
+	
+	cout<<r<< " O volume do raio e  :" << Volume ;
 	
 	
 	
