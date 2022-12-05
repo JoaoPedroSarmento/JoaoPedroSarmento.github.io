@@ -6,11 +6,7 @@ using namespace std;
 float VolumeDoRaio(float r) { 
 	
 	const float  ra = 3.141592; 
-	
-	r  =   4/3 * ra  * pow(r,3);            
-	
-	return r ; 
-	
+        return 4/3 * ra  * pow(r,3);             
 }
 
 int main() { 
