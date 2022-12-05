@@ -4,8 +4,8 @@
 using namespace std; 
 
 
-void retorna_nome( string nome) { 
-	cout<<"Seu nome e : "<<nome ; 
+void MostraNome( string nome) { 
+	cou t<< "Seu nome e : " << nome ; 
 }
 
 
@@ -17,7 +17,7 @@ int main() {
         
 	cin >> nome;
 	
-	retorna_nome(nome);
+	MostraNome(nome);
 
 	getch();
 		
