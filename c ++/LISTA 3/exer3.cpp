@@ -5,33 +5,21 @@
  using namespace std;
  
  
- void  hora(int min)
- 
- {
- 	float h,porc;
- 	
- 	h = min/60;
- 	porc = min % 60;
- 	
- 	cout<<"O horario e "<<h<<"hora(s)"<<porc<<"minuto(s)";
- 	
- 	
- 	
- 	
+ int  hora(int &min) { 
+    float h ;
+
+    h = min/60;
+
+    min  = min % 60; 
+
+    return h ; 
  }
  
- int main()
+ int main() {
+  
+ 	  int minutos;
+ 	  cout << "Digite em minutos : ";
+ 	  cin >> minutos;
+    cout<<"O horario e "<< hora ( minutos )  <<"hora(s)" << minutos  <<"minuto(s)";
  
- {
- 	int minutos;
- 	
- 	cout<<"Digite em minutos : ";
- 	cin>>minutos;
- 
- 	hora(minutos);
- 
- 	
- 	
- 	
- 	
  }
