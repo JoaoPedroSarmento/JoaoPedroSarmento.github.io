@@ -3,41 +3,24 @@
 #include<math.h>
 using namespace std;
 
-float retorna_r(float a,float b,float g )
-{
-  float A, angulo ;
-angulo = a*b;
-return angulo;
-  
-  A =  ( angulo *  (sin (g) )  )/2;
-  
-  return A;
- 
- 
+float RetornaAreaDoTriangulo(float l1 ,float l2 ,float Ang ) { 
+	return       ( l1 * l2  * sin ( Ang )  )    / 2 ;
 }
 
-int main()
+int main() { 
+	
+	float l1 , l2 ,  Ang , Retorno ;
+	
+	cout << "Digite o primeiro lado do triangulo\n\n" ;
+	cin  >> l1 ;
+	
+	cout << "Digite o segundo  lado do triangulo\n\n" ;
+	cin  >> l2  ;
+	
+	cout << " Insira o valor do angulo formado entre esses dois lados dos triangulos " ; 
+	cin  >> Ang ;
 
-{
-	float a,b,retorna,g;
+	Retorno =  RetornaAreaDoTriangulo( l1 , l2 , Ang );
 	
-	cout<<"Digite o primeiro valor do triangulo\n\n";
-	cin>>a;
-	
-	cout<<"Digite o segundo  valor do triangulo\n\n";
-	cin>>b;
-	
-		cout<<"Digite o segundo  valor do triangulo\n\n";
-	cin>>g;
-	
-
-	
-
-	
-	retorna = retorna_r(a,b,g);
-	
-	cout<< " O resultado e   :"<<retorna;
-	
-	
-	
+	cout << " O resultado e   :" << Retorno ;
 }
