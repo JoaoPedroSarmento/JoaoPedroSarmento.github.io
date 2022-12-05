@@ -2,65 +2,47 @@
 #include<conio.h>
 using namespace std;
 
-int minuscula(char l)
-{
-	int retorno;
-  (l >= 'a' && l <= 'z' ) ? retorno = 1  : retorno = 0; 
+bool minuscula(char l) { 
 	
-	return retorno;
+   return (l >= 'a' && l <= 'z' ) ; 
+	
+
 }
 
-int maiuscula(char l)
-{
-	int retorno;
- (l >= 'A' && l <= 'Z' ) ? retorno = 1  : retorno = 0; 
-	return retorno;
+bool maiuscula(char l) { 
 	
-}
-int letra (char l)
-{
-	int retorno;
-	 (l >='A' && l <='Z' || l >='a' && l <='z' ) ? retorno = 1 : retorno =   0 ;
-	return retorno;
-	
-}
+   return  (l >= 'A' && l <= 'Z' ) ;
 
+	
+}
+bool  letra (char l) {
+	
+ return  (l >='A' && l <='Z' || l >='a' && l <='z' ) ;
+	
+	
+}
 
 int vogal(char l)
 {
-	int retorno;
-    ( ( l =='a' )  || ( l  == 'e' )  ||  ( l == 'i' )  || ( l =='o' )  || ( l =='u' )  || ( l =='A' )  || ( l == 'E' )  || ( l == 'I')  || (l =='O') 
-	|| (l =='U' )  ) ? retorno = 1 : retorno = 0;
-	return retorno;
-	
-}
 
-int consoante(char l)
-{
-	int retorno;
-     if ( (  l =='a' ) || ( l == 'A')  )  return retorno = 0;
-	 else
-	 if( ( l == 'e') ||  ( l == 'E'))   return retorno = 0 ;
-	 else
-	 if( ( l == 'i') ||  ( l == 'I')) return retorno = 0 ;
-	 else
-	 if( ( l == 'o') ||  ( l == 'O')) return retorno = 0 ;
-    else
-     if( ( l == 'u') ||  ( l == 'U')) return retorno = 0 ;
-     else
-     if   ( ( l =='1'  ) || (  l =='2' )  || (  l =='3' )  || ( l =='4' )  || ( l =='5' )  || ( l =='6' )  || ( l =='7' )  || ( l =='9' )   ) return  retorno = 0;
-     else
-      return retorno = 1; 
+    return ( ( l =='a' )  || ( l  == 'e' )  ||  ( l == 'i' )  || ( l =='o' )  || ( l =='u' )  || ( l =='A' )  || ( l == 'E' )  || ( l == 'I')  || (l =='O') 
+	|| (l =='U' )  ) ; 
 
 	
 }
 
+bool consoante(char l) { 
+    return  (  ( l != 'a')  &&  ( l  != 'A')  &&  ( l != 'e') &&  ( l != 'E') &&   
+            ( l != 'i')     &&  ( l != 'I')   &&  ( l != 'o')
+            &&  ( l != 'O') &&  ( l != 'u')   &&  ( l != 'U')
+            &&  !( l >= '1' && l <= '9' ));  
+}
 
-int algarismo(char l)
-{
-	int retorno;
-     (  l =='1' || l =='2' || l =='3' || l =='4' || l =='5' || l =='6' || l =='7' || l =='9'  ) ? retorno = 1 : retorno = 0;
-	return retorno;
+
+bool algarismo(char l) { 
+	
+    return  (  l >= '1' && l <= '9'  );
+
 	
 }
 
@@ -89,4 +71,3 @@ getch();
 return 0 ;
 
 }
-
