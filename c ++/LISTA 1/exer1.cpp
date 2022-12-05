@@ -4,26 +4,21 @@
 using namespace std; 
 
 
-void retorna_nome( string nome)
-
-{
-	
-	cout<<"Seu nome e : "<<nome;
-	
+void retorna_nome( string nome) { 
+	cout<<"Seu nome e : "<<nome ; 
 }
 
 
-int main()
-
-{
+int main() { 
+	
 	string nome;
 	
-	cout<<"Digite seu nome\n";
-        cin>>nome;
+	cout << "Digite seu nome\n";
+        
+	cin >> nome;
+	
 	retorna_nome(nome);
+
 	getch();
 		
-	
-	
-	
 }
