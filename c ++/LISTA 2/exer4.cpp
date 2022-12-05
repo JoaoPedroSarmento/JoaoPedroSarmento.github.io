@@ -7,10 +7,7 @@ float AngulosEmRadianos(float angulo ) {
 	
 	const float  pi = 3.141592; 
 	
-	anuglo   =   pi * angulo /180; 
-	
-	return angulo ; 
-	
+	return  pi * angulo /180; 
 }
 
 int main( ) { 
@@ -21,5 +18,5 @@ int main( ) {
 	
 	AngRadianos = AngulosEmRadianos( angulo );
 	
-	cout << angulo < < " O angulo em radianos e   :" << AngRadianos ;
+	cout << angulo << " O angulo em radianos e   :" << AngRadianos ;
 }
