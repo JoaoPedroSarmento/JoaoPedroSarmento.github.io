@@ -2,19 +2,17 @@
 #include<conio.h>
 using namespace std;
  
- int Fatorial(int n)
- {
-  int i, fatorial = 1 ;
-  for(i = 1  ; i <= n ; i++ )
-  {
+ int Fatorial(int n) { 
+   int fatorial = n ;
+  for( int i = n - 1 , c = 1    ;  c  <  n ; i-- , c++  ) {
   fatorial = fatorial * i;
-  }    
-  return fatorial;
+
+  }     
+ return ( n > 0 ) ?  fatorial : 1  ; 
  }
 
-int main()
-{
-	 int n, resultado;
+int main() { 
+	int n, resultado;
 	cout<<"Digite um numero ---> ";
 	cin>>n;
 	resultado = Fatorial(n);
