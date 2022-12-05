@@ -3,36 +3,34 @@
 #include<math.h>
 using namespace std;
 
-float retorna_delta(float a,float b, float c)
-{
+float retorna_delta(float a,float b, float c) { 
 	float delta;
 	
 	delta =  (pow(b,2) ) -(4 * a *c  );
+	
 	return delta;
-	
-	
 }
  
  
- int main()
- 
- {
- 	float a,b,c,retorna;
- 	 
- 	cout<<"Digite o valor de a:\n\n";
- 	cin>>a;
+ int main() { 
  	
- 	cout<<"Digite o valor de b:\n\n";
- 	cin>>b;
+	 float a , b   , c , Retorn ;
+ 	 
+ 	cout << "Digite o valor de a:\n\n" ;
+ 	cin  >> a;
+ 	
+ 	cout << "Digite o valor de b:\n\n" ;
+ 	cin  >> b;
       	
       	
-    cout<<"Digite o valor de c:\n\n";
- 	cin>>c;
+        cout << "Digite o valor de c:\n\n";
+ 	cin  >> c ;
     
-     retorna =   	 retorna_delta(a,b,c);
+      	Retorno = retorna_delta(a,b,c);
 	
-	cout<<"O valor de delta e : "<<retorna;  	
-    getch();  	
+    	cout << "O valor de delta e : "  << Retorno;  	
+    	
+	getch();  	
    
  	
  }
