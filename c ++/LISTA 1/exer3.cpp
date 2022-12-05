@@ -4,12 +4,9 @@
 using namespace std; 
 
 
-void MostraSobrenomeENome( string nome, string sobrenome)
-
-{
+void MostraSobrenomeENome( string nome, string sobrenome) { 
 	
 	cout << sobrenome << "," << nome;
-	
 }
 
 
