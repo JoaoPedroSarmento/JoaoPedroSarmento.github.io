@@ -4,29 +4,23 @@
 using namespace std; 
 
 
-void retorna_sobrenome( string nome, string sobrenome)
+void MostraSobrenomeENome( string nome, string sobrenome)
 
 {
 	
-	cout<<sobrenome<<","<<nome;
+	cout << sobrenome << "," << nome;
 	
 }
 
 
-int main()
-
-{
-	string nome,sob;
+int main() { 
 	
-	cout<<"Digite seu nome\n";
-    cin>>nome;
-   	cout<<"Digite seu sobrenome\n";
-    cin>>sob;
-    
-	retorna_sobrenome(nome,sob);
+	string nome,sobrenome ; 	
+       cout << "Digite seu nome\n";
+       cin  >> nome;
+       cout << "Digite seu sobrenome\n";
+       cin  >> sobrenome;
+ 
+	MostraSobrenomeENome (nome , sobrenome );
 	getch();
-		
-	
-	
-	
 }
