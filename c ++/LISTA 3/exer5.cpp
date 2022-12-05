@@ -4,7 +4,7 @@
 
 using namespace std;
 
-void retorno (float c, float l, float p, float &agua, float &piso) { 
+void VolumeEProfundidadeDaAgua (float c, float l, float p, float &agua, float &piso) { 
   agua  = p * c * l;
   piso  = c * l;
 }
@@ -21,7 +21,7 @@ int main() {
     cout << "Digite a profundidade da piscina: \n";
     
     cin >> profundidade;
-    retorno (comprimento, largura, profundidade, v, a);
+    VolumeEProfundidadeDaAgua (comprimento, largura, profundidade, v, a);
     
     cout << "O volume de agua armazenado pela piscina vale: " << v << "\n";
     cout << "A area de piso a ser substituido vale: " << a;
