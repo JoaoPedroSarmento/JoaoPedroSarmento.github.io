@@ -4,7 +4,7 @@
 using namespace std; 
 
 
-void retorna_dados( string nome ,int dia ,int mes ,int ano ,float s ,char CondicaoDeChefia) { 
+void MostraDados( string nome ,int dia ,int mes ,int ano ,float s ,char CondicaoDeChefia) { 
 	
 	cout << "Seu nome e : " << nome << "\n\n";
 	
@@ -43,6 +43,6 @@ int main() {
     cout << "Condicao de chefia [s]im ou  [n]ao";
     cin >>  CondicaoDeChefia;
     
-    retorna_dados(nome,dia,mes,ano,s,CondicaoDeChefia);
+    MostraDados(nome,dia,mes,ano,s,CondicaoDeChefia);
     getch();
 }
