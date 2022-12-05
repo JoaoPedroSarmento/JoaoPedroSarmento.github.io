@@ -4,117 +4,70 @@
  
  using namespace std;
  
- 
- void soma(float nx,float ny,float dy,float dx, float &ret,float &ret2)
- 
- {
- 	float n,d;
- 	
- 	n = ( nx*dy ) +  (ny * dx);
- 	d = dx * dy;
- 	
- 	ret  = n;
- 	ret2 = d;
- 	
- 	
+ void soma(float &nx,float ny,float dy,float &dx ) { 
+ 	nx = ( nx * dy ) +  (ny * dx);
+ 	dx = dx * dy;
  }
  
- void subtracao (float nx,float ny,float dy,float dx,float &ret,float &ret2)
- 
-{
+ void subtracao (float &nx,float ny,float dy,float &dx) { 
 	
-		float nu,de;
+    nx  =  (nx * dy ) - ( ny * dx ) ;
+ 	dx  = dx * dy;
+
+}
+
+ void multiplicacao (float &nx,float ny,float dy,float &dx ) { 
  	
- 	nu=   (nx*dy )  -ny * dx;
- 	de = dx * dy;
+ 	nx  =  nx * ny;
+ 	dx = dx * dy;
  	
- 	ret  = nu;
-ret2 = de;
- 	
- 	
-	
-	
 }
 
 
-
- void multiplicacao (float nx,float ny,float dy,float dx,float &re,float &re2)
- 
-{
-	
-		float ne,du;
- 	
- 	ne =  nx *ny;
- 	du = dx * dy;
- 	
- 	 re  = ne;
- 	re2 = du;
- 	
- 	
-	
-	
-}
-
-
- void divisao(float nx,float ny,float dy,float dx,float &re,float &re2)
- 
-{
-	
-		float ne,du;
- 	
- 	ne=  nx *dy;
- 	du = dx * ny;
- 	
- 	 re  = ne;
- 	re2 = du;
- 	
- 	
-	
-	
+ void divisao(float &nx,float ny,float dy,float &dx )  {
+ 	nx =  nx * dy;
+ 	dx  = dx * ny;
 }
 
  
  
- int  main()
+ int  main() { 
+     
+    float nx,ny,dy,dx ;
+    float nx2 , ny2 , dy2 , dx2 ; 
+    
+ 	cout << "Digite o valor de nx:\n";
+ 	cin  >> nx;
+ 	nx2 = nx ; 
+ 	
+ 	cout << "Digite o valor de dy:\n";
+ 	cin  >> dy;
+ 	dy2 = dy ;
+ 	
+ 	cout << "Digite o valor de ny :\n ";
+ 	cin  >> ny;
+ 	ny2 = ny  ;
+
+ 	cout << "Digite o valor de dx :\n ";
+ 	cin  >> dx;
+ 	dx2 = dx ; 
+ 	
+ 	soma(nx,ny,dy,dx);
+ 	
+    cout << "Numerador : " << nx << "," << "denominador :" << dx << "\n";
+    
+ 	nx = nx2 , ny = ny2 , dy = dy2 , dx = dx2 ; 
+    subtracao(nx,ny,dy,dx);
+    
+    cout << "Numerador : " << nx << "," << "denominador :" << dx << "\n";
+    nx = nx2 , ny = ny2 , dy = dy2 , dx = dx2 ; 
+	multiplicacao(nx,ny,dy,dx);
+    
+    cout << "Numerador : " << nx << "," << "denominador :" << dx << "\n";
+    nx = nx2 , ny = ny2 , dy = dy2 , dx = dx2 ; 
+	divisao(nx,ny,dy,dx);
  
- {
- 	float nx,ny,dy,dx,ret,ret2; 
-    float ret3,ret4;
- 	float reto1,reto2,reto3,reto4;
- 	
- 	cout<<"Digite o valor de nx:\n";
- 	cin>>nx;
- 	
- 	cout<<"Digite o valor de dy:\n";
- 	cin>>dy;
- 	
- 	cout<<"Digite o valor de ny :\n ";
- 	cin>>ny;
- 	
- 	cout<<"Digite o valor de dx :\n ";
- 	cin>>dx;
- 	
- 	soma(nx,ny,dy,dx,reto3,reto4);
- 	cout<<"Numerador : "<<reto3<<"," <<"denominador :"<<reto4<<"\n";
- 	
-    subtracao(nx,ny,dy,dx,reto1,reto2);
-    
-    cout<<"Numerador : "<<reto1<<"," <<"denominador :"<<reto2<<"\n";
-    
-	multiplicacao(nx,ny,dy,dx,ret,ret2);
-    
-    cout<<"Numerador : "<<ret<<"," <<"denominador :"<<ret2<<"\n";
+    cout << "Numerador : " << nx << "," << "denominador :" << dx << "\n";
  
-	 	divisao(nx,ny,dy,dx,ret3,ret4);
-    
-    cout<<"Numerador : "<<ret3<<"," <<"denominador :"<<ret4<<"\n";
- 
-	 
-	 
 	 getch();
- 	
- 	
- 	
- 	
- 	
  }
