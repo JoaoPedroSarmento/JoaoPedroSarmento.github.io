@@ -3,29 +3,23 @@
 #include<math.h>
 using namespace std;
 
-float retorna_r(float g)
-{
-	float r; 
+float AngulosEmRadianos(float angulo ) { 
+	
 	const float  pi = 3.141592; 
 	
-	r  =   pi * g /180;          
-	return r;
+	anuglo   =   pi * angulo /180; 
 	
+	return angulo ; 
 	
 }
 
-int main()
-
-{
-	float g,retorna;
+int main( ) { 
+	float angulo , AngRadianos;
 	
-	cout<<"Digite o valor do angulo\n\n";
-	cin>>g;
+	cout << "Digite o valor do angulo\n\n" ;
+	cin >> angulo ;
 	
-	retorna = retorna_r(g);
+	AngRadianos = AngulosEmRadianos( angulo );
 	
-	cout<<g<< " O angulo em radianos e   :"<<retorna;
-	
-	
-	
+	cout << angulo < < " O angulo em radianos e   :" << AngRadianos ;
 }
