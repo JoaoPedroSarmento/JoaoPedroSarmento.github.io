@@ -3,27 +3,23 @@
 
 using namespace std;
 
-float retorna_f(float c )
-{
-	float f;
+float CelsiusParaFahrenheit (float celsius )  {
+	float fah;
 	
-	f =   1.8 * c + 32;            
-	return f;
-	
-	
+	fah =   1.8 * celsius + 32;            
+	return fah ;
 }
 
-int main()
-
-{
-	float c,retorna;
+int main() { 
 	
-	cout<<"Digite um valor em celsius\n\n";
-	cin>>c;
+	float celsius ,Retorno;
 	
-	retorna = retorna_f(c);
+	cout << "Digite um valor em celsius\n\n";
+	cin>>celsius ;
 	
-	cout<<c<< " para fahrenheit e equivalente a :"<<retorna;
+	Retorno = CelsiusParaFahrenheit ( celsius );
+	
+	cout << celsius << " para fahrenheit e equivalente a :" << Retorno;
 	
 	
 	
