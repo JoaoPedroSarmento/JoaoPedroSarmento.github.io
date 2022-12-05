@@ -17,5 +17,5 @@ int main() {
 	cin>>n;
 	resultado = Fatorial(n);
 	cout<<"O fatorial de ----> "<<n<<" e ---> "<<resultado;
-    getch();
+    	getch();
 }
