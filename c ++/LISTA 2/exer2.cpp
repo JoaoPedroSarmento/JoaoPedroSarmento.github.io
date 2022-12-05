@@ -5,7 +5,6 @@ using namespace std;
 
 float CelsiusParaFahrenheit (float celsius )  {
 	return   1.8 * celsius + 32;            
-	
 }
 
 int main() { 
