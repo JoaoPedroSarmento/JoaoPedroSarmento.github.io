@@ -1,62 +1,18 @@
 #include<iostream>
 #include<conio.h>
 using namespace std;
-int PosicaoDaLetra(char l)
-{
-	int retorno = 0;
-	(l == 'a' || l == 'A') ? retorno = 1 : retorno;
- 
-	( l == 'b' || l =='B')  ? retorno = 2 : retorno;
-	 
-	( l == 'c' || l =='C')   ? retorno = 3 : retorno;
+int PosicaoDaLetra(char carac) { 
 	
-	(l ==  'd' || l == 'D')  ? retorno = 4 : retorno;
+	 return  (carac == 'a' || carac == 'A') ?  1 : 	( carac == 'b' || carac =='B') ?  2  : 	( carac == 'c' || carac =='C')   ?  3 : 
+	         (carac ==  'd' || carac == 'D')?   4 : 	(carac == 'e'|| carac == 'E') ?  5 : 	(carac == 'f' || carac =='F')  ? 6 : 	
+	         (carac == 'g' || carac =='G')  ?   7 :  (carac == 'h' || carac =='H') ? 8 : (carac == 'i' || carac =='I')  ? 9 :
+	    	 (carac == 'j' || carac =='J')  ? 10 :  (carac == 'k' || carac =='K')  ? 11 : (carac == 'l' || carac =='L') ? 12 :
+	         (carac == 'm' || carac =='M')  ?  13 :  (carac == 'n' || carac =='N')  ?  14 :  (carac == 'o' || carac =='O')  ? 15 : 
+         	 (carac == 'p' || carac =='P')  ?  16:  (carac == 'q' || carac =='Q') ? 17 : (carac == 'r' || carac =='R')  ?  18 :
+        	 (carac == 's' || carac =='S')  ?  19 :  (carac == 't' || carac =='T')  ?  20 : (carac == 'u' || carac =='U')  ?  21 : 
+		     (carac == 'v' || carac =='V')  ?  22 :  	(carac == 'w' || carac =='W') ?  23 : (carac == 'x' || carac =='X') ?  24 :
+         	 (carac == 'y' || carac =='Y')  ?  25 : (carac == 'z' || carac =='Z')  ? 26  : 27;
 	
-	(l == 'e'|| l == 'E') ? retorno = 5 : retorno;
-	
-	(l == 'f' || l =='F')  ? retorno = 6 : retorno;
-		
-	(l == 'g' || l =='G')  ? retorno = 7 : retorno;
-		 
-	(l == 'h' || l =='H') ? retorno = 8 : retorno;
-	
-	(l == 'i' || l =='I')  ? retorno = 9 : retorno;
-	
-	(l == 'j' || l =='J') ? retorno = 10 : retorno;
-	
-	(l == 'k' || l =='K')  ? retorno = 11 : retorno;
-
-	(l == 'l' || l =='L')  ? retorno = 12 : retorno;
-	
-	(l == 'm' || l =='M') ? retorno = 13 : retorno;
-	 
-	(l == 'n' || l =='N')  ? retorno = 14 : retorno;
-	
-	(l == 'o' || l =='O')  ? retorno = 15 : retorno;
-	
-	(l == 'p' || l =='P')  ? retorno = 16: retorno;
-	 
-	(l == 'q' || l =='Q') ? retorno = 17 : retorno;
-
-	(l == 'r' || l =='R')  ? retorno = 18 : retorno;
-
-	(l == 's' || l =='S') ? retorno = 19 : retorno;
-	
-	(l == 't' || l =='T')  ? retorno = 20 : retorno;
-	
-	(l == 'u' || l =='U')  ? retorno = 21 : retorno;
-		
-	(l == 'v' || l =='V')  ? retorno = 22 : retorno;
-	 
-	(l == 'w' || l =='W')  ? retorno = 23 : retorno;
-	
-	(l == 'x' || l =='X') ? retorno = 24 : retorno;
-	
-	(l == 'y' || l =='Y')  ? retorno = 25 : retorno;
-	
-	(l == 'z' || l =='Z')  ? retorno = 26  : retorno;
-	
-	 return retorno;
 }
 int main()
 {
