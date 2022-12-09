@@ -3,16 +3,12 @@
 
 using namespace std;
 
-bool divisivel (int n,int n2)
-{
-  bool retorno;
-  retorno = false;
-  
-  return (n % n2 == 0  ) ? retorno = true : retorno; 
+bool divisivel (int n,int n2) { 
+  return (n % n2 == 0  ) ; 
 }
 
-int main()
-{
+int main( ) { 
+	
    int  n1,n2;
 	
 	cout<<"Digite o primeiro numero\n";
@@ -20,8 +16,7 @@ int main()
 	
 	cout<<"Digite o segundo numero\n";
 	cin>>n2;
-	switch(divisivel(n1,n2))
-	{
+	switch(divisivel(n1,n2)) { 
 		case true : cout <<n1 << " e divisivel por -- > " << n2 << endl ;
 		break;
 		default : 
