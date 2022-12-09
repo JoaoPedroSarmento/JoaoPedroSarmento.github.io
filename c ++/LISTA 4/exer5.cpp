@@ -1,29 +1,22 @@
 #include<iostream>
 using namespace std;
 
-int VerificaSeE_UM_triangulo(int l1, int l2, int l3)
-{
-    if( (l1 + l2 < l3   ) || ( l1 + l3 < l2 )   || (  l2 + l3 < l1) )
-    return 0;
-    else
-    return 1;
+int VerificaSeE_UM_triangulo(int l1, int l2, int l3) { 
+  return  ( (l1 + l2 < l3   ) || ( l1 + l3 < l2 )   || (  l2 + l3 < l1) ) ? 0 : 1 ;
 }
-int TipoDoTriangulo(int l1, int l2, int l3)
 
-{
-    if(VerificaSeE_UM_triangulo(l1,l2,l3))
-    {
-    if( !(l1 == l2) && !(l2 == l3) && !(l1 == l3))
-    return 1;
-    else
-    if( (l1 == l2 && l1 != l3 && l2 != l3  ) || ( l2 == l3 && l2 != l1 )  || ( l1 == l3 && l1 != l2 ) )
-    return 2;
-    else
-    return 3;
+int TipoDoTriangulo(int l1, int l2, int l3) { 
+
+    if(VerificaSeE_UM_triangulo(l1,l2,l3)) { 
+        return ( !(l1 == l2) && !(l2 == l3) && !(l1 == l3)) ? 1  : 
+        (l1 == l2 && l1 != l3 && l2 != l3  ) || ( l2 == l3 && l2 != l1 )  || ( l1 == l3 && l1 != l2 )  ? 2 : 3 ; 
+    }
+    
+    return 0;
+
 }
-return 0;
-}
-main()
+
+int main()
 {
     int l1, l2, l3;
 
@@ -34,9 +27,8 @@ main()
     cout <<"Insira o terceiro lado: ";
     cin  >> l3;
 
-    switch(TipoDoTriangulo(l1,l2,l3))
-    {
-
+    switch(TipoDoTriangulo(l1,l2,l3)) { 
+        
         case 1:
             cout << "Escaleno";
 
