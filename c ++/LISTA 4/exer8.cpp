@@ -1,14 +1,10 @@
 #include<iostream>
 #include<conio.h>
 using namespace std;
-int indetifica_operando(char operando)
-{
-	int retorno = -1;
-	(operando == '+') ? retorno =  0 : retorno;
-	(operando == '-') ?  retorno =  1 : retorno;
-	(operando == '*'|| operando == 'x'|| operando ==  'X') ? retorno =   2 : retorno;
-	(operando == '/' || operando ==  ':') ? retorno =   3 : retorno ; 
-	return retorno;
+int indetifica_operando(char operando) { 
+	
+	return (operando == '+') ?  0 : (operando == '-') ?  1 : (operando == '*'|| operando == 'x'|| operando ==  'X') ?   2 : 
+	(operando == '/' || operando ==  ':') ?   3 : -1 ;  
 }
 
 
@@ -48,7 +44,7 @@ int main()
 	    cout<<"O valor da divisao e : "<<n1/n2;
 		break;
 	    default :
-		cout<<"ERRO\n";
+		cout<<"valor invalido\n";
 		break;	
 	}
 	
