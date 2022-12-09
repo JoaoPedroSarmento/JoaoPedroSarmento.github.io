@@ -3,20 +3,15 @@
 
 using namespace std;
 
-float MaiorEntreDoisNumeros(float x, float y )
-{
- float retorno = 0;
- return (x >= y) ? retorno = x : retorno = y ; 
+float MaiorEntreDoisNumeros(float x, float y ) { 
+ return (x >= y) ?  x :  y ; 
 }
 
-float  MaiorEntreTresNumeros(float x ,float y , float z )
-{
-  float retorno =  MaiorEntreDoisNumeros(x,y);
-  return  (retorno > z ) ?  retorno  : z; 	
-}
+float  MaiorEntreTresNumeros(float x ,float y , float z ) { 
+  return  (  MaiorEntreDoisNumeros(x,y) > z ) ?   MaiorEntreDoisNumeros(x,y)  : z; 	
+} 
 
-int main()
-{
+int main() { 
 	float n,n2, n3,resultado;
  	cout<<"Digite o  primeiro numero\n";
 	cin>>n;
