@@ -1,28 +1,27 @@
 #include <iostream>
+
 using namespace std;
 
-int main() { 
-    
-    // Declare e inicialize as variaveis que armazenarao as posicoes do tabuleiro
-    int origem_x = 0, origem_y = 0, destino_x = 0, destino_y = 0;
+// Função para verificar se as posições de origem e destino são válidas
+// para um movimento de bispo
+bool podeMoverBispo(int xOrigem, int yOrigem, int xDestino, int yDestino)
+{
+  // Verificamos se a distância entre as coordenadas x é igual à distância entre as coordenadas y
+  // Isso é necessário, pois o bispo só pode se mover em diagonal
+  return (xOrigem - xDestino) == (yOrigem - yDestino);
+}
 
-    // Leia as posicoes do tabuleiro
+int main() { 
+   // Declare e inicialize as variaveis que armazenarao as posicoes do tabuleiro
+    int origem_x = 0, origem_y = 0, destino_x = 0, destino_y = 0;
     cout << "Digite a posicao de origem: ";
     cin >> origem_x >> origem_y;
     cout << "Digite a posicao de destino: ";
     cin >> destino_x >> destino_y;
-
-    // Verifique se as posicoes informadas sao validas para um movimento do cavalo
-    if (((origem_x - destino_x) == 1 && (origem_y - destino_y) == 2) ||
-        ((origem_x - destino_x) == 2 && (origem_y - destino_y) == 1))
-    {
-        cout << "E possivel mover o cavalo de (" << origem_x << "," << origem_y << ") para ("
-             << destino_x << "," << destino_y << ")." << endl;
-    }
-    else { 
-        cout << "Nao e possivel mover o cavalo de (" << origem_x << "," << origem_y << ") para ("
-             << destino_x << "," << destino_y << ")." << endl;
-   }
    
-    return 0;
+   if ( podeMoverBispo )  cout << "E possivel mover o cavalo de (" << origem_x << "," << origem_y << ") para (" << destino_x << "," << destino_y << ")." << endl;
+   else 
+	        cout << "Nao e possivel mover o cavalo de (" << origem_x << "," << origem_y << ") para ("
+             << destino_x << "," << destino_y << ")." << endl;
+ 
 }
