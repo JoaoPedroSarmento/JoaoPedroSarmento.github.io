@@ -1,62 +1,28 @@
-#include<iostream>
-#include<conio.h>
+#include <iostream>
+using namespace std;
 
-using namespace std ;
- int main () {
- 	int l1 , c1 , l2 , c2 , tam = 8 ;
+int main() { 
+    
+    // Declare e inicialize as variaveis que armazenarao as posicoes do tabuleiro
+    int origem_x = 0, origem_y = 0, destino_x = 0, destino_y = 0;
 
-	int x[tam] [tam] ;
+    // Leia as posicoes do tabuleiro
+    cout << "Digite a posicao de origem: ";
+    cin >> origem_x >> origem_y;
+    cout << "Digite a posicao de destino: ";
+    cin >> destino_x >> destino_y;
 
-	int j = 0;
-
-	for ( int i = 0 ; i < tam ; i++ ) {
-		for ( int k = 0 ; k < tam ; k++) {
-			x[i] [k] = j ;
-		}
-		j++;
-	}
-
-
-	 cout << "\nMatriz"<<endl ;
-	for ( int i = 0 ;  i < tam ; i++ ){
-		cout << "\n\t";
-		for ( int k = 0 ; k < tam ; k++) {
-			cout << x[i] [k] << "\t" ;
-		}
-		cout << endl ;
-	}
-
-		cout <<"\n";
-	cout << "XADREZ : " << endl ;
-	cout << "Insira a posicao inicial da peca cavalo do xadrez -- > " ;
-	cout << "COLUNA -- > ( max : 7 ) ( min : 0 ) " ;
-	cin  >> c1 ;
-	cout << "LINHA -- > ( max : 7 ) ( min : 0 ) " ;
-	cin  >> l1 ;
-
-	cout << "LINHA -- > ( max : 7 ) ( min : 0 ) " ;
-    cin >> l2 ;
-
-    cout << "Insira a posicao que voce deseja mexer na peca cavalo do xadrez -- > ";
-    cout << "COLUNA -- > ( max : 7 ) ( min : 0 ) " ;
-	cin  >> c2 ;
-
-    int cont  = 0 ;
-
-   if ( ( c1 != c2 && l1 - 2 == l2 ) || ( l1 + 2  == l2 && c1 - 1 == c2  ) || ( c1 + 1 == c2 ) ) {
-
-    cont++;
+    // Verifique se as posicoes informadas sao validas para um movimento do cavalo
+    if (((origem_x - destino_x) == 1 && (origem_y - destino_y) == 2) ||
+        ((origem_x - destino_x) == 2 && (origem_y - destino_y) == 1))
+    {
+        cout << "E possivel mover o cavalo de (" << origem_x << "," << origem_y << ") para ("
+             << destino_x << "," << destino_y << ")." << endl;
+    }
+    else { 
+        cout << "Nao e possivel mover o cavalo de (" << origem_x << "," << origem_y << ") para ("
+             << destino_x << "," << destino_y << ")." << endl;
    }
-  else
-  if( (l1 + 1 == l2 && c1 + 2 == c2 )  || ( l1 - 1 == l2 && c1 - 2 == c2 )  || ( l1 + 1 == l2 && c1 - 2 == c2 ) || ( l1 - 1  == l2 && c1 + 2 == c2  ) )  {
-
-    cont++;
-  }
-
-   if ( cont == 1  ) {
-   	cout << "Movimento possivel !!!" ;
-   }
-   else {
-   	cout << "Movimento da peca cavalo esta incorreto !!" ;
-   }
- }
+   
+    return 0;
+}
