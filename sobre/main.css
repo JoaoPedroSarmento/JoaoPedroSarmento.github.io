@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header#menu:not( nav ul) , footer{
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 0px;
+  background-color: #8B0000;
+  font-size: 1.4rem;
+  color: #FFF;
+}
+
+header#menu nav ul {
+  display: flex;
+  list-style: none;
+}
+nav ul a:not(a[href="#1"]) {
+  text-decoration: none;
+  padding: 10px;
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+a[href="#1"] {
+  text-decoration: none;
+  padding: 10px;
+  font-size: 1.2rem;
+  background-color: #fff;
+  border-radius: 10px 2px 5px 10px;
+  color: #000;
+}
+
+p::first-letter {
+  font-size: 2rem;
+}
+
+p {
+  font-size: 1.3rem;
+}
+
+main section {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 20px;
+  line-height: 25px;
+  margin: 50px auto;
+}
+
+main header h1,
+img {
+  text-align: center;
+}
+
+main section figure {
+  width: 100%;
+  text-align: center;
+}
+
+main section figure img {
+  width: 80%;
+}
+
+#botoes  {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    gap: 10px 20px;
+    padding: 40px;
+}
+#botoes button {
+  padding: 10px;
+  background-color: #DC143C;
+  border: 0;
+  border-radius: 5px;
+}
+
+button a {
+  text-decoration: none;
+  color: #FFF;
+}
