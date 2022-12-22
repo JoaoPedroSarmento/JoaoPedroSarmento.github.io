@@ -34,10 +34,6 @@ a[href="#1"] {
   color: #000;
 }
 
-p::first-letter {
-  font-size: 2rem;
-}
-
 p {
   font-size: 1.3rem;
 }
