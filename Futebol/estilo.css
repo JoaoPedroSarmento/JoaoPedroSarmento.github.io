@@ -3,6 +3,14 @@
 img[ alt="Aymen-Jogador"] {
     width: 400px;
 }
-h2 , ul {
-    margin: 0px auto;
+
+section#lista {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+section#lista div {
+    display: grid;
+    gap: 30px;
 }
