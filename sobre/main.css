@@ -4,38 +4,94 @@
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
+::selection {
+  color: #7e0935;
+}
 
-header#menu:not( nav ul) , footer{
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #8b0000;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #000;
+  border-radius: 2px;
+}
+#container {
+  display: flex;
+}
+header#menu {
+  background-color: #8b0000;
+  display: flex;
+  flex-direction: column;
+}
+ a[href="#1"] {
+  color: 	#000;
+ }
+footer {
+  border-top: 1px solid rgb(26, 20, 20);
   display: flex;
   justify-content: space-around;
   padding: 20px 0px;
-  background-color: #8B0000;
+  background-color: #8b0000;
   font-size: 1.4rem;
-  color: #FFF;
-}
-
-header#menu nav ul {
-  display: flex;
-  list-style: none;
-}
-nav ul a:not(a[href="#1"]) {
-  text-decoration: none;
-  padding: 10px;
   color: #fff;
-  font-size: 1.2rem;
 }
 
-a[href="#1"] {
+header#menu {
+  display: flex;
+
+}
+header#menu nav ul {
+  list-style: none;
+
+}
+nav ul a {
   text-decoration: none;
   padding: 10px;
+  color: #FFF;
   font-size: 1.2rem;
-  background-color: #fff;
-  border-radius: 10px 2px 5px 10px;
-  color: #000;
+  transition: 1s;
+  
 }
+nav ul a:hover  {
+  color: 	#000;
+  opacity: 0.9;
+}
+
+nav {
+  text-align: center;
+  height: 100px;
+}
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 40px;
+}
+
 
 p {
+
   font-size: 1.3rem;
+}
+.texto {
+  margin: auto;
+  width: 80%;
+}
+#figure {
+  padding: 10px;
+  text-align: center;
+}
+
+#figure img {
+  width: 50%;
+  border-radius: 10%;
+  border: 1px solid #8b0000;
+  cursor: no-drop;
 }
 
 main section {
@@ -62,25 +118,36 @@ main section figure img {
   width: 80%;
 }
 
-#botoes  {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center; 
-    gap: 10px 20px;
-    padding: 40px;
-}
-#botoes button {
-  padding: 10px;
-  background-color: #DC143C;
-  border: 0;
-  border-radius: 5px;
+#botoes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px 20px;
+  padding: 40px;
 }
 
 #botoes a {
   text-decoration: none;
-  color: #FFF;
+  color: #fff;
   padding: 10px;
-  background-color: #DC143C;
+  background-color: #dc143c;
   border: 0;
   border-radius: 5px;
+}
+
+@media ( max-width  :  776px ) {
+  #container {
+    flex-wrap: wrap;
+  }
+  
+  header#menu {
+   gap: 50px;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  nav ul {
+    flex-direction: row;
+  }
+ 
 }
