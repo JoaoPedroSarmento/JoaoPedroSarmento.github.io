@@ -10,26 +10,19 @@ void Concatenacao ( char v1[] , char v2[] , string &texto1 , string texto2  ) {
     strcpy( v2 , texto2.c_str() ) ;
 
     int tam1 = texto1.length() ;
+     texto1 = "" ;
 
-    texto1 = "" ;
-
-   for ( int i = 0 ; i < tam1  ; i++ ){
+   for ( int i = 0 ; i < tam1  ; i++ )
        texto1 = texto1 +  v1[i] ;
-   }
 
    int tam2 = texto2.length();
 
    texto2 = "" ;
 
-   for ( int i = 0 ; i < tam2  ; i++) {
-
+   for ( int i = 0 ; i < tam2  ; i++) 
     texto2 = texto2 + v2[i] ;
-
-  }
-
-  texto1 = texto1 + " " + texto2 ;
-
-
+    
+   texto1 = texto1 + " " + texto2 ;
 }
 
 int main () {
