@@ -5,9 +5,8 @@
 using namespace std ;
 
 void  ToUpper( int tam , char v[]  ) {
-  for ( int i = 0 ; i < tam ; i = i + 1 ) {
+  for ( int i = 0 ; i < tam ; i = i + 1 ) 
       v[i] = v[i] - 32;
-    }
 }
 
 int main ( ) {
