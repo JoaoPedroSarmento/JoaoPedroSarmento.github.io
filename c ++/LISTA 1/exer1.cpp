@@ -5,7 +5,7 @@ using namespace std;
 
 
 void MostraNome( string nome) { 
-	cou t<< "Seu nome e : " << nome ; 
+	cout << "Seu nome e : " << nome ; 
 }
 
 
