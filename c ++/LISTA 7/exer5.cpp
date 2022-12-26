@@ -5,11 +5,11 @@
 using namespace std ;
 
 void  ToLower( int tam , char v[]  ) {
-  for ( int i = 0 ; i < tam ; i = i + 1 ) {
+  for ( int i = 0 ; i < tam ; i = i + 1 ) 
       if ( v[i] != ' ') {
       v[i] = v[i] + 32;
     }
-  }
+  
 }
 
 int main ( ) {
