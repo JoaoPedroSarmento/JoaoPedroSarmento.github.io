@@ -21,8 +21,7 @@ int i = 1 ;
 
 char s ;
 for ( i ; i < 255 ; i = i + 1 ) {
-
-    s = TabelaAscII(i , s );
+     s = TabelaAscII(i , s );
     cout << i << " - >  "  << s  << endl ;
 }
 }
