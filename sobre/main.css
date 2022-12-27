@@ -24,15 +24,18 @@ body::-webkit-scrollbar-thumb {
   display: flex;
 }
 header#menu {
+  width: 15%;
   background-color: #8b0000;
   display: flex;
   flex-direction: column;
+  position:fixed;
+  height: 100%;
+  top: 0px;
 }
  a[href="#1"] {
-  color: 	#000;
- }
-footer {
-  border-top: 1px solid rgb(26, 20, 20);
+   color: 	#ffafc1;
+}
+footer { 
   display: flex;
   justify-content: space-around;
   padding: 20px 0px;
@@ -58,7 +61,7 @@ nav ul a {
   
 }
 nav ul a:hover  {
-  color: 	#000;
+  color: #ffafc1;
   opacity: 0.9;
 }
 
@@ -75,15 +78,15 @@ nav ul {
 
 
 p {
-
   font-size: 1.3rem;
 }
 .texto {
-  margin: auto;
-  width: 80%;
+  position: relative;
+  left: 6%;
+  width: 70%;
 }
 #figure {
-  padding: 10px;
+  padding:10px;
   text-align: center;
 }
 
@@ -93,15 +96,16 @@ p {
   border: 1px solid #8b0000;
   cursor: no-drop;
 }
-
+main {
+  padding: 20px;
+}
 main section {
-  width: 80%;
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
+  align-items: center;
   gap: 20px;
   line-height: 25px;
-  margin: 50px auto;
+
 }
 
 main header h1,
@@ -110,12 +114,11 @@ img {
 }
 
 main section figure {
-  width: 100%;
-  text-align: center;
+   text-align: center;
 }
 
 main section figure img {
-  width: 80%;
+  width: 50%;
 }
 
 #botoes {
@@ -139,15 +142,25 @@ main section figure img {
   #container {
     flex-wrap: wrap;
   }
-  
+  #figure {
+    display: none;
+  } 
   header#menu {
-   gap: 50px;
+    width: 100%;
+    position: static;
+    gap: 20px;
     justify-content: center;
     flex-wrap: wrap;
     flex-direction: row;
   }
   nav ul {
+    position: relative;
+    top: 40%;
     flex-direction: row;
   }
- 
+.texto {
+  width: 90%;
+  
+}
+
 }
