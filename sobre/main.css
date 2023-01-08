@@ -128,7 +128,9 @@ main section figure img {
   gap: 10px 20px;
   padding: 40px;
 }
-
+#botoes:hover {
+  transform: scale(1.2, 1.18);
+}
 #botoes a {
   text-decoration: none;
   color: #fff;
