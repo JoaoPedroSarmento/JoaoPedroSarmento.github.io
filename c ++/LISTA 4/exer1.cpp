@@ -36,11 +36,11 @@ int main() {
 	char carac;
 	cout<<"Digite um caractere \n";
 	cin>>carac;
-	(minuscula(carac)) ?  cout<<"Esse caractere e uma letra minuscula\n" : cout<<"";	
-	(maiuscula(carac)) ? cout<<"Esse caractere e uma letra maiuscula\n" : cout<<"";
- 	(letra(carac)) ? cout<<"Esse caractere e uma letra\n" : cout<<"";
-	(vogal(carac)) ? cout<<"Esse caractere e uma vogal \n" : cout<<"";
-	(consoante(carac)) ? cout<<"Esse caractere e uma consoante \n" : cout<<"";
-	(algarismo(carac)) ? cout<<"Esse caractere e um algarismo \n" : cout<<"";
+	(minuscula(carac)) ? cout << "Esse caractere e uma letra minuscula\n" : cout << "";	
+	(maiuscula(carac)) ? cout <<"Esse caractere e uma letra maiuscula\n" : cout << "";
+ 	(letra(carac)) ?     cout <<"Esse caractere e uma letra\n" : cout << "";
+	(vogal(carac)) ?     cout <<"Esse caractere e uma vogal \n" : cout << "";
+	(consoante(carac)) ? cout <<"Esse caractere e uma consoante \n" : cout << "";
+	(algarismo(carac)) ? cout <<"Esse caractere e um algarismo \n" : cout << "";
 	getch();
 }
