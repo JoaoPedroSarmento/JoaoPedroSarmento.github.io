@@ -8,12 +8,11 @@ int VerificaSeE_UM_triangulo(int l1, int l2, int l3) {
 int TipoDoTriangulo(int l1, int l2, int l3) { 
 
     if(VerificaSeE_UM_triangulo(l1,l2,l3)) { 
-        return ( !(l1 == l2) && !(l2 == l3) && !(l1 == l3)) ? 1  : 
-        (l1 == l2 && l1 != l3 && l2 != l3  ) || ( l2 == l3 && l2 != l1 )  || ( l1 == l3 && l1 != l2 )  ? 2 : 3 ; 
+      return ( !(l1 == l2) && !(l2 == l3) && !(l1 == l3)) ? 1  : 
+      (l1 == l2 && l1 != l3 && l2 != l3  ) || ( l2 == l3 && l2 != l1 )  || ( l1 == l3 && l1 != l2 )  ? 2 : 3 ; 
     }
-    
+  
     return 0;
-
 }
 
 int main()
@@ -28,20 +27,17 @@ int main()
     cin  >> l3;
 
     switch(TipoDoTriangulo(l1,l2,l3)) { 
-        
         case 1:
-            cout << "Escaleno";
-
-            break;
+        cout << "Escaleno";
+        break;
         case 2:
-            cout << "Isosceles";
-            break;
+        cout << "Isosceles";
+        break;
         case 3:
-            cout << "Equilatero";
-            break;
-
+        cout << "Equilatero";
+        break;
         default :
-            cout << "Nao e um triangulo.";
-            break;
+        cout << "Nao e um triangulo.";
+        break;
     }
 }
