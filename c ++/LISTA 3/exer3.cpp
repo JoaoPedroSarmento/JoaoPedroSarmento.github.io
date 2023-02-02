@@ -4,15 +4,10 @@
 
  using namespace std;
  
- 
  int  hora(int &min) { 
-    float h ;
-
-    h = min/60;
-
+    float h =  min/60;
     min  = min % 60; 
-
-    return h ; 
+    return h;
  }
  
  int main() {
