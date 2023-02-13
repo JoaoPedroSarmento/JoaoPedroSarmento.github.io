@@ -3,10 +3,6 @@ function Projects() {
     const Container2 = document.getElementById(`container-02`);
     const Close = document.getElementById(`close`);
     const BoxItens = document.createElement(`div`);
-    const DivItem1 = document.createElement(`div`);
-    const DivItem2 = document.createElement(`div`);
-    const DivItem3 = document.createElement(`div`);
-    const DivItem4 = document.createElement(`div`);
     
     Container2.style.display = `none`;
     SectionProject.style.display = `block`;
