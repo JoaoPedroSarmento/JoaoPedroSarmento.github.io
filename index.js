@@ -42,6 +42,6 @@ function Close() {
 
     Container2.style.display = `flex`;
     SectionProject.style.display = `none`;
-    Container2.style.animation = `slideInDown   0.8s ease-in-out forwards`;
+    Container2.style.animation = `fadeIn   0.8s ease-in-out forwards`;
     Close.style.display = `none`;
 }
