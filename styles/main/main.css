@@ -165,3 +165,9 @@ main {
   color: #fff;
   text-decoration: none;
 }
+@media (max-width: 980px) {
+  .nav:hover {
+    background-color: transparent;
+  }
+}
+
