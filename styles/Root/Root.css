@@ -1,0 +1,20 @@
+:root {
+  /* Theme Dark */
+  --bg-color: #1a1a1a;
+  --bg-header-color: #262626;
+  --bg-nav-toggle: #262626;
+  --bg-color-toggle: #fff;
+  --bg-color-itens: #fff;
+  --color-itens: #000;
+  --border-color-itens: #000;
+
+  --menu-hover-color: #717171;
+  --font-color: #f5f5f5;
+  --border-box: #30363d;
+  --link-hover-1: #58a6ff;
+  --nav-togle-active-color: #808080;
+  --link-color: #fff;
+  /* Cores */
+  --white-color: #fff;
+  --black-color: #000;
+}

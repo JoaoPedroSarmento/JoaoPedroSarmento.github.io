@@ -1,0 +1,51 @@
+@import url("/styles/main/main.css");
+@import url("/styles/Root/Root.css");
+
+.section:not(.section--container-01) {
+  display: flex;
+  width: 90%;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  color: var(--font-color);
+}
+main .section .itens {
+  padding: 20px;
+  width: 100%;
+  background-color: var(--bg-color-itens);
+  display: grid;
+  text-align: center;
+}
+main .section .item {
+  padding: 20px;
+  border-top: 1px solid var(--border-color-itens);
+}
+main .section .itens a {
+  text-decoration: none;
+  color: var(--color-itens);
+  opacity: 0.6;
+  transition: 0.4s;
+}
+main .section .itens a:hover {
+  color: var(--link-hover-1);
+}
+main .section .item4 {
+  border-bottom: 1px solid var(--border-color-itens);
+}
+#close {
+  width: 2%;
+  border-radius: 100%;
+  padding: 10px;
+  position: relative;
+}
+#close img {
+  cursor: pointer;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
