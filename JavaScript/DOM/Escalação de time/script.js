@@ -1,69 +1,38 @@
-let i = 0;
-function VerificaNome_e_PosicaoDoJogador(name, position) {
-  const nome = name;
-  const posicao = position;
-
-  if (nome.length == 0 || posicao.length == 0) return false; 
-  for (let i = 0; i <= posicao.length - 1 && i <= nome.length - 1; i++) {
-    if (nome[i] <= 0 || (nome[i] >= 1 && posicao[i] <= 0) || posicao[i] >= 1) {
-      if (nome[i] != " " || posicao[i] != " ") {
-        return false; 
-      }
-    }
-  }
-  return true;
-}
-function VerificaNumeroDACamisaDoJogador(NumeroDAcamisa)
-{
-  const Numerodacamisa = NumeroDAcamisa;
-  
- if(Numerodacamisa >= 0  )
- {
-  return true;
- }
- return false;
-}
-
-function addPlayer() {
-  const position = document.getElementById("position").value;
-  const name = document.getElementById("name").value;
-  const camisa = document.getElementById("camisa").value;
-
-  const players = document.getElementById("players");
-
-  const ul = document.createElement("ul");
-
-  const posicao = document.createElement("li");
-  const nome = document.createElement("li");
-  const NumeroDaCamisa = document.createElement("li");
-
-  posicao.innerHTML = '<h3> A posição do jogador é :  </h3>' ;
-  nome.innerText = "O nome do jogador é " + name;
-  NumeroDaCamisa.innerText = "O número da camisa é  " + camisa;
-
-  ul.append(posicao, nome, NumeroDaCamisa);
-
-  if (VerificaNome_e_PosicaoDoJogador(name, position) && VerificaNumeroDACamisaDoJogador(camisa)) {
-    players.appendChild(ul);
-    return true;
-  } else {
-    alert("Erro. Digite novamente...");
-    return false;
-  }
-  
-}
-
-
-
-function RemovePlayer() {
-  let r = prompt(
-    "Deseja remover o primeiro jogador da lista ? 1- Sim , outro valor - não "
-  );
+function AddPlayer() {
   const Article = document.getElementById("players");
-
-  const ul = document.getElementsByTagName("ul");
-  const li = document.getElementsByTagName("li");
-  if (r == 1) {
-    Article.removeChild(ul[0]);
+  const Position = document.getElementById("position").value;
+  const Name = document.getElementById("name").value;
+  const Camisa = document.getElementById("camisa").value;
+  const H3 = document.createElement("h3");
+  H3.innerText = "Jogadores : ";
+  const Div = document.createElement("div");
+  if (Position.length && Name.length && Camisa.length) {
+    if (Position >= 1 && Position <= 9) {
+      alert("A posição não pode possuir  números");
+      alert("O nome não pode possui números");
+      return false;
+      ``;
+    } else if (Name >= 1 && Name <= 9) {
+      alert("O nome não pode possui números");
+      alert("A posição não pode possuir  números");
+      return false;
+    } else {
+      Div.className = "container";
+      Div.appendChild(H3);
+      Div.innerHTML = `<h4> Nome :  ${Name}</h4> <h4> Posição : ${Position}  </h4> <h4>Número da camisa : ${Camisa} </h4>  `;
+      Article.appendChild(Div);
+      return true;
+    }
+  } else {
+    alert("Espaço vazio ou valor da camisa possuí alguma letra");
+  }
+}
+function RemovePlayer() {
+  const Article = document.getElementById("players");
+  const Div = document.querySelectorAll("article > div");
+  if (Article.children.length) {
+    Article.removeChild(Div[Div.length - 1]);
+  } else {
+    alert("Não há nenhum jogador escalado!!");
   }
 }

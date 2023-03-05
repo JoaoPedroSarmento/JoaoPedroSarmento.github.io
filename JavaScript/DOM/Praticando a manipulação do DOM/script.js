@@ -1,68 +1,40 @@
-function addContact() {
-  const contacSection = document.getElementById("contacts-list");
+function AddContact () {
+  const PuloDeLinha1 = document.createElement(`br`)
+  const PuloDeLinha2 = document.createElement(`br`)
+  const ContactSection = document.getElementById(`contacts-list`)
+  const h3 = document.createElement(`h3`);
+  h3.innerText = `Contato`;
 
-  const h3 = document.createElement("h3");
+  const ul = document.createElement(`ul`);
+  const nameLi = document.createElement(`li`);
+  nameLi.innerText = `Nome : `;
+  const NameInput = document.createElement(`input`)
+  NameInput.type = `text`;
+  NameInput.name = `FullName`;
+  nameLi.appendChild(NameInput)  
 
-  h3.innerText = "Contato";
+  const PhoneLi = document.createElement(`li`);
+  PhoneLi.innerText = `Telefone : `;
+  const PhoneInput = document.createElement(`input`)
+  PhoneInput.type = `text`;
+  PhoneInput.name = `Telefone`;
+  PhoneLi.appendChild(PhoneInput);
 
-  const ul = document.createElement("ul");
-  const nameLi = document.createElement("li");
-
-  nameLi.innerText = "Nome : ";
-
-  const nameinput = document.createElement("input");
-
-  nameinput.type = "text";
-
-  nameinput.name = "Fullname";
-
-  nameLi.appendChild(nameinput);
-
-  ul.appendChild(nameLi);
-  ul.appendChild(document.createElement("br"));
-
-  const phoneli = document.createElement("li");
-
-  phoneli.innerText = "Telefone : ";
-
-  phoneinput = document.createElement("input");
-
-  phoneinput.type = "text";
-
-  phoneinput.name = "Fullname";
-
-  phoneli.appendChild(phoneinput);
-
-  ul.appendChild(phoneli);
-  ul.appendChild(document.createElement("br"));
-
-  const adressli = document.createElement("li");
-
-  adressli.innerHTML = '<label for ="adress"> Endereço </label>';
-
-  const adressinput = document.createElement("input");
-
-  adressinput.type = "text";
-
-  adressinput.name = "adress";
-  adressinput.id = "adress";
-
-  adressli.appendChild(adressinput);
-
-  ul.appendChild(adressli);
-  ul.appendChild(document.createElement("br"));
-
-  contacSection.append(h3, ul);
+  const AdressLi = document.createElement(`li`)
+  AdressLi.innerHTML = `<label for="adress"> Endereço :  </label>`;
+  const AdressInput = document.createElement(`input`)
+  AdressInput.type = `text`;
+  AdressInput.id = `adress`;
+  AdressLi.appendChild(AdressInput)
+  ul.append(nameLi,PuloDeLinha1,PhoneLi,PuloDeLinha2,AdressLi)
+  ContactSection.append(h3,ul)
+  return true;
 }
-
-function removeContact ()
-{
-    const contacSection = document.getElementById('contacts-list')
-
-    const titles = document.getElementsByTagName('h3')
-    const contacts = document.getElementsByTagName ('ul')
-    
-    contacSection.removeChild(titles[0] ) // Forma de excluir o primeiro contato da lista 
-    contacSection.removeChild(contacts[0] )
-
+ 
+function RemoveContact() {
+ const ContactSection = document.getElementById(`contacts-list`); 
+ const titles = document.getElementsByTagName(`h3`);
+ const  contacts = document.getElementsByTagName(`ul`);
+ ContactSection.removeChild(titles[titles.length -1]);
+ ContactSection.removeChild(contacts[contacts.length -1]);  
 }

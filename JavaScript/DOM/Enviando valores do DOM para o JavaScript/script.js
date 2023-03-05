@@ -1,10 +1,7 @@
-function register (element)
-{
-    const username = element.children.username.value;
-    const passwrod = element.children.password.value;
-    const passwrodConfirmation = element.children.passwordConfirmation.value;
+function Register(element) {
+  const UserName = element.children.username.value;
+  const PassWord = element.children.password.value;
+  const PasswordConfirmation = element.children.passwordConfirmation.value;
 
-    console.log(username)
-    console.log(passwrod)
-    console.log(passwrodConfirmation)
+  console.log(UserName, PassWord, PasswordConfirmation);
 }

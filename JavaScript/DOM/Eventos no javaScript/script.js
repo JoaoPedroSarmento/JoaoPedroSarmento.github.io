@@ -1,31 +1,17 @@
 function Register(ev) {
-  console.log(ev);
+  const SectionElement = ev.currentTarget.parentNode;
+  const UserName = SectionElement.children.username.value;
+  const PassWord = SectionElement.children.password.value;
+  const PasswordConfirmation =
+    SectionElement.children.passwordConfirmation.value;
 
-  const sectionElement = ev.currentTarget.parentNode
-
-  const username = sectionElement.children.username.value
-  
-  const password = sectionElement.children.password.value;
-
-  const passwordConfirmation = sectionElement.children.passwordConfirmation.value;
-
-  if (password == passwordConfirmation) {
-    alert("usuário " + username + " registrado ");
-  } else {
-    alert("Usuário não registrado!");
-  }
+  console.log({ UserName, PassWord, PasswordConfirmation });
 }
 
-const button = document.getElementById("register-button");
+const Button = document.getElementById("register-button");
 
-button.addEventListener("click", Register);
+Button.addEventListener("click", Register);
 
-function removeEvent()
-{
-    button.removeEventListener('click' , Register)
-    alert("Evento removido !")
+function RemoveEvent() {
+  Button.removeEventListener("click", Register);
 }
-
-button.addEventListener('mouseover' , function (ev){
-    console.log(ev.currentTarget)
-})

@@ -1,5 +1,4 @@
-*
-{
+* { 
   box-sizing: border-box;
   margin: 0;
 }
@@ -19,24 +18,34 @@
 ul{
   list-style: none;
 }
-.botoes
-{
+.botoes { 
   display: flex;
   gap: 20px;
 }
-[value ="ADICIONAR" ]
-{
+[value ="ADICIONAR" ] {
   background-color: green;
   border: 0;
   padding: 10px;
   color: #fff;
   cursor: pointer;
 }
-[value = "REMOVER"]
-{
+[value = "REMOVER"] { 
   background-color: red;
   border: 0;
   padding: 10px;
   color: #fff;
   cursor: pointer;
+}
+
+article#players {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+article div{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
