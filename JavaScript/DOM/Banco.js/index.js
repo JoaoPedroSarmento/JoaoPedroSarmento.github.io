@@ -52,7 +52,7 @@ document.getElementById("RemoveMoney").addEventListener("click", () => {
   P.innerText = `Valor removido ${InputRemove.value}`;
   Div.className = "Remove";
   Div.appendChild(P);
-  if (Section.children.length) {
+  if (Section.children.length === 0) {
     ButtonClear.innerText = "Clear";
     Section.appendChild(ButtonClear);
   }
