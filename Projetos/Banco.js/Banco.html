@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Banco.js</title>
+    <script src="index.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans"
+      rel="stylesheet"
+    />
+  </head>
+  <body data-theme="dark">
+    <header>
+      <nav>
+        <ul>
+          <li><button class="btn btn-dark">Dark</button></li>
+          <li><button class="btn btn-light">Light</button></li>
+          <li><button class="btn btn-switch">Dark/Light</button></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="Bank">
+        <div id="title">
+          <h1>Banco.js</h1>
+        </div>
+        <div id="AddSaldo">
+          <label for="Add">Adicionar dinheiro:</label>
+          <input type="text" id="Add" />
+          <button id="AddMoney">Adicionar</button>
+        </div>
+        <div id="RemoveSaldo">
+          <label for="Remove">Remover dinheiro:</label>
+          <input type="text" id="Remove" />
+          <button id="RemoveMoney">Remover</button>
+        </div>
+        <div id="DisplaySaldo">
+          <label for="saldo">Saldo:</label>
+          <input type="text" id="saldo" disabled />
+          <button id="copy">Copiar</button>
+        </div>
+      </section>
+      <section id="DisplayInformation"></section>
+    </main>
+  </body>
+</html>
