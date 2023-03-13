@@ -1,21 +1,12 @@
 #include<iostream>
 #include<conio.h>
-
+#include<math.h>
 using namespace std;
 
-bool numero_primo(int numero)
-{
-  bool retorno = false;
-  int  contador = 0;
- for(int i = 1; i <= numero; i ++ )
- {
- 
-  (numero % i == 0 ) ? contador ++ : contador;
-
- }
- (contador == 2 ) ? retorno = true : retorno;
- return retorno;
- 
+bool numero_primo(int numero) { 
+    for (int i = 2; i <= sqrt(numero); i++)
+       if ( numero % i == 0 ) return false;
+    return numero > 1;
 }
 
 int main()
@@ -25,13 +16,13 @@ int main()
 	cin>>numero;
 	resultado = numero_primo(numero);
     
-	switch(resultado)
-   {
+	switch(resultado) {
     case true : 
 	cout<<numero<<" <---- e um numero primo \n";
     break;
     default : 
    	cout<<numero<<" <---- nao e um numero primo ";
     break;
-} 
+       
+   } 
 } 
