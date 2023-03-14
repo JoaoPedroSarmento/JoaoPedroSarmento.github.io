@@ -10,7 +10,7 @@ float retorna_delta(float a,float b, float c) {
  
  int main() { 
  	
-	 float a , b   , c , Retorn ;
+	 float a , b   , c , Retorno;
  	 
  	cout << "Digite o valor de a:\n\n" ;
  	cin  >> a;
