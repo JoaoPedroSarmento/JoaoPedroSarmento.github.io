@@ -75,10 +75,10 @@ let posicaoAtualDaForca = 0;
 let posicaoDaPalavra = 0;
 let tamDaPalavra = 0;
 
-function vitoria() { // Verifica se o usuário venceu a partida 
+function vitoria() { 
   const sublinhas = document.querySelectorAll(".carac")
-  if (sublinhas.length == tamDaPalavra){ // Se todas sublinhas tiverem a classe carac, significa que o caractere digitado é correto.
-    setTimeout(() => {//se for do mesmo tamanho, quer dizer que todos os caracteres corretos foram digitados
+  if (sublinhas.length == tamDaPalavra){
+    setTimeout(() => {
       const mensagemP = document.getElementById("mensagem");
       mensagemP.innerText = `Você ganhou, a palavra era: ${palavrasForca[posicaoDaPalavra]}`;
       alertMensagem()
@@ -86,17 +86,17 @@ function vitoria() { // Verifica se o usuário venceu a partida
     atualizaJogo()
     return true;  
   }
-  else if (posicaoAtualDaForca === 6)  derrota(); //Se a posicao atual da forca 
+  else if (posicaoAtualDaForca === 6)  derrota();
   return true;
 }
-function derrota() {// Verifica se o usuário perdeu a partida 
+function derrota() {
   palavraDaForca.innerText  = forcaFrame[6];
   setTimeout(() => {
     const mensagemP = document.getElementById("mensagem");
     mensagemP.innerText = `Você perdeu, a palavra era: ${palavrasForca[posicaoDaPalavra]}`;
     alertMensagem()
     atualizaJogo()
-   }, 400) // alert e a função atualiza jogo só seram executada depois de 400 milisegundos
+   }, 400)
   return true;  
 } 
 
@@ -110,7 +110,7 @@ function alertMensagem() {
     sections.forEach((section) => section.style.pointerEvents = "all")
   })
   }
-function atualizaJogo() { // zera tudo para recomeçar o jogo
+function atualizaJogo() {
   const sublinhas = document.querySelectorAll(".lines");
   posicaoAtualDaForca = 0;
   palavraDaForca.innerText = forcaFrame[0];
