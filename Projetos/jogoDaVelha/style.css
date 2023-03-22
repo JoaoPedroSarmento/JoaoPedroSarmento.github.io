@@ -1,0 +1,23 @@
+#game {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    font-size: 60px;
+    text-align: center;
+    line-height: 100px;
+    cursor: pointer;
+    margin: 5px;
+}
