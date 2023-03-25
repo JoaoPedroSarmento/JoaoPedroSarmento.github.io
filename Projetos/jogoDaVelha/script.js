@@ -1,7 +1,6 @@
 const celulas = document.querySelectorAll(".cell");
 let posicoesO = [];
 let posicoesX = [];
-let jogando = false;
 let jogador = "O";
 let celulasPreenchidas = 0;
 const vitoriasCombinacoes = [
