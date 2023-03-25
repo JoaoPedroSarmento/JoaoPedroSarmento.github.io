@@ -16,49 +16,46 @@ const vitoriasCombinacoes = [
 ];
 
 function resetaJogo() {
-  celulas.forEach(celula => celula.textContent = "");
+  celulas.forEach((celula) => (celula.textContent = ""));
   posicoesO = [];
   posicoesX = [];
   jogador = "O";
   celulasPreenchidas = 0;
 }
 
-function verifcaVitoria() {
-  for (const combinacao of vitoriasCombinacoes) {
-    if (combinacao.every(posicao => posicoesO.includes(posicao))) {
+function verificaVitoria() {
+  vitoriasCombinacoes.forEach((combinacao) => {
+    if (combinacao.every((posicao) => posicoesO.includes(posicao))) {
       alert("Jogador O venceu");
+      resetaJogo()
       return true;
-    } else if (combinacao.every(posicao => posicoesX.includes(posicao))) {
-      alert("Jogador X venceu!")
+    } else if (combinacao.every((posicao) => posicoesX.includes(posicao))) {
+      alert("Jogador X venceu!");
+      resetaJogo()
       return true;
+    }else if (celulasPreenchidas == 9){
+      alert("Empate");
+      resetaJogo()
     }
-  }
+  });
   return false;
 }
 
-celulas.forEach((celula , indice) => {
+celulas.forEach((celula, indice) => {
   celula.addEventListener("click", (valor) => {
-    if (celula.textContent !== "" || verifcaVitoria() || celulasPreenchidas === 8) {
-        verifcaVitoria()
-        setTimeout(() => {
-            resetaJogo();
-          }, 1000);
-    }
-    if (jogador === "O") {
+    if (jogador === "O" && celula.textContent === "") {
       jogador = "X";
       celula.textContent = "O";
       posicoesO.push(indice);
-    } else {
+      celulasPreenchidas += 1;
+      console.log(celulasPreenchidas)
+    } else if (celula.textContent === "") {
       jogador = "O";
       celula.textContent = "X";
-      posicoesX.push(indice)
+      posicoesX.push(indice);
+      celulasPreenchidas += 1;
+      console.log(celulasPreenchidas)
     }
-    celulasPreenchidas += 1;
-    if (verifcaVitoria() || celulasPreenchidas === 8) {
-        verifcaVitoria()
-        setTimeout(() => {
-        resetaJogo();
-      }, 1000);
-    }
+    verificaVitoria()
   });
 });
