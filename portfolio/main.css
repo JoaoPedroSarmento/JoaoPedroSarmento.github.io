@@ -1,4 +1,11 @@
 @import url("/root.css");
+:root {
+  --body-color: #2d2d2d;
+  --header-bg-color: #1e1e1e;
+  --font-color-1: #e8e8e8;
+  --font-color-2: #1c1c1c;
+  --font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
 * {
   margin: 0;
   padding: 0;
