@@ -1,0 +1,134 @@
+@import url("/root.css");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
+
+.no-touch {
+  font-family: monospace;
+  background-color: var(--body-color);
+  color: var(--font-color-1);
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+.header.header-flex {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--header-bg-color);
+  padding: 20px;
+}
+
+.nav-bar ul {
+  display: flex;
+  gap: 10px;
+  list-style: none;
+}
+.nav-bar ul li a {
+  transition: 0.7s background ease-in-out;
+  background: var(--font-color-2);
+  color: var(--font-color-1);
+  text-decoration: none;
+  padding: 10px;
+}
+.nav-bar ul li a:hover {
+  background: var(--font-color-1);
+  color: var(--font-color-2);
+}
+
+.section{
+ 
+  display: grid;
+  gap: 40px;
+  padding: 50px 20px;
+}
+.section-flex{
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.section-flex p{
+  text-align: justify;
+  font-size: 20px;
+}
+#habilidades .container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+.item.habilidade img {
+  transition: 0.8s ease-out;
+  border-radius: 50%;
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+.item.habilidade img:hover{
+   transform: scale(1.1,1.1);
+}
+
+
+.box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.box .item {
+  width: 40%;
+ padding: 20px;
+}
+
+.box .item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border: 2px solid var(--font-color-1);
+}
+.item a{
+  text-decoration: underline;
+  color: var(--font-color-1);
+}
+
+
+#contato {
+  padding: 80px 0;
+}
+
+.footer-flex{
+  background-color: var(--header-bg-color);
+}
+.footer-flex ul{
+  display: flex;
+  gap: 20px;
+}
+.footer-flex ul{
+  list-style: none;
+}
+.footer-flex ul a {
+  color: var(--font-color-1);
+}
+
+@media only screen and (max-width: 768px) {
+  .header-flex{
+   font-size: 10px;
+  }
+  .menu-toggle {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .menu{
+    width: 30px;
+    height: 2px;
+    background: var(--font-color-1);
+  }
+   .nav-bar ul{
+    display: none;
+   }
+}
