@@ -1,0 +1,87 @@
+@import url("root.css");
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Courier New", Courier, monospace, sans-serif;
+}
+
+body.dark {
+  background: var(--bg-color-dark);
+  color: var(--cor-primaria);
+}
+body.light {
+  background: var(--bg-color-light);
+  color: var(--cor-secundaria);
+}
+.section-grid {
+  display: grid;
+  gap: 20px;
+  padding: 20px 50px;
+}
+a {
+  transition: linear 0.8s;
+  text-decoration: none;
+  color: var(--cor-primaria);
+}
+a:hover {
+  text-decoration: 1px underline;
+}
+.flex-container-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.flex-container-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+.flex-container-row #Toggletheme {
+  transition: ease-out 0.9s;
+  background: var(--btn-color);
+  padding: 10px;
+  border: 0;
+  color: var(--cor-secundaria);
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.flex-container-column pre {
+  font-size: large;
+}
+.div-flex {
+  display: grid;
+  gap: 10px;
+}
+.label-flex {
+  display: flex;
+  gap: 20px;
+}
+#n2 {
+  position: relative;
+  left: 0.7%;
+}
+input[type="text"] {
+  text-align: right;
+}
+
+.input {
+  max-width: 500px;
+  padding: 5px 0px;
+  border: 0;
+  font-size: 16px;
+  outline: 0;
+  background-color: var(--input-bg-color);
+  color: #fff;
+}
+
+.btn {
+  max-width: 150px;
+  padding: 5px 20px;
+  background: blue;
+  border: 0;
+  color: #fff;
+  cursor: pointer;
+}
