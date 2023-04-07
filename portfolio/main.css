@@ -41,14 +41,15 @@ header {
 .menu-list[data-display="grid"] {
   width: 300px;
   display: grid;
+  gap: 20px;
   align-items: center;
   background: var(--color-2);
   position: relative;
   top: -20px;
   left: 18px;
-  height: 100vh;
+  min-height: 500px;
   list-style: none;
-  padding: 20px;
+  padding: 50px;
 }
 .menu-list[data-display="grid"] a {
   text-decoration: none;
