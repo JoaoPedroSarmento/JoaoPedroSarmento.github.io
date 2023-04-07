@@ -1,7 +1,8 @@
-:root {
-  --body-color: #2d2d2d;
-  --header-bg-color: #1e1e1e;
-  --font-color-1: #e8e8e8;
-  --font-color-2: #1c1c1c;
-  --font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+:root{
+    --font-family: "Rajdhani", "Montserrat", sans-serif;
+    --bg-color:#191414;
+    --bg-header:#282828;
+    --color-1:#ffffff;
+    --color-2:#242424;
+    --color-3:#1b1b1b;
 }
