@@ -21,12 +21,17 @@ header {
 }
 .menu,
 .menuX {
-  position: fixed;
+  position: relative;
   right: 20px;
   cursor: pointer;
   display: grid;
   gap: 10px;
   z-index: 1;
+}
+.menuX {
+  position: relative;
+  left: -110px;
+  top: 20px;
 }
 .menu span,
 .menuX span {
@@ -39,29 +44,32 @@ header {
   display: none;
 }
 .menu-list[data-display="grid"] {
+  animation: animationMenu 1s ease-in;
   width: 300px;
-  display: grid;
-  gap: 20px;
-  align-items: center;
   background: var(--color-2);
   position: relative;
   top: -20px;
   left: 18px;
-  min-height: 500px;
+  height: 100vh;
   list-style: none;
-  padding: 50px;
+  padding: 60px;
 }
 .menu-list[data-display="grid"] a {
+  display: grid;
+  justify-content: center;
+  align-items: center;
   text-decoration: none;
+  background-color: var(--color-3);
   color: var(--color-1);
+  width: 300px;
+  min-height: 100px;
 }
 .menu-list[data-display="grid"] li {
   display: flex;
+  padding: 10px;
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  background-color: var(--color-3);
-  height: 90px;
 }
 
 .menuX span:nth-child(1) {
@@ -74,12 +82,71 @@ header {
   transform: translate(0px, -15px) rotate(-50deg);
 }
 
-
-.menu-list li:hover {
-  transform: scale(1.1); 
-  opacity: 1; 
+.menu-list a:hover {
+  transform: scale(1.1);
+  opacity: 1;
 }
 
-.menu-list:hover >   li:not(:hover) {
-  opacity: 0.8; 
+.section-template-grid {
+  display: grid;
+  padding: 20px;
+  place-items: center;
 }
+.section .me {
+  transition: ease-in 0.5s;
+  text-align: justify;
+  font-size: larger;
+}
+.reduce {
+  animation: ease-in animationSection 0.2s;
+  width: calc(100% - 300px);
+}
+
+@keyframes animationMenu {
+  0% {
+    transform: translateY(-100px);
+  }
+  50% {
+    transform: translateY(-50px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes animationSection {
+  0% {
+    transform: translateX(120px);
+  }
+  50% {
+    transform: translateX(100px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.section-template-flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin: 20px;
+}
+.box {
+  cursor: pointer;
+  width:400px;
+  height: 350px;
+  background-color: red;
+  border: 1px solid #fff;
+}
+.div-container img{
+  width: 100%;
+  height: 100%;
+}
+
+.box:hover {
+  scale: 1.1;
+}
+
+
