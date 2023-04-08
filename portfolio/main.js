@@ -7,7 +7,6 @@ menu.addEventListener("click", () => {
   header.classList.toggle("menuToggleX");
   menu.classList.toggle("menu");
   menu.classList.toggle("menuX");
- main.classList.toggle("reduce")
-  menuList.dataset.display =
-    menuList.dataset.display === "none" ? "grid" : "none";
+  main.classList.toggle("reduce")
+  menuList.dataset.display = menuList.dataset.display === "none" ? "grid" : "none";
 });
