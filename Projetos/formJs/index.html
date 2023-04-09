@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form.js</title>
+    <link rel="stylesheet" href="main.css" />
+    <script src="main.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main id="main">
+      <section class="section section-template-grid">
+        <h3>Login:</h3>
+        <form  id="form">
+          <div class="div-label">
+            <label for="nome">Insira seu nome:</label>
+            <input
+              type="text"
+              id="nome"
+              name="nome"
+              required
+              title="insira seu nome"
+              class="input"
+            />
+          </div>
+          <div class="div-label">
+            <label for="email">Insira seu email:</label>
+            <input
+              type="email"
+              name="emali"
+              id="email"
+              required
+              title="insira seu email"
+              class="input"
+            />
+          </div>
+          <div class="div-label">
+            <label for="idade">Insira sua idade:</label>
+            <input
+              type="text"
+              name="idade"
+              id="idade"
+              minlength="0"
+              maxlength="3"             
+              required
+              title="insira sua idade"
+              class="input"
+            />
+          </div>
+          <div class="div-label">
+            <label for="numero">Insira seu número:</label>
+            <input
+              type="text"
+              name="numero"
+              id="numero"
+              minlength="9"
+              required
+              title="insira seu número"
+              class="input"
+            />
+          </div>
+          <input type="submit" value="entrar"  id="submit"/>
+          <input type="reset" value="resetar dados" />
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
