@@ -1,12 +1,13 @@
-const menu = document.querySelector(".nav-bar div");
+const menu = document.getElementById("menu");
 menu.addEventListener("click", () => {
-  const menuList = document.querySelector(".menu-list");
-  const header = document.querySelector("header");
-  const main = document.querySelector("main");
-  header.classList.toggle("menuToggle");
-  header.classList.toggle("menuToggleX");
+  const sections = document.querySelectorAll(".section");
+  const menuList = document.querySelector("ul");
+  sections.forEach((section) => {
+    section.classList.toggle("reduce")
+    section.classList.toggle("section-template-grid")
+  })
   menu.classList.toggle("menu");
-  menu.classList.toggle("menuX");
-  main.classList.toggle("reduce")
-  menuList.dataset.display = menuList.dataset.display === "none" ? "grid" : "none";
+  menu.classList.toggle("menuActive");
+  menuList.classList.toggle("menu-list")
+  menuList.classList.toggle("menu-close")
 });

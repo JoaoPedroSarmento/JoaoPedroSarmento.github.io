@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+    background-color: #242424;
+  font-family: "Gemunu Libre", sans-serif;
+  color: #fff;
+}
+#header , footer {
+  display: flex;
+  border-bottom: 1px solid #000;
+  gap: 20px;
+  justify-content: space-between;
+  padding: 20px 30px;
+  background-color: #1b1b1b;
+  max-height: 90px;
+}
+#header h1 {
+  cursor: pointer;
+  flex-basis: 55%;
+}
+
+.menu,
+.menuActive {
+  display: grid;
+  gap: 8px;
+  z-index:2;
+  cursor: pointer;
+}
+.menuActive {
+    z-index: 1;
+  animation: menuAnimation 0.3s;
+  position: relative;
+  top: 0px;
+}
+.menu span,
+.menuActive span {
+  width: 25px;
+  background: #fff;
+  height: 1px;
+  padding: 1px;
+}
+
+.menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: absolute;
+  top: 0;
+  left: -20px;
+  transition: 0.6s ease;
+  animation: menuAnimation 0.3s;
+  min-height: 100vh;
+  width: 400px;
+  background-color: #1b1b1b;
+  list-style: none;
+  padding: 70px;
+}
+
+.menu-list li {
+  display: grid;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.menu-list a {
+  transition: 0.5s linear;
+  width: 200px;
+  height: 50px;
+  padding: 20px;
+  background-color: #333;
+  text-decoration: none;
+  color: #fff;
+}
+.menu-list a:hover {
+  background: #333;
+  transform: scale(1.1);
+}
+.menu-close li {
+  display: none;
+}
+
+@keyframes menuAnimation {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+#main {
+    display: grid;
+    place-items: center;
+    gap:50px;
+    margin: 20px 20px;
+  }
+  .section-template-flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+  }
+  .box {
+    cursor: pointer;
+    width:400px;
+    height: 350px;
+    border: 1px solid #fff;
+    border-radius: 2px;
+  }
+  .div-container img{
+    transition: 1s ease;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .box:hover {
+    scale: 1.02;
+  }
+  
+  .habilidade img{
+    cursor: pointer;
+    transition: 1s ease;
+    width: 120px;
+    height: 100%;
+  }
+  .habilidade img:hover{
+    scale: 1.1;
+  }
+  
+#main p{
+    font-size: larger;
+}
+.section-template-grid{
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+@media (min-width: 700px) {
+    .reduce{
+        animation: animationReduceWidth linear 0.4s;
+        width: calc(90% - 400px);
+        transform: translateX(150px);
+        z-index: 0;
+    }
+}
+
+@keyframes animationReduceWidth {
+    from{
+        transform: translateX(-20%);
+    }
+}
+footer ul {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+  }
+  
+  footer ul a{
+    position: relative;
+    transition: 1s ease-in;
+    text-decoration: none;
+    color:#fff;
+  }
+  
+  footer ul a:hover{
+    text-decoration: 1px underline;
+  }
