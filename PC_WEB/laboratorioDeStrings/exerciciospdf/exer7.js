@@ -1,4 +1,4 @@
-// Verificar se: Carac minúsculo e Carac maiúsculo, Carac especiais, e Numeros;
+// Verificar se: Carac minúsculo e Carac maiúsculo, Carac especiais, e Num;
 function letraMinuscula(carac) {
   return carac >= "a" && carac <= "z";
 }
