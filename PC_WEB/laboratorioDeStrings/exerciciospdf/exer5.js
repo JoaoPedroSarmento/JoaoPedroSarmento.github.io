@@ -12,7 +12,7 @@ function substitiuPalavra(textoContainer, textoParaSubtituir, textoProcurado) {
     if (palavra) {
       for (let k = 0; k < arrayTextos.length; k += 1) {
         if (palavra === arrayTextos[k]) {
-          arrayTextos[k] = textoParaSubtituir[i];
+          arrayTextos[k] = textoParaSubtituir;
         }
       }
     }
