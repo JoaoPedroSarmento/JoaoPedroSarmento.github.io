@@ -4,8 +4,8 @@ using namespace std;
 
 int imc(float peso,float altura ) { 
 	float IMC = peso/(altura*altura);
-	return (IMC < 25) ?    0 : (IMC >= 25 && IMC < 30) ?   1 : (IMC >= 30 && IMC < 35)	?   2 :
-	(IMC >= 35 && IMC < 40) ?  3 : -1;
+	return (IMC < 25) ?    0 : (IMC < 30) ?   1 : (IMC < 35)	?   2 :
+	(IMC < 40) ?  3 : -1;
 }
 
 int main() { 
