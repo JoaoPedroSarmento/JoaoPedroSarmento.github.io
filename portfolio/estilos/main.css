@@ -46,7 +46,7 @@ html {
 /* Definindo imagem de fundo e tamanho da sessão incial ao lado do header*/
 .section-background-image {
   min-width: 800px;
-  background: url("./img/floresta.png") no-repeat;
+  background: url("https://joaopedrosarmento.github.io/portfolio/img/floresta.png") no-repeat;
   background-size: cover;
   /* Cabeçalho*/
   /* Sessões */
