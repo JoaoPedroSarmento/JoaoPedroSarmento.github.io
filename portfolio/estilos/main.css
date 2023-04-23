@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /* Fontes */
-@import url("/fontes/fontes.css");
-/* Funções para facilitar troca de cor */
+@import url("./fontes/fontes.css");
+
 /* Zera tudo*/
 * {
   margin: 0;
@@ -46,7 +46,7 @@ html {
 /* Definindo imagem de fundo e tamanho da sessão incial ao lado do header*/
 .section-background-image {
   min-width: 800px;
-  background: url("/img/floresta.png") no-repeat;
+  background: url("./img/floresta.png") no-repeat;
   background-size: cover;
   /* Cabeçalho*/
   /* Sessões */
