@@ -7,3 +7,9 @@ window.addEventListener("scroll", () => {
     header.style.removeProperty("background-color");
   }
 });
+
+document.querySelector(".menu-disable").addEventListener("click", () => {
+  const divMenu = document.querySelector("header + div");
+  divMenu.classList.toggle("display-menu-disable");
+  divMenu.classList.toggle("display-menu");
+});

@@ -9,21 +9,38 @@
       rel="stylesheet"
       type="text/css"
       media="screen"
-      href="./estilos/main.css"
+      href="/estilos/main.css"
     />
     <script src="./scripts/main.js" defer></script>
   </head>
+  <!-- body -->
   <body class="is-dark">
+    <!--imagem de fundo -->
     <div class="section-background-image">
+      <!-- header -->
       <header id="header">
         <h1>João Sarmento</h1>
+        <!-- navegação -->
         <nav class="nav-bar">
+          <div class="menu-disable">
+            <img
+              src="https://cdn-icons-png.flaticon.com/128/8297/8297819.png"
+              alt="menu"
+            />
+          </div>
           <ul class="list-links">
             <li><a href="#">Instagram</a></li>
             <li><a href="#">Github</a></li>
           </ul>
         </nav>
       </header>
+      <div class="display-menu-disable">
+        <ul class="list-menu">
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Github</a></li>
+        </ul>
+      </div>
+      <!-- section sobre mim -->
       <section class="section section-template-flex padding">
         <div class="div-template-flex">
           <h2>Sobre mim:</h2>
@@ -50,14 +67,25 @@
         </div>
       </section>
     </div>
+    <!-- main -->
     <main id="main">
+      <!-- section com os projetos -->
       <section class="projetos section-template-flex">
-        <h2 id="projetos">Meus projetos:</h2>
+        <h2>Meus projetos:</h2>
+        <!-- div com projeto -->
         <div class="div-template-flex-inline">
-          <figure class="left">
-            <img src="img/calc.png" alt="calc" width="200px" />
+          <!-- imagem do projeto -->
+          <figure class="left order-2">
+            <img src="img/calc.png" alt="calc" />
+            <a
+              class="width-768"
+              href="https://joaopedrosarmento.github.io/Projetos/calc/index.html"
+              >ver calculadora</a
+            >
           </figure>
-          <div class="sobre-projeto">
+
+          <!-- descrição do projeto -->
+          <div class="sobre-projeto order-1">
             <div class="projeto">
               <h2>Calculadora:</h2>
               <p>
@@ -66,44 +94,63 @@
                 outras coisas.
               </p>
               <a
+                class="width-maior-que-768"
                 href="https://joaopedrosarmento.github.io/Projetos/calc/index.html"
                 >ver calculadora</a
               >
             </div>
           </div>
         </div>
+        <!-- div com projeto -->
         <div class="div-template-flex-inline">
-          <div class="sobre-projeto">
+          <!-- descrição do projeto -->
+          <div class="sobre-projeto order-1">
             <div class="projeto">
               <h2>Jogo da velha:</h2>
               <p>
                 Jogo da velha feito com: HTML, CSS e JavaScript. Possível
-                adicionar apenas dois jogadores, mostrar a quatidade de vitórias
+                adicionar apenas dois jogadores, mostra a quatidade de vitórias
                 de cada jogador e seus respectivos nomes.
               </p>
               <a
+                class="width-maior-que-768"
                 href="https://joaopedrosarmento.github.io/Projetos/jogoDaVelha/jogoDaVelha.html"
                 >ver jogo da velha</a
               >
             </div>
           </div>
-          <figure>
-            <img src="img/jogoDaVelha.png" alt="calc" />
+          <!-- imagem do projeto -->
+          <figure class="order-2">
+            <img src="img/jogoDaVelha.png" alt="jogo-da-velha" />
+            <a
+              class="width-768"
+              href="https://joaopedrosarmento.github.io/Projetos/jogoDaVelha/jogoDaVelha.html"
+              >ver jogo da velha</a
+            >
           </figure>
         </div>
+        <!-- div com projeto -->
         <div class="div-template-flex-inline">
-          <figure class="left">
-            <img src="img/forca.png" alt="calc" width="200px" />
+          <!-- imagem do projeto -->
+          <figure class="left order-2">
+            <img src="img/forca.png" alt="forca" />
+            <a
+              class="width-768"
+              href="https://joaopedrosarmento.github.io/Projetos/calc/index.html"
+              >ver jogo da forca</a
+            >
           </figure>
-          <div class="sobre-projeto">
+          <!-- descrição do projeto -->
+          <div class="sobre-projeto order-1">
             <div class="projeto">
               <h2>Jogo da forca:</h2>
               <p>
                 Jogo da forca feito com: HTML, CSS e JavaScript. Opções de
-                inserir várias palavras, excluir todas as palavras e etc.
+                inserir várias palavras, excluír todas as palavras e etc.
               </p>
               <a
-                href="https://joaopedrosarmento.github.io/Projetos/jogoDaVelha/jogoDaVelha.html"
+                class="width-maior-que-768"
+                href="https://joaopedrosarmento.github.io/Projetos/calc/index.html"
                 >ver jogo da forca</a
               >
             </div>
@@ -111,8 +158,7 @@
         </div>
       </section>
     </main>
-    <footer>
-
-    </footer>
+    <!-- footer  -->
+    <footer id="footer"></footer>
   </body>
 </html>
