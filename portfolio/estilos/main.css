@@ -190,7 +190,8 @@ html {
   width: 50px;
   left: 0px;
   z-index: 1;
-  border-radius: 10px;
+  border-radius: 5px;
+  background: #fff;
 }
 
 .display-menu {
