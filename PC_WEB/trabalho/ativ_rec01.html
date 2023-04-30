@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./css/estilo.css" />
+    <title>PCWeb2022</title>
+    <script src="./script/index.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <img
+        src="/images/logo.jpg"
+        alt="Centro Federal de Educação Tecnológica do Rio de Janeiro Celso Suckow da Fonseca - CEFET/RJ"
+      />
+      <h1>
+        Centro Federal de Educação Tecnológica do Rio de Janeiro - Celso Suckow
+        da Fonseca
+      </h1>
+      <h3>Campus Nova Friburgo</h3>
+      <h4>Curso Técnico em Informática</h4>
+      <h4>Professor Rafael Escalfoni</h4>
+    </header>
+    <main>
+      <h4>Programação de Clientes Web</h4>
+      <p>
+        Leia os enunciados das questões com atenção. Responda à tarefa no MS
+        Teams com este arquivo completo.
+      </p>
+      <p>
+        Não altere o nome das variáveis no seu script. Seu script será testado
+        nesta página, sem adaptações.
+      </p>
+
+      <p>Boa sorte!</p>
+
+      <ol>
+        <li>
+          <h5>Computador de bordo</h5>
+          <p>
+            Um novo modelo de carro, super econômico foi lançado. Ele faz 20 km
+            com 1 litro de combustível, considere cada litro de combustível
+            custa R$ 7,00.
+          </p>
+          <p>
+            Faça um programa que pergunte ao usuário quanto de dinheiro ele tem
+            e em seguida diga quantos litros de combustível ele pode comprar e
+            quantos quilômetros o carro consegue andar com este tanto de
+            combustível.
+          </p>
+          <p>Seu script será usado no computador de bordo do carro.</p>
+          <fieldset>
+            <legend>Painel</legend>
+            <label>Informe quantos R$ dispõe</label>
+            <input id="q01-dinheiro" type="text" placeholder="999.99" />
+            <button id="q01-executar">Calcular</button>
+            <ul id="q01-result"></ul>
+          </fieldset>
+        </li>
+        <li>
+          <h5>Calculadora de IMC</h5>
+          <p>
+            O índice de massa corpórea (IMC) é o cálculo que demonstra se o
+            indivíduo está ou não em seu peso ideal. Esse cálculo é importante
+            para avaliar os riscos de obesidade e encontrar seu peso ideal.
+            Segundo o modelo, pessoas com IMC
+          </p>
+          <table>
+            <tr>
+              <th>Intervalos</th>
+              <th>Interpretação</th>
+            </tr>
+            <tr>
+              <td>abaixo de 18.5</td>
+              <td>abaixo do peso</td>
+            </tr>
+            <tr>
+              <td>entre 18.5 e 24.9</td>
+              <td>com peso normal</td>
+            </tr>
+            <tr>
+              <td>entre 25.0 e 29.9</td>
+              <td>levemente acima do peso</td>
+            </tr>
+            <tr>
+              <td>entre 30.0 e 34.9</td>
+              <td>Obesidade grau I</td>
+            </tr>
+            <tr>
+              <td>entre 35.0 e 39.9</td>
+              <td>Obesidade grau II (severa)</td>
+            </tr>
+            <tr>
+              <td>acima de 40</td>
+              <td>Obesidade grau III (mórbida)</td>
+            </tr>
+          </table>
+          <p>Implemente a calculadora de IMC abaixo</p>
+          <p>IMC = peso/(altura ^ 2)</p>
+          <fieldset>
+            <legend>Calculadora de IMC</legend>
+            <label>Informe o peso (KG)</label>
+            <input id="q02-peso" type="text" placeholder="999.99" />
+            <label>Informe a altura (m)</label>
+            <input id="q02-altura" type="text" placeholder="9.99" />
+            <button id="q02-executar">Calcular</button>
+            <ul id="q02-result"></ul>
+          </fieldset>
+        </li>
+        <li>
+          <h5>Cálculo de probabilidades</h5>
+          <p>
+            A probabilidade de dar um valor em um dado é 1/6 (uma em 6). Faça um
+            script em JavaScript que simule 1 milhão de lançamentos de dados e
+            mostre a frequência que deu para cada número.
+          </p>
+          <p>
+            Ao apertar o botão "Simular", seu programa deverá realizar 1 milhão
+            de lançamentos aleatórios e contabilizar a frequência para cada face
+            do dado.
+          </p>
+          <fieldset>
+            <legend>Simulador</legend>
+            <button id="q03-executar">Simular</button>
+            <p>Resposta:</p>
+            <table>
+              <tr>
+                <th>Face</th>
+                <th>Ocorrências</th>
+                <th>Frequência</th>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td class="face-ocorr-1 ocorrencia">
+                  160223<!-- substitua o valor exemplo pela sua resposta aqui -->
+                </td>
+                <td class="face-freq-1 freq">
+                  16.02%<!-- substitua o valor exemplo pela sua resposta aqui -->
+                </td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td class="face-ocorr-2 ocorrencia">
+                  169021<!-- substitua o valor exemplo pela sua resposta aqui -->
+                </td>
+                <td class="face-freq-2 freq">
+                  16.90%<!-- substitua o valor exemplo pela sua resposta aqui -->
+                </td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td class="face-ocorr-3 ocorrencia">
+                  171911<!-- substitua o valor exemplo pela sua resposta aqui -->
+                </td>
+                <td class="face-freq-3 freq">
+                  17.19%<!-- substitua o valor exemplo pela sua resposta aqui -->
+                </td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td class="face-ocorr-4 ocorrencia">
+                  162888<!-- substitua o valor exemplo pela sua resposta aqui -->
+                </td>
+                <td class="face-freq-4 freq">
+                  16.29%<!-- substitua o valor exemplo pela sua resposta aqui -->
+                </td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td class="face-ocorr-5 ocorrencia">
+                  165017<!-- substitua o valor exemplo pela sua resposta aqui -->
+                </td>
+                <td class="face-freq-5 freq">
+                  16.50%<!-- substitua o valor exemplo pela sua resposta aqui -->
+                </td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td class="face-ocorr-6 ocorrencia">
+                  171940<!-- substitua o valor exemplo pela sua resposta aqui -->
+                </td>
+                <td class="face-freq-6 freq">
+                  17.19%<!-- substitua o valor exemplo pela sua resposta aqui -->
+                </td>
+              </tr>
+            </table>
+          </fieldset>
+        </li>
+        <li>
+          <h5>Inversor de nomes</h5>
+          <p>
+            Faça um programa que peça ao usuário para digitar vários nomes. Ao
+            mandar executar, seu programa deve exibir os nomes digitados
+            invertidos (da última letra para a primeira).
+          </p>
+          <fieldset>
+            <legend>Nomes</legend>
+            <label>Insira um nome</label>
+            <input id="q04-nome" type="text" placeholder="Digite um nome" />
+            <button id="q04-add">Adicionar nome</button>
+            <h6>Lista de Nomes Digitados</h6>
+            <ul id="q04-nomes">
+              <li>Ana</li>
+              <li>Paulo</li>
+              <!--<li>Insira os nomes digitados nessa lista</li> -->
+            </ul>
+            <button id="q04-executar">Inverter</button>
+            <h6>Lista de Nomes Invertidos</h6>
+            <ul id="q04-nomes-invertidos">
+              <!--<li>Insira os nomes invertidos nessa lista</li> -->
+            </ul>
+          </fieldset>
+        </li>
+        <li>
+          <h5>Palíndromo</h5>
+          <p>
+            Faça um programa que verifique se uma palavra digitada é um
+            palíndromo.
+          </p>
+          <p>
+            <em
+              >Um palíndromo é uma palavra que quando invertida tem a mesma
+              escrita: ARARA, OVO, ANA...</em
+            >
+          </p>
+          <fieldset>
+            <legend>Palindromista</legend>
+            <label>Digite uma palavra</label>
+            <input
+              id="q05-palavra"
+              type="text"
+              placeholder="Digite uma palavra"
+            />
+            <button id="q05-executar">Testa Palíndromo</button>
+            <p id="q05-result"></p>
+          </fieldset>
+        </li>
+      </ol>
+    </main>
+  </body>
+</html>
