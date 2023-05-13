@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+  font-family: "Courier New", Courier, monospace, sans-serif, fantasy, cursive;
+  background: #1f1f1f;
+  color: #fff;
+}
+.main-grid {
+  display: grid;
+  height: 300px;
+}
+
+.div-grid {
+  display: grid;
+  gap: 20px;
+  place-items: center;
+}
+.div-grid pre {
+  font-size: larger;
+  line-height: 30px;
+}
+.div-dados{
+  display: grid;
+  gap: 20px;
+}
+input{
+    padding: 5px 10px;
+    color: #fff;
+    background: #1b1b1b;
+    border: 0;
+   font-size: 18px;
+}
+button{
+    cursor: pointer;
+    transition: linear 1s;
+    padding: 8px 15px;
+    border: 0;
+    background: #1b1b1b;
+    color: #fff;
+}
+textarea{
+  width: 500px;
+  height: 300px;
+  max-width: 500px;
+  background: #1b1b1b ;
+  color: #fff;
+  resize: none;
+}
+button:hover{
+    background: #6666;
+}
+
+#textArea{
+  background: #1b1b1b;
+  width: 400px;
+  min-height: 300px;
+}
