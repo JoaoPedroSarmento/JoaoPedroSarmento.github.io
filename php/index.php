@@ -9,10 +9,11 @@ function preencheGrau ( float $media , string &$grau ):void{
   else if ( $media > 4 ) $grau = "D";
   else $grau = "E"; 
 }
-$nota1 = 8.8;
-$nota2 = 9.4;
-$media = obtemMedia ( $nota1 , $nota2);
+$dados = $_POST;
+$nota1 = (float) $dados["nota1"];
+$nota2 = (float) $dados["nota2"];
+$media = obtemMedia ($nota1 , $nota2);
 $grau = "";
 preencheGrau($media ,$grau );
-echo "gRAU -> $grau,  média -> $media";
+echo "GRAU -> $grau,  MÉDIA -> $media";
 ?>
