@@ -1,75 +1,61 @@
-const teclasPermitidas = [
-  "0",
-  "1",
-  "2",
-  "3",
-  "4",
-  "5",
-  "6",
-  "7",
-  "8",
-  "9",
-  ".",
-  " ",
-  "+",
-  "-",
-  "*",
-  "/",
-  "(",
-  ")",
-];
+const input = document.getElementById("input");
+const inputResult = document.getElementById("result");
+const btnCopy = document.getElementById("copy");
+const allowedKeys = [" ", ".", "+","-","*","/","%", "(", ")","0","1", "2","3","4","5","6","7","8","9"];
+const main = document.querySelector("main")
 const root = document.querySelector(":root");
-const main = document.querySelector("main");
-const input = document.getElementById("input"); 
-const inputResultado = document.getElementById("result");
-input.addEventListener("keypress", (event) => {
-  event.preventDefault();
-  if (teclasPermitidas.includes(event.key)) {
-    return (input.value += event.key);
-  } else if (event.key == "Enter") {
-    return calculo();
-  }
+input.addEventListener("keydown", function (ev) {
+  ev.preventDefault();
+  return allowedKeys.includes(ev.key)
+    ? (input.value += ev.key)
+    : ev.key === "Backspace"
+    ? (input.value = input.value.slice(0, -1))
+    : ev.key === "Enter"
+    ? calcular()
+    : "";
 });
-
-function calculo() {
-  inputResultado.value = "Erro";
-  return (inputResultado.value = eval(input.value));
-}
-
-document.getElementById("clear").addEventListener("click", () => {
+document.getElementById("clear").addEventListener("click", function () {
   input.value = "";
   input.focus();
 });
-document.getElementById("igual").addEventListener("click", () => calculo());
 
-document.querySelectorAll(".Key").forEach((elemento) => {
-  elemento.addEventListener(
-    "click",
-    () => (input.value += elemento.textContent)
-  );
+document.querySelectorAll(".key").forEach(function (Button) {
+  Button.addEventListener("click", function (valor) {
+    return (input.value += Button.innerText) + Sound();
+  });
 });
-document
-  .getElementById("Copy")
-  .addEventListener("click", () =>
-    navigator.clipboard.writeText(inputResultado.value)
-  );
-function themeDark (){
-    main.dataset.theme = "dark";
-    root.style.setProperty("--bg-color" , "#242424");
-    root.style.setProperty("--primary-color" , "#ffffff");
-    root.style.setProperty("--secondary-color" , "#222222");
-}
-function themeLight (){
-    main.dataset.theme = "light";
-    root.style.setProperty("--bg-color" , "#ffffff");
-    root.style.setProperty("--primary-color" , "#242424");
-    root.style.setProperty("--secondary-color" , "#222222");
+document.getElementById("igual").addEventListener("click", function () {
+  return calcular();
+;
+});
+btnCopy.addEventListener("click", function () {
+  return navigator.clipboard.writeText(inputResult.value);
+});
+
+function calcular() {
+  inputResult.value = "Erro";
+  console.log(input.value);
+  btnCopy.style.cursor = "pointer";
+  return input.value === ""
+    ? inputResult.value
+    : (inputResult.value = eval(input.value));
 }
 
-document.getElementById("Toggle").addEventListener("click" , () => {
-    if(main.dataset.theme === "light"){
-        return themeDark();
-    }else{
-        return themeLight();
-    }
-})
+function themeDark() {
+  main.dataset.theme = "Dark";
+  root.style.setProperty("--bg-color", "#242424");
+  root.style.setProperty("--primary-color", "#ffffff");
+  root.style.setProperty("--secondary-color", "#222222");
+  document.querySelector("header h1").removeAttribute("style");
+}
+function themeLight() {
+  main.dataset.theme = "Light";
+  root.style.setProperty("--bg-color", "#fff");
+  root.style.setProperty("--primary-color", "#ddd   ");
+  root.style.setProperty("--secondary-color", "#242424");
+  document.querySelector("header h1").style.color = "#242424";
+}
+
+document.getElementById("Toggle").addEventListener("click", function () {
+  return main.dataset.theme === "Dark" ? themeLight() : themeDark();
+});
