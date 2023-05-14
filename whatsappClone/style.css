@@ -135,7 +135,7 @@ header {
 }
 @media (max-width: 900px) and (min-width: 500px) {
   #user {
-    flex-basis: 100% ;
+    flex-basis: 100%;
   }
   #abertura {
     display: none;
@@ -147,14 +147,14 @@ header {
 }
 
 @media (max-width: 500px) {
- #user{
-  flex-basis: 100%;
- }
-  #abertura{
+  #user {
+    flex-basis: 100%;
+  }
+  #abertura {
     display: none;
   }
   .search #input {
-    min-width: 100px;
+    max-width: 200px;
   }
 }
 
