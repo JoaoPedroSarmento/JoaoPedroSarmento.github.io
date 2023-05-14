@@ -1,0 +1,97 @@
+ @import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+
+body.dark-theme {
+  background-color: #1c1c1c;
+  color: #fff;
+}
+body.light-theme {
+  background-color: #fff;
+  color: #333;
+}
+body {
+  font-family: 'Karla', sans-serif;
+  transition: 1s background-color ease;
+}
+
+button {
+  background-color: #333;
+  color: #fff;
+  padding: 5px 10px;
+  border: 0;
+  cursor: pointer;
+}
+#input {
+  border: 0;
+  outline: 0;
+  color: #fff;
+  background-color: #333;
+  text-align: end;
+  padding: 5px 10px;
+}
+#game {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+#main {
+  display: grid;
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  border: 2px solid;
+  border-color: inherit;
+  font-size: 60px;
+  line-height: 100px;
+  cursor: pointer;
+  text-align: center;
+  margin: 5px;
+  background-color: inherit;
+  color: inherit;
+}
+
+div[data-game="false"] {
+  pointer-events: none;
+}
+
+div[data-game="true"] {
+  pointer-events: all;
+}
+.add-player {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.player {
+  font-size: 23px;
+}
+svg {
+  display: none;
+}
+.dark-theme svg {
+  display: block;
+  width: 50px;
+  cursor: pointer;
+}
+img {
+  display: none;
+}
+.light-theme img {
+  display: block;
+  width: 50px;
+}
+.toggle {
+  cursor: pointer;
+}

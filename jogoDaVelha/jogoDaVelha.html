@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Jogo da Velha</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body class="dark-theme">
+    <main id="main">
+      <section class="section add-player">
+        <label for="input">Adicionar jogador:</label>
+        <input type="text" id="input"  autocomplete="off"/>
+        <button id="add">adicionar</button>
+        <svg
+        class="toggle"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        fill="#FFFF00"
+        stroke="#FFFF00"
+        stroke-width="1"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <circle cx="12" cy="12" r="5"></circle>
+        <line x1="12" y1="1" x2="12" y2="3"></line>
+        <line x1="12" y1="21" x2="12" y2="23"></line>
+        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+        <line x1="1" y1="12" x2="3" y2="12"></line>
+        <line x1="21" y1="12" x2="23" y2="12"></line>
+        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+      </svg>
+        <img class="toggle" src="./img/lua.png" alt="lua">
+      </section>
+      <section class="section-players" id="players">
+        <p id="last-child"></p>
+      </section>
+      <section class="section section-game">
+        <div id="game" data-game="false">
+          <div class="row">
+            <div class="cell" id="cell-0" data-value="0"></div>
+            <div class="cell" id="cell-1" data-value="1"></div>
+            <div class="cell" id="cell-2" data-value="2"></div>
+          </div>
+          <div class="row">
+            <div class="cell" id="cell-3" data-value="3"></div>
+            <div class="cell" id="cell-4" data-value="4"></div>
+            <div class="cell" id="cell-5" data-value="5"></div>
+          </div>
+          <div class="row">
+            <div class="cell" id="cell-6" data-value="6"></div>
+            <div class="cell" id="cell-7" data-value="7"></div>
+            <div class="cell" id="cell-8" data-value="8"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
