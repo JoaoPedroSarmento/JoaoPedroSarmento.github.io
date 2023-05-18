@@ -1,0 +1,254 @@
+@charset "UTF-8";
+/* Fontes */
+@import url("/fontes/fontes.css");
+/* Funções para facilitar troca de cor */
+/* Zera tudo*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+  font-family: "Source Code Pro", "Chivo Mono", sans-serif;
+  color: #fff;
+}
+
+/* Mudando cor de fundo do scrollbar e width*/
+body::-webkit-scrollbar {
+  width: 7px;
+  height: 12px;
+  background: #1f1f1f;
+}
+
+/* Mudando cor de fundo do scroll*/
+body::-webkit-scrollbar-thumb {
+  background: #808080;
+  border-radius: 5px;
+}
+
+/* Leveza ao clicar em um link*/
+html {
+  scroll-behavior: smooth;
+}
+
+/* herdar display flex de vários elementos */
+.flex, #main .div-template-flex-inline, #main .section-template-flex, .section-background-image .button, .section-background-image .section-template-flex .div-template-flex, .section-background-image .section-template-flex, .section-background-image #header .nav-bar, .section-background-image #header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+}
+
+/* Definindo imagem de fundo e tamanho da sessão incial ao lado do header*/
+.section-background-image {
+  min-width: 800px;
+  background: url("/img/floresta.png") no-repeat;
+  background-size: cover;
+  /* Cabeçalho*/
+  /* Sessões */
+}
+.section-background-image #header {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  transition: background-color 0.5s linear;
+  justify-content: space-between;
+  gap: 20px;
+  background: rgba(0, 0, 0, 0.5764705882);
+  -webkit-backdrop-filter: blur(25px);
+          backdrop-filter: blur(25px);
+  -webkit-backdrop-filter: 35px;
+          backdrop-filter: 35px;
+  padding: 0px 20px;
+  height: 65px;
+  color: #fff;
+  /* Título principal*/
+  /* Navegação*/
+}
+.section-background-image #header h1 {
+  cursor: pointer;
+  transition: all 0.4s linear;
+}
+.section-background-image #header h1:hover {
+  transform: scale(1.07);
+}
+.section-background-image #header .nav-bar .list-links {
+  display: flex;
+  gap: 10px;
+  list-style: none;
+}
+.section-background-image #header .nav-bar .list-links a {
+  transition: all 0.4s linear;
+  text-decoration: none;
+  color: #fff;
+  padding: 10px;
+  background: #1f1f1f;
+}
+.section-background-image #header .nav-bar .list-links a:hover {
+  background: rgba(221, 221, 221, 0.8666666667);
+  color: #1f1f1f;
+}
+.section-background-image .section-template-flex {
+  gap: 3em;
+  padding: 40px;
+}
+.section-background-image .section-template-flex .div-template-flex {
+  transition: all 0.4s linear;
+  flex-direction: column;
+  background: rgba(0, 0, 0, 0.5764705882);
+  cursor: pointer;
+  -webkit-backdrop-filter: blur(30px);
+          backdrop-filter: blur(30px);
+  padding: 30px 20px;
+  border-radius: 5px;
+  gap: 10px;
+}
+.section-background-image .section-template-flex .div-template-flex:hover {
+  transform: scale(1.02);
+  -webkit-backdrop-filter: blur(0px);
+          backdrop-filter: blur(0px);
+}
+.section-background-image .padding {
+  padding: 120px;
+}
+.section-background-image .button {
+  width: 100%;
+}
+.section-background-image .button button {
+  transition: all 0.4s linear;
+  width: 200px;
+  max-width: 500px;
+  cursor: pointer;
+  background: rgba(5, 5, 5, 0.5411764706);
+  border: 0;
+  padding: 15px 50px;
+  color: #fff;
+}
+.section-background-image .button button:hover {
+  transform: scale(1.2);
+}
+
+/* main*/
+#main .section-template-flex {
+  min-width: 800px;
+  background: #1f1f1f;
+  color: #fff !important;
+  justify-content: end;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  color: #1b1b1b;
+}
+#main .div-template-flex-inline {
+  flex-wrap: nowrap;
+  align-items: start;
+  /* Sessão de projetos*/
+}
+#main .div-template-flex-inline figure img {
+  /* Definindo min e max de largura da imagem -> 500px*/
+  min-width: 500px;
+  max-width: 500px;
+  cursor: pointer;
+  border: 1px solid #fff;
+}
+#main .div-template-flex-inline .sobre-projeto {
+  width: 100%;
+}
+#main .div-template-flex-inline .sobre-projeto .projeto {
+  display: grid;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+#main .div-template-flex-inline .sobre-projeto .projeto .width-768 {
+  display: none;
+}
+#main a,
+#main .extend-a,
+#main figure a {
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  padding: 10px;
+  background: #1b1b1b;
+}
+#main figure a {
+  display: none;
+}
+
+/* menu ativado */
+.menu-disable {
+  display: none;
+}
+.menu-disable [alt=menu] {
+  position: relative;
+  width: 50px;
+  left: 0px;
+  z-index: 1;
+  border-radius: 10px;
+}
+
+/* Alterando o layout dos projetos para resoluções menores */
+/* Alterações  feitas em: .section-template-flex, .div-template-flex-inline */
+@media (max-width: 768px) {
+  .display-menu {
+    transition: all 0.4s;
+    width: 300px;
+    padding: 20px;
+    justify-content: center;
+    position: fixed;
+    top: 120px;
+    left: 30%;
+    background-color: #1b1b1b;
+    z-index: 1;
+    border-radius: 20px;
+  }
+  .display-menu .list-menu {
+    display: grid;
+    gap: 10px;
+    list-style: none;
+  }
+  .display-menu .list-menu a {
+    text-decoration: none;
+    color: #fff;
+  }
+  .menu-disable {
+    display: grid;
+    gap: 5px;
+  }
+  .menu-disable span {
+    padding: 1px;
+    background-color: #fff;
+    height: 1px;
+    width: 30px;
+  }
+  .list-links {
+    display: none !important;
+  }
+  .div-template-flex-inline {
+    /* !important para trocar o nowrap pro wrap */
+    flex-wrap: wrap !important;
+  }
+  /* Invertendo a ordem da imagerm com o texto, imagem para baixo (order-2) e texto para cima da imagem (order-1)*/
+  .order-1 {
+    order: 1;
+  }
+  .order-2 {
+    order: 2;
+  }
+  figure {
+    display: grid;
+    gap: 20px;
+  }
+  figure .width-768 {
+    display: block !important;
+  }
+  .width-maior-que-768 {
+    display: none;
+  }
+}/*# sourceMappingURL=main.css.map */
