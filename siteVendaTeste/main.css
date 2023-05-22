@@ -16,6 +16,24 @@ body {
   text-align: justify;
   min-height: 100vh;
   font-size: 17px;
+  overflow-y: hidden;
+}
+aside * , main *  {
+  transform: translateY(100%);
+  opacity: 0;
+  transition: opacity 0.5s, transform 0.5s;
+  animation: slideUp 1s forwards;
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 aside {
@@ -102,17 +120,13 @@ strong:hover {
 
 @media (max-width: 676px) {
   body {
+    overflow-y: scroll;
     flex-direction: column;
   }
   .icons {
     justify-content: flex-start;
-    padding: 5px;
+    padding: 10px;
     flex-direction: row;
   }
-  main {
-    order: 1;
-  }
-  aside {
-    order: 2;
-  }
+
 }
