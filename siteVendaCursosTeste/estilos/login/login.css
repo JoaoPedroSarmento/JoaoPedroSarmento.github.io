@@ -1,0 +1,33 @@
+@charset "UTF-8";
+@import url("../cadastro/cadastro.css");
+.container-login {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.container-login label {
+  color: var(--corTexto);
+}
+.container-login input[type=checkbox] {
+  position: relative;
+  display: inline-block;
+  top: 4px;
+  padding: 9px;
+  margin-right: 5px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-appearance: none;
+  background-color: #121212;
+  border: 1px solid #363739;
+}
+.container-login input[type=checkbox].checked::after {
+  content: "✔";
+  font-size: 14px;
+  position: absolute;
+  top: 0px;
+  left: 3px;
+  color: var(--corTitulo);
+}/*# sourceMappingURL=login.css.map */
