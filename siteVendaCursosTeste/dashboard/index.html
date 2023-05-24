@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LearnHub | dashboard</title>
+    <link rel="stylesheet" href="../estilos/dashboard/dashboard.css" />
+    <link rel="shortcut icon" href="../imagens/title.svg" type="image/x-icon" />
+    <script src="../scripts/dashboard.js" type="module" defer></script>
+  </head>
+  <body class="onload">
+    <div class="onload">
+      <h1>LearnHub</h1>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="48"
+        height="48"
+        viewBox="0 0 48 48"
+      >
+        <circle
+          cx="24"
+          cy="24"
+          r="22"
+          stroke="#1f1f1f"
+          stroke-width="4"
+          fill="none"
+        ></circle>
+        <path
+          d="M46 24A22 22 0 0 1 2 24"
+          stroke="#f64348"
+          stroke-width="2"
+          fill="none"
+        >
+          <animateTransform
+            attributeType="xml"
+            attributeName="transform"
+            type="rotate"
+            from="0 24 24"
+            to="360 24 24"
+            dur="0.8s"
+            repeatCount="indefinite"
+          />
+        </path>
+      </svg>
+    </div>
+    <aside id="aside">
+      <div class="icons">
+        <img src="../imagens/icon-home.svg" alt="home" data-page-atual="true" />
+        <img src="../imagens/icon-cursos.svg" alt="cursos">
+      </div>
+    </aside>
+    <main id="main">
+      <header id="header"></header>
+    </main>
+  </body>
+</html>

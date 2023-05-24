@@ -1,0 +1,26 @@
+body.onload {
+  color: var(--cor-texto-primario);
+  text-shadow: -5px 0px 5px var(--cor-vermelho-2),
+    -5px 0px 20px var(--cor-vermelho-1);
+  font-size: 22px;
+  cursor: pointer;
+}
+body.onload div.onload {
+  min-height: 100vh;
+  min-width: 100vw;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body.onload div.onload svg {
+  width: 400px;
+  height: 50px;
+}
+body.onload #header,
+body.onload #main,
+body.onload #footer,
+body.onload #aside {
+  display: none;
+}

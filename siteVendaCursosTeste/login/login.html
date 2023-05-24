@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="shortcut icon" href="../imagens/title.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="../estilos/login/login.css" />
+  </head>
+  <body>
+    <section class="logo">
+      <h1>LearnHub</h1>
+    </section>
+    <section class="login">
+      <div class="container-login">
+        <div class="acess creat">
+          <div class="acess-account">
+            <h2><a href="#">Acessar conta</a></h2>
+          </div>
+          <div class="creat-account">
+            <h2><a href="../cadastrar/cadastro.html">Criar conta</a></h2>
+          </div>
+        </div>
+        <form>
+          <div class="label">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" />
+          </div>
+          <div class="label">
+            <label for="senha">Senha</label>
+            <input type="password" id="senha" />
+          </div>
+          <div class="label-flex">
+            <input type="checkbox" id="check" />
+            <label for="check">Salvar informações</label>
+          </div>
+          <div class="button">
+            <button class="btn">Acessar conta</button>
+          </div>
+          <div class="password">
+            <a href="#" style="text-decoration: none"
+              ><p style="color: #fff; text-align: center">
+                Esqueceu sua senha?
+              </p></a
+            >
+          </div>
+        </form>
+      </div>
+    </section>
+    <script>
+      const inputCheck = document.querySelector("input[type='checkbox']");
+      inputCheck.addEventListener("click", () => {
+        inputCheck.classList.toggle("checked");
+      });
+    </script>
+  </body>
+</html>

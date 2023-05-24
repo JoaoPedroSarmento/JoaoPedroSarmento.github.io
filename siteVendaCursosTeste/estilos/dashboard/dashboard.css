@@ -1,0 +1,57 @@
+@import url("../variaveis/var.css");
+@import url("../onload/onload.css");
+@import url("../scroll/scroll.css");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--fonte);
+}
+
+body {
+  display: flex;
+  align-items: stretch;
+  justify-content: stretch;
+  background: var(--cor-fundo-principal);
+}
+body #main {
+  display: flex;
+  flex-grow: 1;
+}
+body #aside {
+  display: flex;
+  top: 0;
+  position: fixed;
+  width: 80px;
+  min-height: 100vh;
+  background: var(--cor-aside);
+}
+body #aside .icons {
+  display: flex;
+  min-height: 250px;
+  max-height: 250px;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  padding: 10px;
+}
+body #aside .icons img {
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+  cursor: pointer;
+  transition: 0.8s ease;
+}
+body #aside .icons img[data-page-atual=true] {
+  background: var(--cor-preto-5);
+  border-radius: 10px;
+}
+body #aside .icons img:hover {
+  background: var(--cor-preto-5);
+  border-radius: 10px;
+}
+body .onload {
+  display: none;
+}/*# sourceMappingURL=dashboard.css.map */
