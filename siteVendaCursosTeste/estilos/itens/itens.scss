@@ -1,0 +1,56 @@
+/* Itens */
+@import url("../variaveis/var.css");
+@mixin displayFlexItens {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+}
+.item-flex-1 {
+  @include displayFlexItens();
+  justify-content: center;
+  width: 200px;
+  background: var(--cor-preto-2);
+  border: 1px solid var(--cor-cinza-1);
+  border-radius: 5px;
+  height: 150px;
+  transition: 0.5s border-color ease;
+  &:hover {
+    border-color: var(--cor-vermelho-2);
+  }
+}
+.item-flex-2 {
+  @include displayFlexItens();
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  width: 200px;
+  height: 60px;
+  background: var(--cor-preto-1);
+  transition: 0.5s ease;
+  &:hover {
+    background: var(--cor-cinza-1);
+  }
+}
+
+.menu-item-flex-1 {
+  @include displayFlexItens();
+  border-top: 1px solid var(--cor-cinza-1);
+}
+.menu-item-flex-1:last-child {
+  border-bottom: 1px solid var(--cor-cinza-1);
+}
+
+.item-grid-1 {
+  display: grid;
+  width: 200px;
+  height: 300px;
+  border-radius: 5px;
+  background: var(--cor-preto-1);
+  .header-curso {
+    img {
+      width: 100%;
+      border-radius: 5px;
+    }
+  }
+}

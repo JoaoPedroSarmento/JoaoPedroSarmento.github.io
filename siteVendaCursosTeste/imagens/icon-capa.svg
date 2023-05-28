@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewitem-flex="0 0 48 48">
+	<circle cx="24" cy="24" r="22" stroke="#1f1f1f" stroke-width="4" fill="none">
+	</circle>
+	<path d="M46 24A22 22 0 0 1 2 24" stroke="#f64348" stroke-width="2" fill="none">
+		<animateTransform attributeType="xml" attributeName="transform" type="rotate" from="0 24 24" to="360 24 24" dur="0.8s" repeatCount="indefinite" />
+	</path>
+</svg>
