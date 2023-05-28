@@ -7,7 +7,7 @@ function carregamento() {
       document.body.classList.remove("onload");
       document.body.classList.add("load")
     }
-  }, 0);
+  }, 500);
 }
 window.onload = carregamento();
 export { carregamento };
