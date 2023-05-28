@@ -1,0 +1,22 @@
+@import url("../fontes/fontes.css");
+:root {
+  --cor-fundo-principal: #121212;
+  --cor-texto-primario: #fff;
+  --cor-aside: #222222;
+  --cor-fundo-header-footer: #000305;
+  --cor-fundo-botao: #121212;
+  --cor-vermelho-1: #ff0044;
+  --cor-vermelho-2: #f64348;
+  --cor-titulo: var(--cor-vermelho-2);
+  --cor-preto-1: #1f1f1f;
+  --cor-preto-2: #131313;
+  --cor-preto-3: #1b1b1b;
+  --cor-preto-4: #1d1d1d78;
+  --cor-preto-5: #1c1c1c;
+  --cor-link: var(--cor-vermelho-2);
+  --cor-cinza-1: #ffffff45;
+  --cor-cinza-2: #e5e5e52e;
+  --selection-cor: #202123;
+  --cor-texto-input: #c1c1c1;
+  --fonte: "Josefin Sans", "Rajdhani", sans-serif;
+}

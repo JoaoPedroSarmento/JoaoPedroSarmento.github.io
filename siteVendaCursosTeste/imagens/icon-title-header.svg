@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="90" height="80">
+	<circle cx="90" cy="64" r="25" fill="#f64348" />
+	<text x="20px" y="70px" fill="#FFF" font-family="Josefin Sans" font-size="20" font-weight="bold" text-anchor="start">
+		CursosTech
+	</text>
+</svg>
