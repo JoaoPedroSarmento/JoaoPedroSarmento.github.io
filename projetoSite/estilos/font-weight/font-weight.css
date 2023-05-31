@@ -1,0 +1,30 @@
+/* Define o peso da fonte */
+.font-peso-100 {
+  font-weight: 100;
+}
+.font-peso-200 {
+  font-weight: 200;
+}
+.font-peso-300 {
+  font-weight: 300;
+}
+.font-peso-400 {
+  font-weight: 400;
+}
+
+.font-peso-500 {
+  font-weight: 500;
+}
+.font-peso-600 {
+  font-weight: 600;
+}
+.font-peso-700 {
+  font-weight: 700;
+}
+.font-peso-800 {
+  font-weight: 800;
+}
+
+.font-peso-900 {
+  font-weight: 900;
+}

@@ -1,0 +1,79 @@
+/* Importando todos os arquivos de estilização */
+/*alinhamento dos itens de flexbox ou grid */
+@import url("../align-self/align-self.css");
+@import url("../align-items/align-items.css");
+@import url("../justify-content/justify-content.css");
+/* ESPAÇAMENTO EM LINHA E COLUNA DE UM FLEXBOX OU GRID*/
+@import url("../gap/gap.css");
+/* PADDING E MARGIN */
+@import url("../padding/padding.css");
+/* CSS RESET */
+@import url("../cssReset/cssReset.css");
+/* DISPLAYS */
+@import url("../display/display.css");
+/*FONTES*/
+@import url("../fontes/fontes.css");
+/* POSITIONS */
+@import url("../positions/positions.css");
+/* ESTILO SCROLL*/
+@import url("../scroll/scroll.css");
+/* VARIÁVEIS */
+@import url("../variaveis/variaveis.css");
+/* CAPA */
+@import url("../capa/capa.css");
+/* BOTOES */
+@import url("../botoes/botao.css");
+/* ALINHAMENTO DO TEXTO */
+@import url("../text-align/text-align.css");
+/* DIFRENTES CORES PARA UM TEXTO */
+@import url("../text-color/text-color.css");
+/*PESO DA FONTE*/
+@import url("../font-weight/font-weight.css");
+/* DECORAÇÃO DO TEXTO */
+@import url("../text-decoration/text-decoration.css");
+/* ESTILOS DE LISTAS */
+@import url("../list-style/list-style.css");
+::selection {
+  background: var(--selection-cor);
+}
+body {
+  font-family: "Montserrat", "Arial";
+  background: var(--cor-fundo-principal);
+  color: var(--cor-texto);
+  min-width: 100vw;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+/* Definindo um minímo de largura*/
+header,
+footer,
+main {
+  min-width: 100vw;
+}
+/* Definindo a altura padrão do header e footer */
+header,
+footer {
+  min-height: 80px;
+  max-height: 80px;
+}
+/* Acrescentando uma borda ao header e footer*/
+header {
+  border-bottom: 1px solid var(--cor-borda-nav);
+}
+footer {
+  border-top: 1px solid var(--cor-borda-nav);
+}
+/* Cor header e footer */
+header,
+footer {
+  background: var(--cor-navegacao);
+}
+/* Main vai ocupar todo o espaço que sobrar*/
+main {
+  flex-grow: 1;
+}
+/* Toda imagem que estiver dentro de uma tag âncora terá este estilo:*/
+a img {
+  width: 50px;
+  height: 20px;
+}

@@ -1,0 +1,11 @@
+body:has(.capa) *:not(.capa, .capa *) {
+  /* Se o body tiver a capa, todos os elementos do body vão ter um display none,
+  menos a capa e todos os elementos que estiverem dentro da capa*/
+  display: none;
+}
+.capa {
+  min-width: 100vw;
+  min-height: 100vh;
+  background-color: var(--cor-fundo-principal);
+  color: #fff;
+}

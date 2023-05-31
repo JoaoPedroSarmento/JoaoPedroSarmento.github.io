@@ -1,0 +1,16 @@
+/* ESPAÇAMENTO EM LINHA E COLUNA DE UM FLEXBOX OU GRID */
+.gap-10 {
+  gap: 10px;
+}
+.gap-20 {
+  gap: 20px;
+}
+.gap-30 {
+  gap: 30px;
+}
+.gap-40 {
+  gap: 40px;
+}
+.gap-50 {
+  gap: 50px;
+}

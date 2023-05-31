@@ -1,0 +1,18 @@
+:root {
+  --cor-fundo-principal: #121212;
+  --cor-texto: #fff;
+  --cor-navegacao: #000305;
+  --cor-borda-nav: #ffffff45;
+  --vermelho-1: #ff0044;
+  --vermelho-2: #f64348;
+  --preto-1: #1f1f1f;
+  --preto-2: #131313;
+  --preto-3: #1b1b1b;
+  --preto-4: #1d1d1d78;
+  --preto-5: #1c1c1c;
+  --cinza-1: #ffffff45;
+  --cinza-2: #e5e5e52e;
+  --selection-cor: #202123;
+  --cor-texto-input: #c1c1c1;
+  --fonte: "Raleway", "Josefin Sans", "Rajdhani", sans-serif;
+}
