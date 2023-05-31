@@ -54,7 +54,6 @@ main {
 header,
 footer {
   min-height: 80px;
-  max-height: 80px;
 }
 /* Acrescentando uma borda ao header e footer*/
 header {
