@@ -1,0 +1,5 @@
+Tudo que necessita ser feito:
+
+Escolher logo e nome para o site;
+escolher um layout e cores para o site;
+criar pastas para os estilos do header, main e footer;
