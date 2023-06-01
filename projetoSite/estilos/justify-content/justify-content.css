@@ -23,3 +23,13 @@
 .justify-content-inherit {
   justify-content: inherit;
 }
+
+.justify-content-space-between-media-query-center {
+  justify-content: space-between;
+}
+
+@media (max-width: 500px) {
+  .justify-content-space-between-media-query-center {
+    justify-content: center;
+  }
+}

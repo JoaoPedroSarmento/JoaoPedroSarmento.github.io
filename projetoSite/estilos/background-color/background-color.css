@@ -1,0 +1,25 @@
+/* DEFININDO CORES DE FUNDO DE UM ITEM*/
+.bg-preto-1 {
+  background-color: var(--preto-1);
+}
+.bg-preto-2 {
+  background-color: var(--preto-2);
+}
+.bg-preto-3 {
+  background-color: var(--preto-3);
+}
+.bg-preto-4 {
+  background-color: var(--preto-4);
+}
+.bg-preto-5 {
+  background-color: var(--preto-5);
+}
+.bg-preto-6 {
+  background-color: var(--cor-navegacao);
+}
+.bg-cinza-1 {
+  background-color: var(--cinza-1);
+}
+.bg-cinza-2 {
+  background-color: var(--cinza-2);
+}

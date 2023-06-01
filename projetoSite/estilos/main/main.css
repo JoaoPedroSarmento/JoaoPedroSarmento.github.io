@@ -7,6 +7,7 @@
 @import url("../gap/gap.css");
 /* PADDING E MARGIN */
 @import url("../padding/padding.css");
+@import url("../margin/margin.css");
 /* CSS RESET */
 @import url("../cssReset/cssReset.css");
 /* DISPLAYS */
@@ -33,6 +34,16 @@
 @import url("../text-decoration/text-decoration.css");
 /* ESTILOS DE LISTAS */
 @import url("../list-style/list-style.css");
+/* LARGURA E ALTURA DE UM ITEM*/
+@import url("../width/width.css");
+/*CORES DE FUNDO*/
+@import url("../background-color/background-color.css");
+/* Estilos do item de um container*/
+@import url("../containerContent/containerContent.css");
+/* DIFERENTES TIPOS DE FONTES*/
+@import url("../font-family/font-family.css");
+/* BORDAS */
+@import url("../borda/borda.css");
 ::selection {
   background: var(--selection-cor);
 }
