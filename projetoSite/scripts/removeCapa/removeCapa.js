@@ -10,6 +10,6 @@ export function removendoCapa() {
       clearInterval(intervalo); // Parando com o loop
     }
     tempo += 1;
-  }, 0); // a cada 1 segundo executa o código passado
+  }, 1000); // a cada 1 segundo executa o código passado
 }
 // função exportada!!
