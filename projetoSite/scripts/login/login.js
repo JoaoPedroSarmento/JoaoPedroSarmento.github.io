@@ -1,24 +1,19 @@
 import { removecapa } from "../removeCapa/removeCapa.js"; // Importando função para remover capa
 window.onload = removecapa(); // removendo a capa quando a página for carregada
-
+const inputCheckBox = document.querySelector("input[type='checkbox']") || null;
+const inputSenha = document.getElementById("input-senha") || null;
 function ativaEDesativaCheckbox() {
-  const inputCheckBox = document.querySelector("input[type='checkbox']");
   inputCheckBox.classList.toggle("active");
 }
 
-function mostrarSenha() {
-  const inputSenha = document.getElementById("input-senha");
-  if (inputSenha.type === "text") {
-    inputSenha.type = "password";
-  } else {
-    inputSenha.type = "text";
-  }
+export function mostraSenha() {
+  inputSenha.type = inputSenha.type === "text" ? "password" : "text";
+  inputSenha.focus();
+}
+if (inputCheckBox) {
+  inputCheckBox.addEventListener("click", ativaEDesativaCheckbox);
 }
 
-document
-  .querySelector("input[type='checkbox']")
-  .addEventListener("click", ativaEDesativaCheckbox);
-
-document
-  .querySelector(".input-password img")
-  .addEventListener("click", mostrarSenha);
+if (inputSenha) {
+  inputSenha.addEventListener("click", mostraSenha);
+}

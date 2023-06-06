@@ -44,6 +44,9 @@ a {
   color: var(--branco-1);
 }
 
+.fa-eye {
+  cursor: pointer;
+}
 input[type="checkbox"] {
   position: relative;
   display: inline-block;

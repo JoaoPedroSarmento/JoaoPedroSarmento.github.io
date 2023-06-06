@@ -9,7 +9,11 @@
       rel="stylesheet"
       href="../estilos/login-criar-conta/login-criar-conta.css"
     />
-    <script src="../scripts/main/main.js" type="module" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <script src="../scripts/criarConta/criarConta.js" type="module" defer></script>
   </head>
   <body>
     <!-- capa -->
@@ -39,7 +43,16 @@
         </div>
         <div class="display-flex-column gap-10">
           <label for="input-senha">Senha:</label>
-          <input type="password" name="senha" id="input-senha" class="pd-10" />
+          <div
+            class="input-password display-flex-row-nowrap align-items-center gap-20 pd-10"
+          >
+            <input
+              type="password"
+              name="senha"
+              id="input-senha"
+            />
+            <i class="fas fa-eye"></i>
+          </div>
         </div>
         <div
           class="display-flex-column gap-10 justify-content-center align-items-center"
