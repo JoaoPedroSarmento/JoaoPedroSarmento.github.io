@@ -33,3 +33,8 @@
     justify-content: center;
   }
 }
+@media (max-width: 768px) {
+  .justify-content-center-media-query-768px {
+    justify-content: center;
+  }
+}

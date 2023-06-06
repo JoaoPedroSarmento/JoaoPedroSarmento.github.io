@@ -13,6 +13,32 @@
   border-radius: 5px;
   border: 1px solid var(--cinza-2);
 }
+.container-content-drop-dow-menu {
+  width: 95%;
+  height: 40px;
+  border-top: inherit;
+}
+.container-content-drop-dow-menu:last-child {
+  border-bottom: inherit;
+}
+
+.container-content-3 {
+  cursor: pointer;
+  border-radius: 5px;
+  width: 200px;
+  height: 60px;
+  background: var(--preto-1);
+  transition: 0.5s ease;
+}
+.container-content-3:hover {
+  background: var(--cinza-2);
+}
+.container-content-4 {
+  width: 200px;
+  height: 300px;
+  border-radius: 5px;
+  background: var(--preto-1);
+}
 .container-content-1,
 .container-content-2 {
   transition: 0.8s ease;

@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Painel || [nome]</title>
+    <link rel="stylesheet" href="../estilos/painel/painel.css" />
+    <script src="../scripts/painel/painel.js" type="module" defer></script>
+  </head>
+  <body class="display-flex-column justify-content-space-between">
+    <!-- capa -->
+    <div
+      class="capa display-flex-column justify-content-center align-items-center gap-20"
+    >
+      <h1>[Nome]</h1>
+      <img src="../imagens/capa.svg" alt="capa" />
+    </div>
+    <!-- header -->
+    <header
+      class="position-fixed display-flex-row-nowrap justify-content-space-between align-items-center pd-20"
+    >
+      <div class="titulo">
+        <h1>[nome]</h1>
+      </div>
+      <div class="display-flex-row-nowrap align-items-center gap-10">
+        <div class="search">
+          <img src="../imagens/icon-search.svg" alt="pesquisar" />
+        </div>
+        <div
+          id="drop-down-menu"
+          class="display-flex-row-nowrap align-items-center gap-10 bg-preto-3"
+        >
+          <img src="../imagens/usuario.jpg" alt="foto usuário" />
+          <img src="../imagens/seta-drop-down-menu.svg" alt="menu" />
+        </div>
+      </div>
+    </header>
+    <!--  seção do drop dow menu -->
+    <section
+      class="position-fixed display-none justify-content-center pd-10 drop-down-menu"
+    >
+      <div
+        class="container-content-drop-dow-menu display-flex-row-nowrap align-items-center pd-20 font-peso-900"
+      >
+        <a href="#" class="text-decoration-none font-peso-900 branco-1"
+          >Perfil</a
+        >
+      </div>
+      <div
+        class="container-content-drop-dow-menu display-flex-row-nowrap align-items-center pd-20 font-peso-900"
+      >
+        <a href="#" class="text-decoration-none font-peso-900 branco-1"
+          >mais informações</a
+        >
+      </div>
+      <div
+        class="container-content-drop-dow-menu display-flex-row-nowrap align-items-center pd-20 font-peso-900"
+      >
+        <a href="#" class="text-decoration-none font-peso-900 branco-1"
+          >Grupos</a
+        >
+      </div>
+      <div
+        class="container-content-drop-dow-menu display-flex-row-nowrap align-items-center pd-20 font-peso-900"
+      >
+        <a href="#" class="text-decoration-none font-peso-900 branco-1">Sair</a>
+      </div>
+    </section>
+    <!-- seção de  pesquisa -->
+    <section
+      class="display-flex-row-nowrap justify-content-center align-items-center height-100vh desativado-search display-none gap-20 pd-20"
+    >
+      <div class="input display-flex-row-nowrap gap-10">
+        <input type="text" id="pesquisar" placeholder="pesquisar..." />
+        <img src="../imagens/icon-search.svg" alt="pesquisar" />
+      </div>
+      <div class="fechar">
+        <img src="../imagens/fechar.svg" alt="fechar pesquisa" />
+      </div>
+    </section>
+    <main class="display-flex-column">
+      <section class="display-flex-column gap-10 pd-10">
+        <h1>Acesso rápido:</h1>
+        <div
+          class="display-flex-row-wrap justify-content-center-media-query-768px gap-30 mg-20"
+        >
+          <div
+            class="container-content-3 display-flex-row-nowrap justify-content-center align-items-center"
+          >
+            <h1>Meus cursos</h1>
+          </div>
+          <div
+            class="container-content-3 display-flex-row-nowrap justify-content-center align-items-center"
+          >
+            <h1>Meus cursos</h1>
+          </div>
+          <div
+            class="container-content-3 display-flex-row-nowrap justify-content-center align-items-center"
+          >
+            <h1>Meus cursos</h1>
+          </div>
+          <div
+            class="container-content-3 display-flex-row-nowrap justify-content-center align-items-center"
+          >
+            <h1>Meus cursos</h1>
+          </div>
+        </div>
+      </section>
+      <!-- seção -->
+      <section class="display-flex-column gap-10 pd-10">
+        <h1>Cursos disponíveis:</h1>
+        <!-- container  -->
+        <div class="display-flex-row-wrap justify-content-center gap-10 mg-20">
+          <div class="container-content-4 display-grid gap-20">
+            <div class="header-container">
+              <img src="../imagens/js.jpg" alt="js" />
+            </div>
+            <div class="main-container mg-10">
+              <h2>Curso javaScript</h2>
+            </div>
+            <div
+              class="footer-container display-flex-column justify-content-center align-items-center pd-20"
+            >
+              <h1 class="vermelho-1">assitir</h1>
+            </div>
+          </div>
+          <div class="container-content-4 display-grid gap-20">
+            <div class="header-container">
+              <img src="../imagens/js.jpg" alt="js" />
+            </div>
+            <div class="main-container mg-10">
+              <h2>Curso javaScript</h2>
+            </div>
+            <div
+              class="footer-container display-flex-column justify-content-center align-items-center pd-20"
+            >
+              <h1 class="vermelho-1">assitir</h1>
+            </div>
+          </div>
+          <div class="container-content-4 display-grid gap-20">
+            <div class="header-container">
+              <img src="../imagens/js.jpg" alt="js" />
+            </div>
+            <div class="main-container mg-10">
+              <h2>Curso javaScript</h2>
+            </div>
+            <div
+              class="footer-container display-flex-column justify-content-center align-items-center pd-20"
+            >
+              <h1 class="vermelho-1">assitir</h1>
+            </div>
+          </div>
+          <div class="container-content-4 display-grid gap-20">
+            <div class="header-container">
+              <img src="../imagens/js.jpg" alt="js" />
+            </div>
+            <div class="main-container mg-10">
+              <h2>Curso javaScript</h2>
+            </div>
+            <div
+              class="footer-container display-flex-column justify-content-center align-items-center pd-20"
+            >
+              <h1 class="vermelho-1">assitir</h1>
+            </div>
+          </div>
+          <div class="container-content-4 display-grid gap-20">
+            <div class="header-container">
+              <img src="../imagens/js.jpg" alt="js" />
+            </div>
+            <div class="main-container mg-10">
+              <h2>Curso javaScript</h2>
+            </div>
+            <div
+              class="footer-container display-flex-column justify-content-center align-items-center pd-20"
+            >
+              <h1 class="vermelho-1">assitir</h1>
+            </div>
+          </div>
+          <div class="container-content-4 display-grid gap-20">
+            <div class="header-container">
+              <img src="../imagens/js.jpg" alt="js" />
+            </div>
+            <div class="main-container mg-10">
+              <h2>Curso javaScript</h2>
+            </div>
+            <div
+              class="footer-container display-flex-column justify-content-center align-items-center pd-20"
+            >
+              <h1 class="vermelho-1">assitir</h1>
+            </div>
+          </div>
+        </div>
+        <!-- container  -->
+        <div class="display-flex-row-wrap justify-content-center gap-10 mg-20">
+          <div class="container-content-4 display-grid gap-20">
+            <div class="header-container">
+              <img src="../imagens/js.jpg" alt="js" />
+            </div>
+            <div class="main-container mg-10">
+              <h2>Curso javaScript</h2>
+            </div>
+            <div
+              class="footer-container display-flex-column justify-content-center align-items-center pd-20"
+            >
+              <h1 class="vermelho-1">assitir</h1>
+            </div>
+          </div>
+          <div class="container-content-4 display-grid gap-20">
+            <div class="header-container">
+              <img src="../imagens/js.jpg" alt="js" />
+            </div>
+            <div class="main-container mg-10">
+              <h2>Curso javaScript</h2>
+            </div>
+            <div
+              class="footer-container display-flex-column justify-content-center align-items-center pd-20"
+            >
+              <h1 class="vermelho-1">assitir</h1>
+            </div>
+          </div>
+          <div class="container-content-4 display-grid gap-20">
+            <div class="header-container">
+              <img src="../imagens/js.jpg" alt="js" />
+            </div>
+            <div class="main-container mg-10">
+              <h2>Curso javaScript</h2>
+            </div>
+            <div
+              class="footer-container display-flex-column justify-content-center align-items-center pd-20"
+            >
+              <h1 class="vermelho-1">assitir</h1>
+            </div>
+          </div>
+          <div class="container-content-4 display-grid gap-20">
+            <div class="header-container">
+              <img src="../imagens/js.jpg" alt="js" />
+            </div>
+            <div class="main-container mg-10">
+              <h2>Curso javaScript</h2>
+            </div>
+            <div
+              class="footer-container display-flex-column justify-content-center align-items-center pd-20"
+            >
+              <h1 class="vermelho-1">assitir</h1>
+            </div>
+          </div>
+          <div class="container-content-4 display-grid gap-20">
+            <div class="header-container">
+              <img src="../imagens/js.jpg" alt="js" />
+            </div>
+            <div class="main-container mg-10">
+              <h2>Curso javaScript</h2>
+            </div>
+            <div
+              class="footer-container display-flex-column justify-content-center align-items-center pd-20"
+            >
+              <h1 class="vermelho-1">assitir</h1>
+            </div>
+          </div>
+          <div class="container-content-4 display-grid gap-20">
+            <div class="header-container">
+              <img src="../imagens/js.jpg" alt="js" />
+            </div>
+            <div class="main-container mg-10">
+              <h2>Curso javaScript</h2>
+            </div>
+            <div
+              class="footer-container display-flex-column justify-content-center align-items-center pd-20"
+            >
+              <h1 class="vermelho-1">assitir</h1>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- footer  -->
+    <footer
+      class="display-flex-row-wrap justify-content-space-evenly gap-40 pd-30"
+    >
+      <div class="termos">
+        <ul class="display-flex-row-nowrap gap-10 list-style-none">
+          <li>
+            <a
+              href="#"
+              class="text-decoration-none branco-1"
+              title="Termos de uso"
+              >Termos de uso</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="text-decoration-none branco-1"
+              title="Política e privacidade"
+              >Política e privacidade</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="icones display-flex-row-nowrap gap-10">
+        <a href="#" title="instagram">
+          <img src="../imagens/icon-instagram.svg" alt="instagram" />
+        </a>
+        <a href="#" title="youtube">
+          <img src="../imagens/icon-youtube.svg" alt="youtube" />
+        </a>
+        <a href="#" title="linkedin">
+          <img src="../imagens/icon-likedin.svg" alt="linkedim"
+        /></a>
+      </div>
+    </footer>
+  </body>
+</html>

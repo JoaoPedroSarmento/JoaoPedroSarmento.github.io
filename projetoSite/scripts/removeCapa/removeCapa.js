@@ -1,4 +1,4 @@
-export function removendoCapa() {
+export function removecapa() {
   let tempo = 0;
   const intervalo = setInterval(() => {
     if (tempo === 1) {
@@ -10,6 +10,6 @@ export function removendoCapa() {
       clearInterval(intervalo); // Parando com o loop
     }
     tempo += 1;
-  }, 0); // a cada 1 segundo executa o código passado
+  }, 500); // a cada 1 segundo executa o código passado
 }
 // função exportada!!

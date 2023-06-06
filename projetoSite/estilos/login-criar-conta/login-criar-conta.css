@@ -1,0 +1,29 @@
+@import url("../main/main.css");
+
+input {
+  width: 100%;
+  background: var(--preto-3);
+  border: 0;
+  height: 35px;
+  outline: 0;
+  font-size: 18px;
+  color: #fff;
+}
+
+main > :first-child {
+  width: 50%;
+  border-right: 1px solid var(--cinza-1);
+}
+
+@media (max-width: 700px) {
+  main > :first-child {
+    width: 100vw;
+    height: 100vh;
+    border-right: 0;
+    border-top: 1px solid var(--cinza-1);
+    order: 2;
+  }
+}
+a {
+  color: var(--branco-1);
+}

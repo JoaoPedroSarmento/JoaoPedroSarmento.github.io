@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link
+      rel="stylesheet"
+      href="../estilos/login-criar-conta/login-criar-conta.css"
+    />
+    <script src="../scripts/main/main.js" type="module" defer></script>
+  </head>
+  <body class="display-flex-row-nowrap height-100vh">
+    <!-- capa -->
+    <div
+      class="capa display-flex-column justify-content-center align-items-center gap-20"
+    >
+      <h1>[Nome]</h1>
+      <img src="../imagens/capa.svg" alt="capa" />
+    </div>
+    <!-- main-->
+    <main class="display-flex-row-wrap justify-content-stretch height-100vh">
+      <section
+        class="display-flex-column align-items-center justify-content-center bg-cinza-2"
+      >
+        <h1>[Nome]</h1>
+      </section>
+      <section
+        class="display-flex-column justify-content-space-evenly pd-50 gap-20 flex-grow"
+      >
+        <div class="display-flex-column gap-10">
+          <label for="input-email">E-mail:</label>
+          <input type="email" name="email" id="input-email" class="pd-10" />
+        </div>
+        <div class="display-flex-column gap-10">
+          <label for="input-senha">Senha:</label>
+          <input type="password" name="senha" id="input-senha" class="pd-10" />
+        </div>
+        <div
+          class="display-flex-column gap-10 justify-content-center align-items-center"
+        >
+          <button class="btn btn-3">entrar</button>
+          <a href="#" class="text-decoration-none">esqueceu sua senha?</a>
+          <a href="../criarConta/criarConta.html" class="text-decoration-none"
+            >criar conta</a
+          >
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

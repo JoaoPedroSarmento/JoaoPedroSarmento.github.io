@@ -19,7 +19,7 @@
 /* ESTILO SCROLL*/
 @import url("../scroll/scroll.css");
 /* VARIÁVEIS */
-@import url("../variaveis/variaveis.css");
+@import url("../root/root.css");
 /* CAPA */
 @import url("../capa/capa.css");
 /* BOTOES */
@@ -36,6 +36,7 @@
 @import url("../list-style/list-style.css");
 /* LARGURA E ALTURA DE UM ITEM*/
 @import url("../width/width.css");
+@import url("../height/height.css");
 /*CORES DE FUNDO*/
 @import url("../background-color/background-color.css");
 /* Estilos do item de um container*/
@@ -44,11 +45,14 @@
 @import url("../font-family/font-family.css");
 /* BORDAS */
 @import url("../borda/borda.css");
+@import url("../font-size-elementos/font-size-elementos.css");
+/* FLEX */
+@import url("../flex/flex.css");
 ::selection {
   background: var(--selection-cor);
 }
 body {
-  font-family: "Montserrat", "Arial";
+  font-family: "Source Sans Pro", "Montserrat", "Arial";
   background: var(--cor-fundo-principal);
   color: var(--cor-texto);
   min-width: 100vw;
@@ -65,9 +69,11 @@ main {
 header,
 footer {
   min-height: 80px;
+  max-height: 80px;
 }
 /* Acrescentando uma borda ao header e footer*/
 header {
+  z-index: 1;
   border-bottom: 1px solid var(--cor-borda-nav);
 }
 footer {
@@ -78,12 +84,18 @@ header,
 footer {
   background: var(--cor-navegacao);
 }
-/* Main vai ocupar todo o espaço que sobrar*/
 main {
-  flex-grow: 1;
+  margin-top: 80px; /* se  não houver isso o main ficará sobre o header*/
 }
 /* Toda imagem que estiver dentro de uma tag âncora terá este estilo:*/
 a img {
   width: 50px;
   height: 20px;
+}
+
+@media (max-width: 500px) {
+  header,
+  footer {
+    max-height: max-content;
+  }
 }

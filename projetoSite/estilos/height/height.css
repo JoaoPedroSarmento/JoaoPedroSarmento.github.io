@@ -1,4 +1,4 @@
 /* Definindo altura de um item */
-.heigth-100vh {
-  height: 100vh;
+.height-100vh {
+  min-height: 100vh;
 }

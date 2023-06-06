@@ -1,0 +1,80 @@
+@import url("../main/main.css");
+
+body:has(.ativado-search) *:not(.ativado-search, .ativado-search *) {
+  display: none;
+}
+body:has(.ativado-search) {
+  background: var(--preto-3);
+}
+.search {
+  cursor: pointer;
+}
+#drop-down-menu {
+  border-radius: 18px;
+  padding-left: 5px;
+  padding-right: 5px;
+  height: 52px;
+}
+#drop-down-menu img:first-child {
+  width: 40px;
+  height: 40px;
+  border-radius: inherit;
+  pointer-events: none;
+}
+
+#drop-down-menu img:first-child + img {
+  cursor: pointer;
+}
+
+.drop-down-menu {
+  width: 200px;
+  right: 5px;
+  top: 90px;
+  z-index: 1;
+  border-radius: 10px;
+  border: 2px solid var(--cinza-2);
+  background: var(--cor-navegacao);
+}
+
+.input {
+  width: 300px;
+  height: 40px;
+  border-radius: 10px;
+  padding-right: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--preto-2);
+}
+
+.input input {
+  background: inherit;
+  color: var(--branco-1);
+  width: 100%;
+  border: none;
+  padding: 5px 20px;
+  outline: 0;
+  font-size: 15px;
+  font-weight: bold;
+}
+.input img,
+.fechar img {
+  cursor: pointer;
+}
+.fechar img {
+  width: 35px;
+  height: 35px;
+  background: var(--preto-2);
+  border-radius: 10px;
+}
+
+.header-container img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+
+.footer-container {
+  border-top: 1px solid var(--cinza-2);
+}
+

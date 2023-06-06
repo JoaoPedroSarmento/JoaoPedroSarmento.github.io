@@ -8,25 +8,29 @@
     <link rel="stylesheet" href="./estilos/main/main.css" />
     <script src="./scripts/main/main.js" type="module" defer></script>
   </head>
-  <body class="display-flex-column justify-content-space-between">
+  <body class="display-flex-column justify-content-stretch align-items-stretch">
     <!-- capa -->
     <div
       class="capa display-flex-column justify-content-center align-items-center gap-20"
     >
-      <h1>CursosTech</h1>
+      <h1>[Nome]</h1>
       <img src="./imagens/capa.svg" alt="capa" />
     </div>
     <!-- header -->
     <header
-      class="display-flex-row-wrap justify-content-space-between-media-query-center align-items-center gap-10 pd-30"
+      class="position-fixed display-flex-row-wrap justify-content-space-between-media-query-center align-items-center gap-10 pd-20"
     >
       <div class="titulo">
-        <h2>CursosTech</h2>
+        <h1>[Nome]</h1>
       </div>
-      <div class="display-flex-row-nowrap gap-10 links pd-10">
-        <a href="#" class="btn btn-nav text-align-center">Entrar</a>
-        <a href="#" class="btn btn-nav text-align-center">Criar conta</a>
-      </div>
+      <ul class="display-flex-row-nowrap list-style-none gap-10">
+        <li>
+          <a href="#" class="btn btn-nav">Entrar</a>
+        </li>
+        <li>
+          <a href="#" class="btn btn-nav">Criar conta</a>
+        </li>
+      </ul>
     </header>
     <!-- main -->
     <main
@@ -34,15 +38,16 @@
     >
       <!-- seção -->
       <section
-        class="display-flex-column align-items-center justify-content-center text-align-center gap-20 mg-20 font-work"
+        class="display-flex-column justify-content-center align-items-center text-align-center gap-20 mg-20"
       >
         <h1>
           {<span class="vermelho-2 font-peso-900">Venda</span>} e {<span
             class="vermelho-2 font-peso-900"
             >Compre</span
-          >} Cursos on-line!
+          >
+          } Cursos on-line!
         </h1>
-        <p>
+        <h2>
           Bem-vindo à nossa
           <span class="vermelho-2 font-peso-900">plataforma</span> de vendas de
           <span class="vermelho-2 font-peso-900">cursos</span>, onde oferecemos
@@ -54,7 +59,7 @@
           <span class="vermelho-2 font-peso-900">alcançar</span> seus
           <span class="vermelho-2 font-peso-900">objetivos</span> acadêmicos e
           profissionais.
-        </p>
+        </h2>
       </section>
       <!-- seção -->
       <section
@@ -115,7 +120,7 @@
         </div>
         <h3 class="font-peso-700">Plano gratuito:</h3>
         <div
-          class="display-flex-row-wrap justify-content-center align-items-center gap-10 text-align-center font-work"
+          class="display-flex-row-wrap justify-content-center align-items-center gap-10 text-align-center"
         >
           <div
             class="container-content-1 bg-preto-2 display-flex-row-wrap justify-content-center align-items-center pd-10"
@@ -146,7 +151,7 @@
           Plano <span class="vermelho-1">pago</span>:
         </h3>
         <div
-          class="display-flex-row-wrap justify-content-center align-items-center gap-10 text-align-center font-work"
+          class="display-flex-row-wrap justify-content-center align-items-center gap-10 text-align-center"
         >
           <div
             class="container-content-1 bg-preto-2 display-flex-row-wrap justify-content-center align-items-center pd-10"
@@ -174,7 +179,7 @@
           </div>
         </div>
         <div
-          class="display-flex-row-wrap justify-content-center align-items-center gap-10 text-align-center font-work"
+          class="display-flex-row-wrap justify-content-center align-items-center gap-10 text-align-center"
         >
           <div
             class="container-content-1 bg-preto-2 display-flex-row-wrap justify-content-center align-items-center pd-10"
@@ -194,17 +199,18 @@
           </div>
         </div>
       </section>
+      <!-- seção -->
       <section
-        class="display-flex-row-wrap justify-content-center align-items-center gap-20 pd-50"
+        class="display-flex-row-wrap justify-content-center align-items-center gap-20 pd-bottom-100"
       >
         <div
           class="display-flex-column container-content-2 justify-content-space-evenly align-items-center bg-preto-6"
         >
           <h1>Plano mensal</h1>
           <div class="display-flex-column gap-20 align-items-center">
-            <p class="font-peso-900">30R$/mês</p>
+            <h2 class="font-peso-900">R$30/mês</h2>
             <button class="btn btn-2">
-              <a href="#" class="text-decoration-none branco-1 font-work"
+              <a href="#" class="text-decoration-none branco-1"
                 >adquirir agora!</a
               >
             </button>
@@ -215,9 +221,9 @@
         >
           <h1>Plano anual</h1>
           <div class="display-flex-column gap-20 align-items-center">
-            <p class="font-peso-900">300R$/ano</p>
+            <h2 class="font-peso-900">R$300/ano</h2>
             <button class="btn btn-2">
-              <a href="#" class="text-decoration-none branco-1 font-work"
+              <a href="#" class="text-decoration-none branco-1"
                 >adquirir agora!</a
               >
             </button>
