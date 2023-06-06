@@ -1,18 +1,34 @@
 @import url("../main/main.css");
 
-input {
+input:not(input[type="checkbox"]),
+.input-password {
   width: 100%;
-  background: var(--preto-3);
+  background: var(--cor-fundo-principal);
   border: 0;
-  height: 35px;
+  height: 40px;
   outline: 0;
   font-size: 18px;
+  border-radius: 10px;
   color: #fff;
 }
-
+input[type="checkbox"].active::after {
+  content: "✔";
+  font-size: 14px;
+  position: absolute;
+  top: 0px;
+  left: 3px;
+  color: var(--vermelho-2);
+}
 main > :first-child {
   width: 50%;
   border-right: 1px solid var(--cinza-1);
+  background: var(--cor-fundo-principal);
+}
+main > :nth-child(2) {
+  background: var(--preto-6);
+}
+main {
+  margin: 0;
 }
 
 @media (max-width: 700px) {
@@ -26,4 +42,24 @@ main > :first-child {
 }
 a {
   color: var(--branco-1);
+}
+
+input[type="checkbox"] {
+  position: relative;
+  display: inline-block;
+  top: 4px;
+  padding: 9px;
+  margin-right: 5px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-appearance: none;
+  background-color: #121212;
+  border: 1px solid #363739;
+}
+
+.input-password img {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
 }
