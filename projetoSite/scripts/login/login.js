@@ -15,5 +15,5 @@ if (inputCheckBox) {
 }
 
 if (inputSenha) {
-  inputSenha.addEventListener("click", mostraSenha);
+  document.querySelector(".fa-eye").addEventListener("click", mostraSenha);
 }

@@ -7,6 +7,7 @@
     <title>Página inicial</title>
     <link rel="stylesheet" href="./estilos/main/main.css" />
     <script src="./scripts/main/main.js" type="module" defer></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
   </head>
   <body class="display-flex-column justify-content-stretch align-items-stretch">
     <!-- capa -->
@@ -18,86 +19,61 @@
     </div>
     <!-- header -->
     <header
-      class="position-fixed display-flex-row-wrap justify-content-space-between-media-query-center align-items-center gap-10 pd-20"
+      class="display-flex-row-wrap justify-content-space-between-media-query-center align-items-center gap-10 pd-20"
     >
       <div class="titulo">
         <h1>[Nome]</h1>
       </div>
-      <ul class="display-flex-row-nowrap list-style-none gap-10">
+      <ul
+        class="display-flex-row-nowrap list-style-none gap-10 align-self-center"
+      >
         <li>
-          <a href="#" class="btn btn-nav">Entrar</a>
+          <a href="./login/login.html" class="btn btn-nav">login</a>
         </li>
         <li>
-          <a href="#" class="btn btn-nav">Criar conta</a>
+          <a href="./criarConta/criarConta.html" class="btn btn-nav"
+            >Criar conta</a
+          >
         </li>
       </ul>
     </header>
+    <!-- div menu -->
+    <div
+      class="position-fixed display-flex-row-nowrap width-100vw justify-content-center mg-10 pd-20"
+    >
+      <div
+        class="menu display-flex-row-nowrap justify-content-center gap-20 align-items-center pd-10"
+      >
+        <button class="btn-menu">
+          <a href="./login/login.html" class="btn">login</a>
+        </button>
+        <button class="btn-menu">
+          <a href="./criarConta/criarConta.html" class="btn">Criar conta</a>
+        </button>
+      </div>
+    </div>
     <!-- main -->
     <main
       class="display-flex-column justify-content-stretch align-items-stretch gap-50"
     >
       <!-- seção -->
       <section
-        class="display-flex-column justify-content-center align-items-center text-align-center gap-20 mg-20"
+        class="height-100vh display-flex-column align-items-center justify-content-center gap-50 mg-20 pd-50"
       >
-        <h1>
-          {<span class="vermelho-2 font-peso-900">Venda</span>} e {<span
-            class="vermelho-2 font-peso-900"
-            >Compre</span
-          >
-          } Cursos on-line!
+        <h1 class="text-align-center font-size-big">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
+          cupiditate ut laboriosam maxime laudantium non labore nobis fugit
+          atque illum eveniet, delectus architecto et obcaecati debitis ea at
+          consequuntur voluptate facere! Nam, ducimus.
         </h1>
-        <h2>
-          Bem-vindo à nossa
-          <span class="vermelho-2 font-peso-900">plataforma</span> de vendas de
-          <span class="vermelho-2 font-peso-900">cursos</span>, onde oferecemos
-          uma experiência única de
-          <span class="vermelho-2 font-peso-900">estudo</span> dirigido e
-          <span class="vermelho-2 font-peso-900">organizado</span>! Aqui, você
-          encontrará tudo o que precisa para impulsionar o seu
-          <span class="vermelho-2 font-peso-900">aprendizado</span> e
-          <span class="vermelho-2 font-peso-900">alcançar</span> seus
-          <span class="vermelho-2 font-peso-900">objetivos</span> acadêmicos e
-          profissionais.
-        </h2>
-      </section>
-      <!-- seção -->
-      <section
-        class="display-flex-column align-items-center justify-content-center gap-20"
-      >
-        <div
-          class="display-flex-row-wrap align-items-center justify-content-center gap-20"
-        >
+        <div class="display-flex-row-wrap justify-content-center gap-20">
           <button class="btn-1 btn-2" title="Comece aqui!">
-            <a href="#" class="text-decoration-none branco-1 font-peso-700"
+            <a href="./painel/painel.html" class="text-decoration-none branco-1 font-peso-700"
               >Comece aqui!</a
             >
           </button>
-          <button class="btn-1" title="Vender cursos">
-            <a href="#" class="text-decoration-none branco-1 font-peso-700"
-              >Vender cursos</a
-            >
-          </button>
-        </div>
-        <div
-          class="display-flex-row-wrap align-items-center justify-content-center gap-20"
-        >
-          <button class="btn-1" title="Comprar cursos">
-            <a href="#" class="text-decoration-none branco-1 font-peso-700"
-              >Comprar cursos</a
-            >
-          </button>
-          <button class="btn-1" title="Saiba mais">
-            <a href="#" class="text-decoration-none branco-1 font-peso-700"
-              >Saiba mais</a
-            >
-          </button>
-        </div>
-        <div
-          class="display-flex-row-wrap align-items-center justify-content-center gap-20"
-        >
           <button class="btn-1" title="entrar">
-            <a href="#" class="text-decoration-none branco-1 font-peso-700"
+            <a href="./login/login.html" class="text-decoration-none branco-1 font-peso-700"
               >Entrar/Login</a
             >
           </button>
@@ -118,7 +94,7 @@
             <span class="vermelho-2 font-peso-900">carreira</span>!
           </h1>
         </div>
-        <h3 class="font-peso-700">Plano gratuito:</h3>
+        <h3 class="font-peso-700 text-align-center">Plano gratuito:</h3>
         <div
           class="display-flex-row-wrap justify-content-center align-items-center gap-10 text-align-center"
         >

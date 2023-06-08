@@ -15,8 +15,9 @@ function ativaEDesativaAbaDePesquisa() {
   sectionPesquisa.classList.toggle("ativado-search");
   sectionPesquisa.classList.toggle("display-none");
 }
+
 document
-  .getElementById("drop-down-menu")
+  .querySelector(".drop-down-menu-style")
   .addEventListener("click", ativaEDesativaDropwDownMenu);
 document
   .querySelector(".search")

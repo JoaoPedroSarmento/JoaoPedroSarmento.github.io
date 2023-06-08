@@ -9,28 +9,29 @@ body:has(.ativado-search) {
 .search {
   cursor: pointer;
 }
-#drop-down-menu {
+.drop-down-menu-style {
   border-radius: 18px;
   padding-left: 5px;
   padding-right: 5px;
   height: 52px;
 }
-#drop-down-menu img:first-child {
+.drop-down-menu-style img:first-child {
   width: 40px;
   height: 40px;
   border-radius: inherit;
   pointer-events: none;
 }
 
-#drop-down-menu img:first-child + img {
+.drop-down-menu img:first-child + img {
   cursor: pointer;
 }
 
 .drop-down-menu {
   width: 200px;
-  right: 5px;
-  top: 90px;
-  z-index: 1;
+  right: 10px;
+  top: 100px;
+  z-index: 22;
+  backdrop-filter: blur(200px);
   border-radius: 10px;
   border: 2px solid var(--cinza-2);
   background: var(--cor-navegacao);
@@ -78,3 +79,9 @@ body:has(.ativado-search) {
   border-top: 1px solid var(--cinza-2);
 }
 
+main {
+  margin-top: 80px; /* se não tiver isso o main ficara no topo ao lado do header*/
+}
+.menu{
+  padding: 5px;
+}

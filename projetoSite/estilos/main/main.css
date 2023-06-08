@@ -73,29 +73,48 @@ footer {
 }
 /* Acrescentando uma borda ao header e footer*/
 header {
-  z-index: 1;
-  border-bottom: 1px solid var(--cor-borda-nav);
+  z-index: 999;
 }
-footer {
-  border-top: 1px solid var(--cor-borda-nav);
-}
+
 /* Cor header e footer */
 header,
 footer {
-  background: var(--cor-navegacao);
+  background-color: var(--cor-navegacao);
+  backdrop-filter: blur(200px);
 }
-main {
-  margin-top: 80px; /* se  não houver isso o main ficará sobre o header*/
+
+.capa {
+  background-image: url("../../imagens/estrelas.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
+.capa {
+  animation: moveFundoParaCima 3s infinite forwards;
+}
+.animation-scroll {
+  animation: moveFundoParaCima 0.3s forwards;
+}
+
 /* Toda imagem que estiver dentro de uma tag âncora terá este estilo:*/
 a img {
   width: 50px;
   height: 20px;
 }
-
 @media (max-width: 500px) {
   header,
   footer {
     max-height: max-content;
   }
+}
+
+.menu {
+  z-index: 400;
+  width: 400px;
+  height: 40px;
+  -webkit-backdrop-filter: blur(16px);
+  backdrop-filter: blur(16px);
+  background-color: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 32px;
 }

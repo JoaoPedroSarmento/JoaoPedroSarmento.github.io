@@ -28,14 +28,14 @@
           <img src="../imagens/icon-search.svg" alt="pesquisar" />
         </div>
         <div
-          id="drop-down-menu"
-          class="display-flex-row-nowrap align-items-center gap-10 bg-preto-3"
+          class="display-flex-row-nowrap align-items-center gap-10 bg-preto-3 drop-down-menu-style"
         >
           <img src="../imagens/usuario.jpg" alt="foto usuário" />
           <img src="../imagens/seta-drop-down-menu.svg" alt="menu" />
         </div>
       </div>
     </header>
+
     <!--  seção do drop dow menu -->
     <section
       class="position-fixed display-none justify-content-center pd-10 drop-down-menu"
@@ -64,7 +64,12 @@
       <div
         class="container-content-drop-dow-menu display-flex-row-nowrap align-items-center pd-20 font-peso-900"
       >
-        <a href="#" class="text-decoration-none font-peso-900 branco-1">Sair</a>
+        <a
+          href="../login/login.html"
+          onclick="sairDaPagina()"
+          class="text-decoration-none font-peso-900 branco-1"
+          >Sair</a
+        >
       </div>
     </section>
     <!-- seção de  pesquisa -->
