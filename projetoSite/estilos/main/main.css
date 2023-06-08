@@ -83,18 +83,6 @@ footer {
   backdrop-filter: blur(200px);
 }
 
-.capa {
-  background-image: url("../../imagens/estrelas.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-.capa {
-  animation: moveFundoParaCima 3s infinite forwards;
-}
-.animation-scroll {
-  animation: moveFundoParaCima 0.3s forwards;
-}
 
 /* Toda imagem que estiver dentro de uma tag âncora terá este estilo:*/
 a img {

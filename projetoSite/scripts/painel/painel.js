@@ -15,6 +15,19 @@ function ativaEDesativaAbaDePesquisa() {
   sectionPesquisa.classList.toggle("ativado-search");
   sectionPesquisa.classList.toggle("display-none");
 }
+function sairDaPagina() {
+  const sair = window.confirm("DESEJA SAIR?");
+  if (sair) {
+    window.close();
+  }
+}
+
+const a = document.getElementById("sair");
+if (a) {
+  a.addEventListener("click", () => {
+    sairDaPagina();
+  });
+}
 
 document
   .querySelector(".drop-down-menu-style")
