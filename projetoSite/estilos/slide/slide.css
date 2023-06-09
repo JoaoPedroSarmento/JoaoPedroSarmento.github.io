@@ -1,5 +1,8 @@
 @import url("../root/root.css");
 
+#planos {
+  cursor: grab;
+}
 .slide.ativado {
   display: flex;
   flex-direction: column;
