@@ -48,21 +48,28 @@ function trocaSlidesComSeta() {
 
 function trocaSlidesComTouchMobile() {
   let startX = 0;
-  window.addEventListener("touchstart", (event) => {
+  let trocaRealizada = false; // Variável de controle
+
+  document.getElementById("planos").addEventListener("touchstart", (event) => {
     startX = event.touches[0].clientX;
+    trocaRealizada = false; // Reinicia a variável de controle no início do toque
   });
 
   document.getElementById("planos").addEventListener("touchmove", (event) => {
-    const currentX = event.touches[0].clientX;
-    if (currentX > startX) {
-      indiceAtual += 1;
-      verificaIndice();
-    } else if (currentX < startX) {
-      indiceAtual -= 1;
-      verificaIndice();
+    if (!trocaRealizada) {
+      // Verifica se a troca já foi realizada
+      const currentX = event.touches[0].clientX;
+      if (currentX > startX) {
+        indiceAtual += 1;
+        verificaIndice();
+      } else if (currentX < startX) {
+        indiceAtual -= 1;
+        verificaIndice();
+      }
+      trocaSlides(indiceAtual);
+      startX = currentX;
+      trocaRealizada = true; // Define a variável de controle para evitar trocas repetidas
     }
-    trocaSlides(indiceAtual);
-    startX = currentX;
   });
 }
 
