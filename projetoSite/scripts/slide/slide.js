@@ -52,7 +52,7 @@ function trocaSlidesComTouchMobile() {
     startX = event.touches[0].clientX;
   });
 
-  window.addEventListener("touchmove", (event) => {
+  document.getElementById("planos").addEventListener("touchmove", (event) => {
     const currentX = event.touches[0].clientX;
     if (currentX > startX) {
       indiceAtual += 1;
