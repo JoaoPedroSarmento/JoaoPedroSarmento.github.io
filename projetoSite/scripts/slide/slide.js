@@ -5,7 +5,6 @@ export function rodaSlides() {
   const bolas = document.querySelectorAll(".bola");
   trocaSlidesComSeta();
   trocaSlidesComTouchMobile();
-  trocaSlidesComCLique();
   bolas.forEach((bola, indice) => {
     bola.addEventListener("click", () => {
       trocaSlides(indice);
@@ -67,13 +66,6 @@ function trocaSlidesComTouchMobile() {
   });
 }
 
-function trocaSlidesComCLique() {
-  document.getElementById("planos").addEventListener("click", () => {
-    indiceAtual += 1;
-    verificaIndice();
-    trocaSlides(indiceAtual);
-  });
-}
 function verificaIndice() {
   const slides = document.querySelectorAll(".slide");
   if (indiceAtual < 0) {
