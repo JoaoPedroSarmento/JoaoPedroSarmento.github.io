@@ -5,9 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Página inicial</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
+    />
     <link rel="stylesheet" href="./estilos/main/main.css" />
     <script src="./scripts/main/main.js" type="module" defer></script>
-    <script src="https://unpkg.com/scrollreveal"></script>
   </head>
   <body class="display-flex-column justify-content-stretch align-items-stretch">
     <!-- capa -->
@@ -28,10 +31,23 @@
         class="display-flex-row-nowrap list-style-none gap-10 align-self-center"
       >
         <li>
-          <a href="./login/login.html" class="btn btn-nav">login</a>
+          <a
+            href="#planos"
+            aria-label="Ver planos, gratuito ou pago"
+            class="text-decoration-none branco-1"
+            >Planos</a
+          >
         </li>
         <li>
-          <a href="./criarConta/criarConta.html" class="btn btn-nav"
+          <a href="./login/login.html" aria-label="Entrar" class="btn btn-nav"
+            >Login</a
+          >
+        </li>
+        <li>
+          <a
+            href="./criarConta/criarConta.html"
+            aria-label="Criar conta"
+            class="btn btn-nav"
             >Criar conta</a
           >
         </li>
@@ -44,12 +60,21 @@
       <div
         class="menu display-flex-row-nowrap justify-content-center gap-20 align-items-center pd-10"
       >
-        <button class="btn-menu">
-          <a href="./login/login.html" class="btn">login</a>
-        </button>
-        <button class="btn-menu">
-          <a href="./criarConta/criarConta.html" class="btn">Criar conta</a>
-        </button>
+        <a
+          href="./login/login.html"
+          title="Login"
+          aria-label="Entrar"
+          class="btn-menu text-decoration-none branco-1 display-flex-row-nowrap justify-content-center align-items-center"
+          >Login</a
+        >
+
+        <a
+          href="./criarConta/criarConta.html"
+          title="Cria conta"
+          aria-label="Criar conta"
+          class="btn-menu text-decoration-none branco-1 display-flex-row-nowrap justify-content-center align-items-center"
+          >Criar conta</a
+        >
       </div>
     </div>
     <!-- main -->
@@ -57,127 +82,102 @@
       class="display-flex-column justify-content-stretch align-items-stretch gap-50"
     >
       <!-- seção -->
+
       <section
-        class="height-50vh display-flex-column align-items-center justify-content-center gap-50 mg-20 pd-50"
+        class="height-50vh display-flex-column align-items-center-media-query-600px justify-content-center gap-50 mg-20 pd-50"
       >
-        <h1 class="text-align-center font-size-big">
+        <h1 class="text-align-justify font-size-big">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
           cupiditate ut laboriosam maxime laudantium non labore nobis fugit
           atque illum eveniet, delectus architecto et obcaecati debitis ea at
           consequuntur voluptate facere! Nam, ducimus.
         </h1>
-        <div class="display-flex-row-wrap justify-content-center gap-20">
-          <button class="btn-1 btn-2" title="Comece aqui!">
-            <a href="./painel/painel.html" class="text-decoration-none branco-1 font-peso-700"
-              >Comece aqui!</a
-            >
-          </button>
-          <button class="btn-1" title="entrar">
-            <a href="./login/login.html" class="text-decoration-none branco-1 font-peso-700"
-              >Entrar/Login</a
-            >
-          </button>
+        <div
+          class="display-flex-row-wrap justify-content-center-media-query-600px gap-20"
+        >
+          <a
+            title="comece aqui!"
+            href="./painel/painel.html"
+            class="btn-2 display-flex-row-nowrap justify-content-center align-items-center text-decoration-none branco-1 font-peso-700"
+            >Comece aqui!</a
+          >
+
+          <a
+            href="./login/login.html"
+            class="display-flex-row-nowrap justify-content-center align-items-center btn-1 branco-1 font-peso-700"
+            >Entrar/Login</a
+          >
         </div>
       </section>
-      <!-- Seção -->
+      <!-- seção -->
       <section
-        class="display-flex-column bg-preto-3 pd-20 gap-20 bd-top bd-bottom bd-color-cinza-1"
+        id="planos"
+        class="display-flex-row-wrap bg-preto-2 justify-content-center align-items-center gap-20 pd-30"
       >
-        <div class="titulo">
-          <h1 class="text-align-center">
-            <span class="vermelho-2 font-peso-900">Aqui</span> você encontra
-            <span class="vermelho-2 font-peso-900">cursos</span> que você
-            <span class="vermelho-2 font-peso-900">precisa</span> para
-            <span class="vermelho-2 font-peso-900">alcançar</span> seus
-            <span class="vermelho-2 font-peso-900">objetivos</span>
-            e <span class="vermelho-2 font-peso-900">impulsionar</span> sua
-            <span class="vermelho-2 font-peso-900">carreira</span>!
-          </h1>
-        </div>
-        <h3 class="font-peso-700 text-align-center">Plano gratuito:</h3>
-        <div
-          class="display-flex-row-wrap justify-content-center align-items-center gap-10 text-align-center"
-        >
-          <div
-            class="container-content-1 bg-preto-2 display-flex-row-wrap justify-content-center align-items-center pd-10"
-          >
-            <p class="font-peso-500">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Doloremque esse ipsum odio.
-            </p>
-          </div>
-          <div
-            class="container-content-1 bg-preto-2 display-flex-row-wrap justify-content-center align-items-center pd-10"
-          >
+        <div class="slide-container display-flex-column gap-30">
+          <div class="slide ativado" data-index="1">
+            <h1>Sobre o plano gratuito:</h1>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
-              reiciendis illo impedit!
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
+              consequatur enim magni voluptas. Iste illum culpa ad distinctio
+              sed, maiores ipsam debitis.
             </p>
+            <div
+              class="display-flex-row-wrap justify-content-center align-items-center gap-20"
+            >
+              <div class="container-content-1 pd-20 text-align-center">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+              </div>
+              <div class="container-content-1 pd-20 text-align-center">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+              </div>
+              <div class="container-content-1 pd-20 text-align-center">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+              </div>
+              <div class="container-content-1 pd-20 text-align-center">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+              </div>
+            </div>
           </div>
-          <div
-            class="container-content-1 bg-preto-2 display-flex-row-wrap justify-content-center align-items-center pd-10"
-          >
+          <div class="slide desativado" data-index="2">
+            <h1>Sobre o plano pago:</h1>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Doloremque esse ipsum odio.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
+              consequatur enim magni voluptas. Iste illum culpa ad distinctio
+              sed, maiores ipsam debitis.
             </p>
-          </div>
-        </div>
-        <h3 class="font-peso-700">
-          Plano <span class="vermelho-1">pago</span>:
-        </h3>
-        <div
-          class="display-flex-row-wrap justify-content-center align-items-center gap-10 text-align-center"
-        >
-          <div
-            class="container-content-1 bg-preto-2 display-flex-row-wrap justify-content-center align-items-center pd-10"
-          >
-            <p class="font-peso-500">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Doloremque esse ipsum odio.
-            </p>
-          </div>
-          <div
-            class="container-content-1 bg-preto-2 display-flex-row-wrap justify-content-center align-items-center pd-10"
-          >
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Doloremque esse ipsum odio.
-            </p>
+            <div
+              class="display-flex-row-wrap justify-content-center align-items-center gap-20"
+            >
+              <div class="container-content-1 pd-20 text-align-center">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+              </div>
+              <div class="container-content-1 pd-20 text-align-center">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+              </div>
+              <div class="container-content-1 pd-20 text-align-center">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+              </div>
+              <div class="container-content-1 pd-20 text-align-center">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+              </div>
+            </div>
           </div>
           <div
-            class="container-content-1 bg-preto-2 display-flex-row-wrap justify-content-center align-items-center pd-10"
+            class="bolas display-flex-row-nowrap gap-10 justify-content-center align-items-center"
           >
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Doloremque esse ipsum odio.
-            </p>
-          </div>
-        </div>
-        <div
-          class="display-flex-row-wrap justify-content-center align-items-center gap-10 text-align-center"
-        >
-          <div
-            class="container-content-1 bg-preto-2 display-flex-row-wrap justify-content-center align-items-center pd-10"
-          >
-            <p class="font-peso-500">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Doloremque esse ipsum odio.
-            </p>
-          </div>
-          <div
-            class="container-content-1 bg-preto-2 display-flex-row-wrap justify-content-center align-items-center pd-10"
-          >
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Doloremque esse ipsum odio.
-            </p>
+            <a href="#planos">
+              <div class="bola ativado" data-index="1"></div>
+            </a>
+            <a href="#planos">
+              <div class="bola desativado" data-index="2"></div>
+            </a>
           </div>
         </div>
       </section>
       <!-- seção -->
       <section
-        class="display-flex-row-wrap justify-content-center align-items-center gap-20 pd-bottom-100"
+        class="display-flex-row-wrap bg-preto-1 justify-content-center align-items-center gap-20 pd-30"
       >
         <div
           class="display-flex-column container-content-2 justify-content-space-evenly align-items-center bg-preto-6"
@@ -185,11 +185,12 @@
           <h1>Plano mensal</h1>
           <div class="display-flex-column gap-20 align-items-center">
             <h2 class="font-peso-900">R$30/mês</h2>
-            <button class="btn btn-2">
-              <a href="#" class="text-decoration-none branco-1"
-                >adquirir agora!</a
-              >
-            </button>
+            <a
+              href="#"
+              aria-label="adquirir plano mensal por apenas 30 reais"
+              class="btn-2 display-flex-row-nowrap justify-content-center align-items-center text-decoration-none branco-1 font-peso-900"
+              >adquirir agora!</a
+            >
           </div>
         </div>
         <div
@@ -198,11 +199,13 @@
           <h1>Plano anual</h1>
           <div class="display-flex-column gap-20 align-items-center">
             <h2 class="font-peso-900">R$300/ano</h2>
-            <button class="btn btn-2">
-              <a href="#" class="text-decoration-none branco-1"
-                >adquirir agora!</a
-              >
-            </button>
+            <a
+              href="#"
+              title="adquirir agora!"
+              aria-label="adquirir plano anual por apenas 300 reais"
+              class="btn-2 display-flex-row-nowrap justify-content-center align-items-center text-decoration-none branco-1 font-peso-900"
+              >adquirir agora!</a
+            >
           </div>
         </div>
       </section>

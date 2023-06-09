@@ -15,3 +15,8 @@
 .align-items-inherit {
   align-items: inherit;
 }
+@media (max-width: 600px) {
+  .align-items-center-media-query-600px {
+    align-items: center;
+  }
+}

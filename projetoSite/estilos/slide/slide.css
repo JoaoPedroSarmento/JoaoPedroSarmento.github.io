@@ -1,0 +1,33 @@
+@import url("../root/root.css");
+
+.slide.ativado {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  animation: slideOpacidade 2s forwards;
+}
+.slide.desativado {
+  display: none;
+}
+
+.bola {
+  width: 20px;
+  height: 20px;
+  padding: 1px;
+  background-color: #fff;
+  cursor: pointer;
+  border-radius: 100%;
+}
+
+.bola.ativado {
+  background-color: var(--vermelho-2);
+}
+
+@keyframes slideOpacidade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

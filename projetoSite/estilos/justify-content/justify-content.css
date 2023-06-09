@@ -37,4 +37,7 @@
   .justify-content-center-media-query-768px {
     justify-content: center;
   }
+  .justify-content-center-media-query-600px {
+    justify-content: center;
+  }
 }

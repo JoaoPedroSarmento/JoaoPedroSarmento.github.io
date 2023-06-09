@@ -48,12 +48,19 @@
 @import url("../font-size-elementos/font-size-elementos.css");
 /* FLEX */
 @import url("../flex/flex.css");
+/*  SLIDES */
+
+@import url("../slide/slide.css");
 ::selection {
   background: var(--selection-cor);
 }
+html,
 body {
-  font-family: "Source Sans Pro", "Montserrat", "Arial";
-  background: var(--cor-fundo-principal);
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Manrope";
+  background: var(--preto-5);
   color: var(--cor-texto);
   min-width: 100vw;
   min-height: 100vh;
@@ -79,10 +86,9 @@ header {
 /* Cor header e footer */
 header,
 footer {
-  background-color: var(--cor-navegacao);
+  background: var(--preto-5);
   backdrop-filter: blur(200px);
 }
-
 
 /* Toda imagem que estiver dentro de uma tag âncora terá este estilo:*/
 a img {
@@ -97,7 +103,7 @@ a img {
 }
 
 .menu {
-  z-index: 400;
+  z-index: 999;
   width: 400px;
   height: 40px;
   -webkit-backdrop-filter: blur(16px);
@@ -105,4 +111,8 @@ a img {
   background-color: rgba(255, 255, 255, 0.08);
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 32px;
+}
+
+a:hover {
+  color: #fff;
 }

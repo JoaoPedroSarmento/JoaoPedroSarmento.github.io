@@ -27,8 +27,8 @@
   cursor: pointer;
   border-radius: 5px;
   width: 200px;
-  height: 60px;
-  background: var(--preto-1);
+  padding: 5px;
+  background: var(--cor-navegacao);
   transition: 0.5s ease;
 }
 .container-content-3:hover {
