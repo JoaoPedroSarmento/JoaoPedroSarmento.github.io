@@ -13,7 +13,11 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
-    <script src="../scripts/criarConta/criarConta.js" type="module" defer></script>
+    <script
+      src="../scripts/criarConta/criarConta.js"
+      type="module"
+      defer
+    ></script>
   </head>
   <body>
     <!-- capa -->
@@ -21,7 +25,7 @@
       class="capa display-flex-column justify-content-center align-items-center gap-20"
     >
       <h1>[Nome]</h1>
-      <img src="../imagens/capa.svg" alt="capa" />
+      <div class="custom-loader"></div>
     </div>
     <!-- main-->
     <main class="display-flex-row-wrap justify-content-stretch height-100vh">
@@ -46,11 +50,7 @@
           <div
             class="input-password display-flex-row-nowrap align-items-center gap-20 pd-10"
           >
-            <input
-              type="password"
-              name="senha"
-              id="input-senha"
-            />
+            <input type="password" name="senha" id="input-senha" />
             <i class="fas fa-eye"></i>
           </div>
         </div>

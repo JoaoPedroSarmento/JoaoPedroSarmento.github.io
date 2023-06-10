@@ -128,7 +128,8 @@ a:hover {
   width: 30px;
   height: 1px;
   padding: 1px;
-  background: var(--vermelho-2);
+  background: var(--branco-1);
+  transition: 1s background ease;
 }
 
 .linha-column {
@@ -136,6 +137,11 @@ a:hover {
   width: 2px;
   height: 30px;
   padding: 1;
+  background: var(--branco-1);
+  transition: 1s background ease;
+}
+.hover + .linha-column,
+.hover + .linha-row {
   background: var(--vermelho-2);
 }
 
@@ -166,11 +172,11 @@ a:hover {
   }
 }
 
-@media (max-width: 659px){
-   .display-flex-row-wrap .linha-row{
-     display: none !important;
-   }
-   .display-flex-row-wrap .linha-column{
+@media (max-width: 659px) {
+  .display-flex-row-wrap .linha-row {
+    display: none !important;
+  }
+  .display-flex-row-wrap .linha-column {
     display: inline !important;
-   }
+  }
 }
