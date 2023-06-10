@@ -1,21 +1,20 @@
 /* Conteúdo do container*/
-
 .container-content-1 {
-  width: 300px;
+  flex: 0 1 300px;
   height: 200px;
   cursor: pointer;
   border: 1px solid var(--cinza-2);
   border-radius: 5px;
 }
 .container-content-2 {
-  width: 350px;
+  flex: 0 1 350px;
   height: 400px;
   border-radius: 5px;
   background-color: var(--preto-7);
   border: 1px solid var(--cinza-2);
 }
 .container-content-drop-dow-menu {
-  width: 95%;
+  flex: 0 1 95%;
   height: 40px;
   border-top: inherit;
 }
@@ -26,7 +25,7 @@
 .container-content-3 {
   cursor: pointer;
   border-radius: 5px;
-  width: 200px;
+  flex: 0 1 200px;
   padding: 5px;
   background: var(--cor-navegacao);
   transition: 0.5s ease;
@@ -35,7 +34,7 @@
   background: var(--cinza-2);
 }
 .container-content-4 {
-  width: 200px;
+  flex: 0 1 200px;
   height: 300px;
   border-radius: 5px;
   background: var(--preto-1);
@@ -51,10 +50,10 @@
 .container-content-2:hover {
   backdrop-filter: blur(200px);
 }
-@media (max-width: 500px) {
+@media (max-width:  500px) {
   .container-content-1,
   .container-content-2 {
-    width: 250px;
+    flex: 0 1 250px;
     height: 250px;
   }
 }

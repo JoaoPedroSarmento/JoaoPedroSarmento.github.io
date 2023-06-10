@@ -1,9 +1,11 @@
 // melhorar o código e o nome das variáveis!!
 // pega o índice
 let indiceAtual = 0;
+let startX = 0;
 export function rodaSlides() {
   const bolas = document.querySelectorAll(".bola");
   trocaSlidesComSeta();
+  trocaDeSlidesComMouse();
   trocaSlidesComTouchMobile();
   bolas.forEach((bola, indice) => {
     bola.addEventListener("click", () => {
@@ -68,8 +70,32 @@ function trocaSlidesComTouchMobile() {
       }
       trocaSlides(indiceAtual);
       startX = currentX;
-      trocaRealizada = true; // Define a variável de controle para evitar trocas repetidas
+      trocaRealizada = true;
     }
+  });
+}
+
+function trocaDeSlidesComMouse() {
+  let trocaRealizada = false;
+  const sectionPlanos = document.getElementById("planos");
+  sectionPlanos.addEventListener("mousemove", (event) => {
+    const sectionPlanosActive = document.querySelector("#planos:active");
+    let x = event.movementX;
+    if (x > startX && sectionPlanosActive && !trocaRealizada) {
+      indiceAtual -= 1;
+      trocaRealizada = true;
+      verificaIndice();
+      trocaSlides(indiceAtual);
+    } else if (x < startX && sectionPlanosActive && !trocaRealizada) {
+      indiceAtual += 1;
+      trocaRealizada = true;
+      verificaIndice();
+      trocaSlides(indiceAtual);
+    }
+    if (!sectionPlanosActive) {
+      trocaRealizada = false;
+    }
+    startX = x;
   });
 }
 
