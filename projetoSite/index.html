@@ -22,7 +22,7 @@
     </div>
     <!-- header -->
     <header
-      class="display-flex-row-wrap justify-content-space-between-media-query-center align-items-center gap-10 pd-20"
+      class="display-flex-row-wrap justify-content-space-between align-items-center gap-10 pd-20"
     >
       <div class="titulo">
         <h1>[Nome]</h1>
@@ -52,7 +52,38 @@
           >
         </li>
       </ul>
+
+      <img src="./imagens/menu.svg" alt="menu" class="menu-imagem" />
     </header>
+    <!-- menu -->
+    <div class="menu">
+      <ul
+        class="display-flex-row-nowrap list-style-none gap-10 align-self-center"
+      >
+        <li>
+          <a
+            href="#planos"
+            aria-label="Ver planos, gratuito ou pago"
+            class="text-decoration-none branco-1"
+            >Planos</a
+          >
+        </li>
+        <li>
+          <a href="./login/login.html" aria-label="Entrar" class="btn btn-nav"
+            >Login</a
+          >
+        </li>
+        <li>
+          <a
+            href="./criarConta/criarConta.html"
+            aria-label="Criar conta"
+            class="btn btn-nav"
+            >Criar conta</a
+          >
+        </li>
+      </ul>
+      <img src="./imagens/fechar.svg" alt="fechar" class="fechar-menu-img" />
+    </div>
     <a href="#" class="text-decoration-none branco-1"
       ><div
         class="voltar-topo desativado position-fixed display-flex-row-nowrap justify-content-center align-items-center"
@@ -106,6 +137,7 @@
         <div
           class="slide-container display-flex-column gap-30 justify-content-center align-items-center"
         >
+        <!-- slide  -->
           <div class="slide lr ativado" data-index="1">
             <h1>Sobre o plano gratuito:</h1>
             <p>
@@ -201,6 +233,7 @@
               </div>
             </div>
           </div>
+          <!-- slide  -->
           <div class="slide rl desativado" data-index="2">
             <h1>Sobre o plano pago:</h1>
             <p>
@@ -297,6 +330,7 @@
             </div>
           </div>
         </div>
+        <!--  bolas -->
         <div
           class="bolas display-flex-row-nowrap gap-10 justify-content-center align-items-center"
         >
@@ -380,5 +414,6 @@
       </div>
     </footer>
     <script src="./scripts/alteraCorDaLinhaDoSlide/alteraCorDaLinhaDoSlide.js"></script>
+    <script src="./scripts/menu/menu.js"></script>
   </body>
 </html>

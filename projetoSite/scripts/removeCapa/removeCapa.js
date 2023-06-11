@@ -10,5 +10,5 @@ export function removecapa() {
       clearInterval(intervalo); // Parando com o loop
     }
     tempo += 1;
-  }, 1000); // a cada 1 segundo executa o código passado
+  }, 0); // a cada 1 segundo executa o código passado
 } // função exportada!

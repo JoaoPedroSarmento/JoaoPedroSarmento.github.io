@@ -49,8 +49,9 @@
 /* FLEX */
 @import url("../flex/flex.css");
 /*  SLIDES */
-
 @import url("../slide/slide.css");
+/* MENU*/
+@import url("../menu/menu.css");
 ::selection {
   background: var(--selection-cor);
 }
@@ -59,7 +60,7 @@ body {
   scroll-behavior: smooth;
 }
 body {
-  font-family: "Manrope";
+  font-family:"Comic Neue" , "Manrope";
   background: var(--preto-5);
   color: var(--cor-texto);
   min-width: 100vw;
