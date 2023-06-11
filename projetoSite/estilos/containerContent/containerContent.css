@@ -47,10 +47,11 @@
 .container-content-1:hover {
   border-color: var(--vermelho-2);
 }
+
 .container-content-2:hover {
   backdrop-filter: blur(200px);
 }
-@media (max-width:  500px) {
+@media (max-width: 500px) {
   .container-content-1,
   .container-content-2 {
     flex: 0 1 250px;

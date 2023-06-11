@@ -140,7 +140,7 @@ a:hover {
   background: var(--branco-1);
   transition: 1s background ease;
 }
-.hover + .linha-column,
+div:has(div.hover) + .linha-column,
 .hover + .linha-row {
   background: var(--vermelho-2);
 }

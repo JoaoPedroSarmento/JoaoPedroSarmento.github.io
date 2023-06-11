@@ -1,5 +1,5 @@
 import { removecapa } from "../removeCapa/removeCapa.js"; // Importando função para remover capa
-import { rodaSlides } from "../slide/slide.js";
+import { gerenciarSlides } from "../slide/slide.js";
 window.onload = removecapa(); // removendo a capa quando a página for carregada
 function voltarAoHeader() {
   window.addEventListener("scroll", () => {
@@ -14,4 +14,4 @@ function voltarAoHeader() {
   });
 }
 voltarAoHeader();
-rodaSlides();
+gerenciarSlides();
