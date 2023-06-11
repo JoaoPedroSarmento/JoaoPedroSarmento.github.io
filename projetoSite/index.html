@@ -132,12 +132,23 @@
       <!-- seção -->
       <section
         id="planos"
-        class="display-flex-column bg-preto-2 justify-content-center align-items-center gap-20 pd-30"
+        class="display-flex-row-nowrap bg-preto-2 justify-content-center align-items-center gap-20 pd-30"
       >
+        <!-- slide container -->
+        <div class="seta-container left-seta">
+          <svg
+            class="seta left-seta"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="#fff"
+          >
+            <path d="M15 3l-9 9 9 9" />
+          </svg>
+        </div>
         <div
           class="slide-container display-flex-column gap-30 justify-content-center align-items-center"
         >
-        <!-- slide  -->
+          <!-- slide  -->
           <div class="slide lr ativado" data-index="1">
             <h1>Sobre o plano gratuito:</h1>
             <p>
@@ -147,7 +158,7 @@
             </p>
             <!-- div container -->
             <div
-              class="display-flex-row-wrap justify-content-center align-items-center"
+              class="display-flex-row-wrap justify-content-center align-items-center gap-10"
             >
               <!-- div template 1 -->
               <div
@@ -243,7 +254,7 @@
             </p>
             <!-- div container -->
             <div
-              class="display-flex-row-wrap justify-content-center align-items-center"
+              class="display-flex-row-wrap justify-content-center align-items-center gap-10"
             >
               <!-- div template 1 -->
               <div
@@ -329,18 +340,25 @@
               </div>
             </div>
           </div>
+          <div class="bola-container display-flex-row-nowrap gap-10">
+            <div class="bola ativado"></div>
+            <div class="bola"></div>
+          </div>
         </div>
-        <!--  bolas -->
+        <div class="seta-container right-seta">
+          <svg
+            class="seta right-seta"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="#fff"
+          >
+            <path d="M9 21l9-9-9-9" />
+          </svg>
+        </div>
+        <!--  bolas mobile -->
         <div
           class="bolas display-flex-row-nowrap gap-10 justify-content-center align-items-center"
-        >
-          <a href="#planos">
-            <div class="bola ativado" data-index="1"></div>
-          </a>
-          <a href="#planos">
-            <div class="bola desativado" data-index="2"></div>
-          </a>
-        </div>
+        ></div>
       </section>
       <!-- seção -->
       <section
@@ -413,7 +431,6 @@
         /></a>
       </div>
     </footer>
-    <script src="./scripts/alteraCorDaLinhaDoSlide/alteraCorDaLinhaDoSlide.js"></script>
     <script src="./scripts/menu/menu.js"></script>
   </body>
 </html>

@@ -1,5 +1,5 @@
 // Índice atual do slide
-let currentIndex = 0;
+let indiceAtual = 0;
 let startX = 0;
 
 // Função principal para manipular os slides
@@ -8,6 +8,7 @@ export function gerenciarSlides() {
   trocarSlidesComSeta();
   trocarSlidesComMouse();
   trocarSlidesComToqueMobile();
+  trocaSlidesComSeta();
 
   // Adiciona um event listener para cada bola
   bolas.forEach((bola, indice) => {
@@ -17,11 +18,28 @@ export function gerenciarSlides() {
   });
 }
 
+function trocaSlidesComSeta() {
+  const setas = document.querySelectorAll(".seta-container") || false;
+  setas.forEach((seta) => {
+    seta.addEventListener("click", () => {
+      verificaSeta(seta);
+      trocarSlides(indiceAtual);
+    });
+  });
+}
+function verificaSeta(seta) {
+  if (seta.classList.contains("right-seta")) {
+    indiceAtual += 1;
+    verificarIndice(indiceAtual);
+  } else {
+    indiceAtual -= 1;
+    verificarIndice(indiceAtual);
+  }
+}
 // Função para trocar os slides com base no índice fornecido
 function trocarSlides(indice) {
   const bolas = document.querySelectorAll(".bola");
   const slides = document.querySelectorAll(".slide");
-
   bolas.forEach((bola, indiceBola) => {
     if (indiceBola == indice) {
       if (!bola.classList.contains("ativado")) {
@@ -45,13 +63,13 @@ function trocarSlidesComSeta() {
     const slides = document.querySelectorAll(".slide");
 
     if (evento.key === "ArrowLeft" || evento.key === "a") {
-      currentIndex -= 1;
+      indiceAtual -= 1;
       verificarIndice();
-      trocarSlides(currentIndex);
+      trocarSlides(indiceAtual);
     } else if (evento.key === "ArrowRight" || evento.key === "d") {
-      currentIndex += 1;
+      indiceAtual += 1;
       verificarIndice();
-      trocarSlides(currentIndex);
+      trocarSlides(indiceAtual);
     }
   });
 }
@@ -71,13 +89,13 @@ function trocarSlidesComToqueMobile() {
       // Verifica se a troca já foi realizada
       const currentX = evento.touches[0].clientX;
       if (currentX > startX) {
-        currentIndex += 1;
+        indiceAtual += 1;
         verificarIndice();
       } else if (currentX < startX) {
-        currentIndex -= 1;
+        indiceAtual -= 1;
         verificarIndice();
       }
-      trocarSlides(currentIndex);
+      trocarSlides(indiceAtual);
       startX = currentX;
       trocaRealizada = true;
     }
@@ -93,16 +111,16 @@ function trocarSlidesComMouse() {
     const sectionPlanosAtiva = document.querySelector("#planos:active");
     let x = evento.movementX;
 
-    if (x > startX && sectionPlanosAtiva && !trocaRealizada) {
-      currentIndex -= 1;
+    if (x > startX + 10 && sectionPlanosAtiva && !trocaRealizada) {
+      indiceAtual -= 1;
       trocaRealizada = true;
       verificarIndice();
-      trocarSlides(currentIndex);
-    } else if (x < startX && sectionPlanosAtiva && !trocaRealizada) {
-      currentIndex += 1;
+      trocarSlides(indiceAtual);
+    } else if (x < startX - 10 && sectionPlanosAtiva && !trocaRealizada) {
+      indiceAtual += 1;
       trocaRealizada = true;
       verificarIndice();
-      trocarSlides(currentIndex);
+      trocarSlides(indiceAtual);
     }
 
     if (!sectionPlanosAtiva) {
@@ -117,9 +135,9 @@ function trocarSlidesComMouse() {
 function verificarIndice() {
   const slides = document.querySelectorAll(".slide");
 
-  if (currentIndex < 0) {
-    currentIndex = slides.length - 1;
-  } else if (currentIndex >= slides.length) {
-    currentIndex = 0;
+  if (indiceAtual < 0) {
+    indiceAtual = slides.length - 1;
+  } else if (indiceAtual >= slides.length) {
+    indiceAtual = 0;
   }
 }

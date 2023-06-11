@@ -60,7 +60,7 @@ body {
   scroll-behavior: smooth;
 }
 body {
-  font-family:"Comic Neue" , "Manrope";
+  font-family: "Comic Neue", "Manrope";
   background: var(--preto-5);
   color: var(--cor-texto);
   min-width: 100vw;
@@ -123,61 +123,4 @@ a img {
 
 a:hover {
   color: #fff;
-}
-
-.linha-row {
-  width: 30px;
-  height: 1px;
-  padding: 1px;
-  background: var(--branco-1);
-  transition: 1s background ease;
-}
-
-.linha-column {
-  display: none;
-  width: 2px;
-  height: 30px;
-  padding: 1;
-  background: var(--branco-1);
-  transition: 1s background ease;
-}
-div:has(div.hover) + .linha-column,
-.hover + .linha-row {
-  background: var(--vermelho-2);
-}
-
-@media (max-width: 1259px) {
-  .display-flex-row-wrap:nth-of-type(2) .linha-column {
-    display: inline;
-  }
-  .display-flex-row-wrap:nth-of-type(3) .linha-row {
-    display: none;
-  }
-}
-
-@media (max-width: 959px) {
-  .display-flex-row-wrap:nth-of-type(1) .linha-column {
-    display: inline;
-  }
-  .display-flex-row-wrap:nth-of-type(3) .linha-column {
-    display: none;
-  }
-  .display-flex-row-wrap:nth-of-type(4) .linha-column {
-    display: none;
-  }
-  .display-flex-row-wrap:nth-of-type(2) .linha-row {
-    display: none;
-  }
-  .display-flex-row-wrap:nth-of-type(3) .linha-row {
-    display: inline;
-  }
-}
-
-@media (max-width: 659px) {
-  .display-flex-row-wrap .linha-row {
-    display: none !important;
-  }
-  .display-flex-row-wrap .linha-column {
-    display: inline !important;
-  }
 }

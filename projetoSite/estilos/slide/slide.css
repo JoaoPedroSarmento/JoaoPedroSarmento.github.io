@@ -3,8 +3,10 @@
 #planos {
   cursor: grab;
 }
+
 .slide.ativado {
   display: flex;
+
   flex-direction: column;
   gap: 20px;
 }
@@ -29,6 +31,20 @@
   border-radius: 100%;
 }
 
+.seta {
+  width: 25px;
+  cursor: pointer;
+  height: 25px;
+}
+.seta-container {
+  display: flex;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background: var(--vermelho-2);
+}
 .bola.ativado {
   background-color: var(--vermelho-2);
 }
@@ -36,8 +52,8 @@
 @keyframes animacaoSlideDireitaParaEsqueda {
   from {
     transform: scaleX(1) scaleY(1) scaleZ(3) rotateX(0deg) rotateY(0deg)
-      rotateZ(0deg) translateX(100%) translateY(0px) translateZ(0px)
-      skewX(0deg) skewY(0deg);
+      rotateZ(0deg) translateX(100%) translateY(0px) translateZ(0px) skewX(0deg)
+      skewY(0deg);
   }
   to {
     transform: translateX(0);
@@ -52,5 +68,11 @@
   }
   to {
     transform: translateX(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .seta-container {
+    display: none;
   }
 }

@@ -16,6 +16,7 @@
   padding: 10px;
   min-height: 70px;
   z-index: 1000;
+  padding: 10px;
 }
 .menu-imagem {
   display: none;
@@ -23,8 +24,8 @@
   cursor: pointer;
 }
 .fechar-menu-img {
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
 }
 @media (max-width: 768px) {
   .menu-imagem {
