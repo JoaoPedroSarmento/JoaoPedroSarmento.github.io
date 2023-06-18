@@ -126,7 +126,6 @@ function trocarSlidesComMouse() {
     if (!sectionPlanosAtiva) {
       trocaRealizada = false;
     }
-
     startX = x;
   });
 }

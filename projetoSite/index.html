@@ -28,7 +28,7 @@
         <h1>[Nome]</h1>
       </div>
       <ul
-        class="display-flex-row-nowrap list-style-none gap-10 align-self-center"
+        class="display-flex-row-nowrap list-style-none gap-10 align-self-center nav-item"
       >
         <li>
           <a
@@ -149,7 +149,7 @@
           class="slide-container display-flex-column gap-30 justify-content-center align-items-center"
         >
           <!-- slide  -->
-          <div class="slide lr ativado" data-index="1">
+          <div class="slide lr ativado" data-indexDropDown="1">
             <h1>Sobre o plano gratuito:</h1>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
@@ -245,7 +245,7 @@
             </div>
           </div>
           <!-- slide  -->
-          <div class="slide rl desativado" data-index="2">
+          <div class="slide rl desativado" data-indexDropDown="1">
             <h1>Sobre o plano pago:</h1>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
@@ -360,6 +360,93 @@
           class="bolas display-flex-row-nowrap gap-10 justify-content-center align-items-center"
         ></div>
       </section>
+      <section
+        class="display-flex-row-wrap justify-content-center-media-query-600px justify-content-space-between align-items-center gap-20 bg-preto-3 flex-grow pd-20"
+      >
+        <h1>Perguntas frequentes:</h1>
+        <div class="display-flex-column gap-10">
+          <div class="display-flex-column">
+            <div
+              class="container-content-5 container-drop-down display-flex-row-nowrap justify-content-space-between pd-20"
+            >
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi
+              </p>
+              <svg
+                viewBox="0 0 24 24"
+                focusable="false"
+                aria-hidden="true"
+                class="icon-seta active"
+              >
+                <path
+                  fill="currentColor"
+                  d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
+                ></path>
+              </svg>
+              <svg
+                viewBox="0 0 24 24"
+                focusable="false"
+                class="icon-seta"
+                aria-hidden="true"
+              >
+                <path
+                  fill="currentColor"
+                  d="M16.59 15.41L12 10.83 7.41 15.41 6 14l6-6 6 6z"
+                ></path>
+              </svg>
+            </div>
+            <div
+              class="container-content-5 content-container-drop-down display-flex-row-nowrap justify-content-space-between pd-20 bd-top bd-color-preto-4 display-none"
+            >
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Incidunt libero ullam nobis.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="display-flex-column gap-10">
+          <div class="display-flex-column">
+            <div
+              class="container-content-5 container-drop-down display-flex-row-nowrap justify-content-space-between pd-20"
+            >
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi
+              </p>
+              <svg
+                viewBox="0 0 24 24"
+                focusable="false"
+                aria-hidden="true"
+                class="icon-seta active"
+              >
+                <path
+                  fill="currentColor"
+                  d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
+                ></path>
+              </svg>
+              <svg
+                viewBox="0 0 24 24"
+                focusable="false"
+                class="icon-seta"
+                aria-hidden="true"
+              >
+                <path
+                  fill="currentColor"
+                  d="M16.59 15.41L12 10.83 7.41 15.41 6 14l6-6 6 6z"
+                ></path>
+              </svg>
+            </div>
+            <div
+              class="container-content-5 content-container-drop-down display-flex-row-nowrap justify-content-space-between pd-20 bd-top bd-color-preto-4 display-none"
+            >
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Incidunt libero ullam nobis.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
       <!-- seção -->
       <section
         class="display-flex-row-wrap bg-preto-1 justify-content-center align-items-center gap-20 pd-30"
@@ -432,5 +519,6 @@
       </div>
     </footer>
     <script src="./scripts/menu/menu.js"></script>
+    <script src="./scripts/alterNaClasseDoitemDropDownESeta/alterNaClasseDoitemDropDownESeta.js"></script>
   </body>
 </html>

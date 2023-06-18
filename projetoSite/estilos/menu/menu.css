@@ -31,7 +31,7 @@
   .menu-imagem {
     display: block;
   }
-  header :nth-child(2) {
+  header .nav-item {
     display: none;
   }
 }

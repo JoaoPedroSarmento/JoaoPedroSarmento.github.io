@@ -122,5 +122,15 @@ a img {
 }
 
 a:hover {
-  color: #fff;
+  color: var(--branco-1);
+}
+
+.icon-seta{
+  width: 40px;
+  height: 40px;
+  display: none;
+  cursor: pointer;
+}
+.icon-seta.active{
+  display: inline;
 }

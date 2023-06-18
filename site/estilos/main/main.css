@@ -1,0 +1,178 @@
+/* FONTES  */
+@import url("../fontes/fontes.css");
+/* ROOT CSS */
+@import url("../root/root.css");
+/* BOTÕES */
+@import url("../botoes/botoes.css");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 12pt;
+}
+body {
+  font-family: "Source Sans Pro";
+  background: var(--main-background-color);
+  color: var(--text-color);
+}
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  height: 80px;
+  background: var(--main-background-color);
+}
+#header.active {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 300;
+}
+#header h2 {
+  user-select: none;
+}
+#nav {
+  display: inherit;
+  gap: 10px;
+}
+#nav > a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 700;
+  transition: 0.8s;
+}
+#nav > a.pg-atual {
+  color: #fff;
+}
+#nav > a:hover {
+  color: #fff;
+}
+.banner {
+  display: flex;
+  grid-area: banner;
+  align-items: center;
+  padding: 50px;
+  text-align: justify;
+  justify-content: center;
+}
+.banner img {
+  width: 100%;
+}
+.content-banner {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas:
+    "titulo titulo titulo titulo"
+    "texto texto texto texto"
+    "texto texto texto texto"
+    "botao botao botao botao";
+  gap: 20px;
+}
+.content-banner > h1 {
+  grid-area: titulo;
+}
+.content-banner > p {
+  color: var(--gray-5);
+  line-height: 35px;
+  grid-area: texto;
+}
+
+.content-banner > button {
+  grid-area: botao;
+}
+.section-container-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 10px;
+  flex-wrap: wrap;
+}
+.section-container-grid {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  gap: 40px;
+  background: var(--blue-1);
+}
+.section-container p {
+  color: var(--gray-5);
+}
+.content-container {
+  display: flex;
+  justify-content: center;
+}
+
+.content-container .content {
+  width: 50%;
+  min-height: 300px;
+}
+.content-container img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px 0px 0px 20px;
+}
+
+.content {
+  border-radius: 0px 20px 20px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+  background: var(--gray-4);
+  padding: 20px;
+}
+.content > p {
+  color: var(--gray-5);
+}
+
+.wrapper-img {
+  background: linear-gradient(45deg, #d54857 20%, #2eaeff 100%);
+  width: 20%;
+}
+
+.content-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 350px;
+  height: 400px;
+  background: var(--gray-4);
+ border: 1px solid var(--gray-2);
+ border-radius: 10px;
+ transition: 0.5s border;
+ user-select: none;
+}
+.content-card:hover{
+   border: 1px solid var(--red-2);
+}
+@media (max-width: 768px) {
+  .banner {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+  }
+  .content-banner {
+    align-items: center;
+    justify-content: baseline;
+  }
+  .content-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .content,
+  .wrapper-img {
+    width: 70% !important;
+    border-radius: 0px;
+  }
+  .wrapper-img {
+    height: 90px;
+  }
+}

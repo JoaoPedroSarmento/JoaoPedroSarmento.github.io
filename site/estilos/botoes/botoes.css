@@ -1,0 +1,28 @@
+.btn {
+  background: var(--red-2);
+  border: 0;
+  color: var(--text-color);
+  padding: 10px 15px;
+  cursor: pointer;
+  width: 200px;
+  transition: 0.8s background ease;
+}
+.btn:hover {
+  background: var(--blue-1);
+}
+
+.btn-card {
+  width: 150px;
+  border-radius: 7px;
+  cursor: pointer;
+  color: var(--text-color);
+  background: var(--red-3);
+  border: 20px;
+  padding: 15px 15px;
+}
+
+@media (max-width: 500px) {
+ .btn{
+    width: 140px;
+ }
+}
