@@ -1,0 +1,144 @@
+:root {
+  --main-bg-color: #ff8c00;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: "Source Sans Pro", "Arial";
+  min-height: 100vh;
+}
+
+
+header,
+footer {
+  display: flex;
+  height: 80px;
+  align-items: center;
+  padding: 15px;
+  justify-content: space-between;
+  background: var(--main-bg-color);
+}
+
+main {
+  flex-grow: 1;
+}
+
+.icon-user svg {
+  width: 50px;
+  height: 60px;
+}
+
+
+
+.menu {
+  cursor: pointer;
+}
+
+.menu svg {
+  width: 40px;
+  height: 30px;
+}
+
+.section-header {
+  display: flex;
+  background: #ff8c00;
+  color: #fff;
+  justify-content: space-around;
+  transition: 0.5s ease;
+}
+
+.section-container {
+  display: none;
+}
+
+.active {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#geladeira,
+#ambiente {
+  text-align: center;
+  width: 50%;
+  cursor: pointer;
+}
+
+#geladeira {
+  border-right: 5px solid #fff;
+}
+
+.active-color {
+  background: #694a25;
+}
+
+.adicionar-produto {
+  display: flex;
+  margin: 20px;
+  justify-content: center;
+}
+
+.adicionar-produto button,
+.container button {
+  padding: 5px 10px;
+  border: 0;
+  background: #694a25;
+  border-radius: 2px;
+  color: #fff;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+.adicionar-produto button:hover,
+.container button {
+  background: #ff8c00;
+}
+
+.adicionar-produto svg {
+  cursor: pointer;
+  width: 90px;
+  height: 90px;
+}
+
+.adicionar-produtos-e-informacoes {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  align-items: center;
+  gap: 20px;
+}
+
+.adicionar-produtos-e-informacoes input {
+  width: 200px;
+}
+
+.section-header:not(.active):hover {
+  background-color: #694a25;
+}
+
+.display-none {
+  display: none;
+}
+
+.container {
+  display: flex;
+  gap: 20px;
+}
+
+.container-flex {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: 10px;
+}
+
+.informacoes-produto {
+  margin: 20px;
+}
