@@ -71,7 +71,6 @@ document.getElementById("adicionar-alimento").addEventListener("click", () => {
   const containerProduto = new ElementoHTML(".adicionar-produtos-e-informacoes");
   if (containerProduto.elemento.classList.contains("display-none")) {
     containerProduto.removerClasse("display-none")
-    trocarAbaProduto()
     cancelarAdicionamentoDoProduto()
     adicionarProduto(containerProduto)
   }
