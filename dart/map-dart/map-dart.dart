@@ -1,6 +1,9 @@
 void main(List<String> args) {
   const String nome = "Dean";
-  Map usuario = const {"nome": nome, "telefone": "+55 (21) 99999-9999"};
+  Map<String, String> usuario = const {
+    "nome": nome,
+    "telefone": "+55 (21) 99999-9999"
+  };
   print(usuario);
   print("Nome: ${usuario["nome"]}\n Telefone: ${usuario["telefone"]}");
   // não é possível inserir nenhum valor, porque o Map é const

@@ -1,4 +1,4 @@
-void main() {
+void main(List<String> args) {
   var lista = [1, 2, 3];
   print(lista);
   lista[0] = 3;
@@ -28,4 +28,20 @@ void main() {
   const nomes3 = ['joão', "Maria"];
   // nomes3[0] = "Erro!";
   print("${nomes3} ${nomes2}");
+
+  // definindo o objeto Lista
+  // List <tipo> nomeVariavel = [];
+  List<String> habilidades = [
+    "HTML",
+    "CSS",
+    "PYTHON",
+    "C++",
+    "DART",
+    'PHP',
+    "JavaScrit",
+    "SASS",
+  ];
+  print(habilidades);
+  List<dynamic> pessoa = ["Kaue", 26, true];
+  print(pessoa);
 }

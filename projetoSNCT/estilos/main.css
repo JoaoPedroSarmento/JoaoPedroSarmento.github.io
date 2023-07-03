@@ -1,5 +1,5 @@
 :root {
-  --main-bg-color: #ff8c00;
+  --main-bg-color: #CB6D00;
 }
 
 * {
@@ -48,7 +48,7 @@ main {
 
 .section-header {
   display: flex;
-  background: #ff8c00;
+  background: #CB6D00;
   color: #fff;
   justify-content: space-around;
   transition: 0.5s ease;
@@ -76,7 +76,7 @@ main {
 }
 
 .active-color {
-  background: #694a25;
+  background: #AB691D;
 }
 
 .adicionar-produto {
@@ -89,7 +89,7 @@ main {
 .container button {
   padding: 5px 10px;
   border: 0;
-  background: #694a25;
+  background: #AB691D;
   border-radius: 2px;
   color: #fff;
   transition: 0.5s ease;
@@ -120,7 +120,7 @@ main {
 }
 
 .section-header:not(.active):hover {
-  background-color: #694a25;
+  background-color: #AB691D;
 }
 
 .display-none {
