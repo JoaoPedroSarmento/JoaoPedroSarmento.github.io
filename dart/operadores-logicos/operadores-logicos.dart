@@ -1,3 +1,4 @@
+import 'dart:convert';
 import 'dart:io';
 
 void main(List<String> args) {
@@ -7,5 +8,7 @@ void main(List<String> args) {
   condicao = condicao && 8 < 10;
   print(condicao);
   condicao = 2 > 3 || 3 > 2;
+  print(condicao);
+  condicao = !(2 > 3);
   print(condicao);
 }
