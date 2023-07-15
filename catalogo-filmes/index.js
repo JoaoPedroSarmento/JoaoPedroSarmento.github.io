@@ -1,5 +1,5 @@
 function criarCard(filme) {
-  const { titulo, resumo, figura, rating, generos, elenco, classificacao } =
+  const { titulo, resumo, figura, opinioes, generos, elenco, classificacao } =
     filme;
   console.log(filme);
   const box = document.createElement("div");
@@ -8,7 +8,6 @@ function criarCard(filme) {
   const boxContentContainer = document.createElement("div");
   boxContentContainer.classList.add("box-content-container");
   box.appendChild(boxContentContainer);
-
   const img = document.createElement("img");
   img.src = figura;
   img.alt = titulo;
@@ -44,6 +43,8 @@ function criarCard(filme) {
 
   const estrelasElement = document.createElement("div");
   estrelasElement.classList.add("estrelas");
+  console.log(opinioes[0].rating);
+  estrelasElement.textContent = adicionaEstrela(estrelasElement, opinioes[0].rating);
   boxContent2.appendChild(estrelasElement);
 
   const descricaoElement = document.createElement("p");
@@ -72,4 +73,15 @@ function definirCorDeFundoFaixaEtaria(faixaEtaria) {
   }
 }
 
+function adicionaEstrela(item, estrelas) {
+  for (let i = 1; i <= 5; i += 1) {
+    console.log(estrelas)
+    if (i <= estrelas) {
+      item.textContent += "★";
+    } else {
+      item.textContent += "☆";
+    }
+  }
+  return item.textContent;
+}
 obterFilmes();
