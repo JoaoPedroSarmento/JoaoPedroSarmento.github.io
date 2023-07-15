@@ -1,0 +1,19 @@
+#paises {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.pais {
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    gap: 20px;
+    background: #ddd;
+}
+
+img {
+    width: 200px;
+    height: 100px;
+}

@@ -1,8 +1,8 @@
 function execute() {
     return new Promise((resolve, reject) => {
-        console.log("A promisse está sendo executada");
+        console.log("A promise está sendo executada");
         setTimeout(() => {
-            console.log("Resolvendo a promisse");
+            console.log("Resolvendo a promise");
             resolve("Resultado");
         }, 1000 * 2)
     })
@@ -13,4 +13,4 @@ console.log(p);
 
 setTimeout(() => {
     console.log(p);
-}, 1000 * 2)
+}, 1000 * 2);

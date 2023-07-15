@@ -46,3 +46,12 @@ execute2();
 // }).catch((erro) => {
 //     console.log("Ouve um erro")
 // })
+
+async function promessaPendente() {
+    console.log("Promessa sendo executada....");
+}
+async function execute3() {
+    const resultatdo = await promessaPendente();
+    console.log("Promessa executada, retorno: " + resultado);
+}
+execute3();

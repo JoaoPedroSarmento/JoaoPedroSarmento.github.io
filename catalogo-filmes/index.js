@@ -1,9 +1,67 @@
-const titulos = document.querySelectorAll(".titulo");
-const generosHTML = document.querySelectorAll(".genero");
-const elencos = document.querySelectorAll(".elenco");
-const faixasEtarias = document.querySelectorAll(".faixa-etaria");
-const descricoes = document.querySelectorAll(".descricao");
-const imagens = document.querySelectorAll("img");
+function criarCard(filme) {
+  const { titulo, resumo, figura, rating, generos, elenco, classificacao } =
+    filme;
+  console.log(filme);
+  const box = document.createElement("div");
+  box.classList.add("box");
+
+  const boxContentContainer = document.createElement("div");
+  boxContentContainer.classList.add("box-content-container");
+  box.appendChild(boxContentContainer);
+
+  const img = document.createElement("img");
+  img.src = figura;
+  img.alt = titulo;
+  boxContentContainer.appendChild(img);
+
+  const boxContent = document.createElement("div");
+  boxContent.classList.add("box-content");
+  boxContentContainer.appendChild(boxContent);
+
+  const tituloElement = document.createElement("h1");
+  tituloElement.classList.add("titulo");
+  tituloElement.textContent = titulo;
+  boxContent.appendChild(tituloElement);
+
+  const generoElement = document.createElement("p");
+  generoElement.classList.add("genero")
+  generoElement.textContent = generos;
+  boxContent.appendChild(generoElement);
+
+  const elencoElement = document.createElement("p");
+  elencoElement.classList.add("elenco");
+  elencoElement.innerHTML = ` <strong>Elenco:</strong> ${elenco} `;
+  boxContent.appendChild(elencoElement);
+
+  const boxContent2 = document.createElement("div");
+  boxContent2.classList.add("box-content");
+  boxContentContainer.appendChild(boxContent2);
+
+  const faixaEtariaElement = document.createElement("div");
+  faixaEtariaElement.setAttribute("class", `faixa-etaria , ${definirCorDeFundoFaixaEtaria(classificacao)}`)
+  faixaEtariaElement.textContent = classificacao;
+  boxContent2.appendChild(faixaEtariaElement);
+
+  const estrelasElement = document.createElement("div");
+  estrelasElement.classList.add("estrelas");
+  boxContent2.appendChild(estrelasElement);
+
+  const descricaoElement = document.createElement("p");
+  descricaoElement.classList.add("descricao");
+  descricaoElement.textContent = resumo;
+  box.appendChild(descricaoElement);
+
+  document.getElementById("filmes").appendChild(box);
+}
+
+async function obterFilmes() {
+  const resposta = await fetch(
+    "https://rafaelescalfoni.github.io/desenv_web/filmes.json"
+  );
+  const filmes = await resposta.json();
+  filmes.forEach(criarCard);
+}
+
 function definirCorDeFundoFaixaEtaria(faixaEtaria) {
   if (faixaEtaria >= 18) {
     return "vermelho";
@@ -14,32 +72,4 @@ function definirCorDeFundoFaixaEtaria(faixaEtaria) {
   }
 }
 
-const requisicao = new XMLHttpRequest();
-requisicao.open(
-  "GET",
-  "https://rafaelescalfoni.github.io/desenv_web/filmes.json"
-);
-
-requisicao.send();
-requisicao.addEventListener("readystatechange", function () {
-  if (requisicao.readyState === 4 && requisicao.status === 200) {
-    const informacoes = JSON.parse(requisicao.responseText);
-    console.log(informacoes);
-    informacoes.forEach(function (item, indice) {
-      console.log(item);
-      const { titulo, resumo, figura, rating, generos, elenco, classificacao } =
-        item;
-      titulos[indice].textContent = titulo;
-      generosHTML[indice].textContent = generos;
-      elencos[indice].textContent += elenco;
-      faixasEtarias[indice].textContent = classificacao;
-      faixasEtarias[indice].classList.add(
-        definirCorDeFundoFaixaEtaria(classificacao)
-      );
-      descricoes[indice].textContent = resumo;
-      imagens[indice].src = figura;
-    });
-  } else {
-    console.log("Erro");
-  }
-});
+obterFilmes();

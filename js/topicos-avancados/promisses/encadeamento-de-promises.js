@@ -45,7 +45,7 @@
 //     console.log(erro.message);
 // })
 
-// // outros exemplos de programas com promisses
+// // outros exemplos de programas com promises
 // // programa converter de String para Numero
 
 // function stringParaNumero(texto) {
