@@ -43,7 +43,6 @@ function criarCard(filme) {
 
   const estrelasElement = document.createElement("div");
   estrelasElement.classList.add("estrelas");
-  console.log(opinioes[0].rating);
   estrelasElement.textContent = adicionaEstrela(estrelasElement, opinioes[0].rating);
   boxContent2.appendChild(estrelasElement);
 
@@ -73,9 +72,8 @@ function definirCorDeFundoFaixaEtaria(faixaEtaria) {
   }
 }
 
-function adicionaEstrela(item, estrelas) {
+function adicionaEstrelas(item, estrelas) {
   for (let i = 1; i <= 5; i += 1) {
-    console.log(estrelas)
     if (i <= estrelas) {
       item.textContent += "★";
     } else {
