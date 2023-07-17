@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Antic&family=Chakra+Petch&family=Work+Sans:wght@200&display=swap');
+
+html,
+body {
+    background: #1a1b1f;
+    margin: 0;
+    overflow-x: hidden;
+    font-family: 'Work Sans', sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 2px;
+
+}
+
+::-webkit-scrollbar-track {
+    background: inherit;
+
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+
+}
+
+
+::-webkit-scrollbar-horizontal {
+    height: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+
+}
+
+p {
+    text-align: justify;
+}
+
+.swiper-container {
+    height: inherit;
+}
+
+.swiper-slide {
+    display: flex;
+    color: #fff;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 60px;
+    background-color: #44474e;
+    border-radius: 5px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    opacity: .35;
+}
+
+.swiper-button-next {
+    right: 10px;
+}
+
+.swiper-button-prev {
+    left: 10px;
+}
+
+
+.content-container-slide {
+    width: 100vw;
+    padding: 20px;
+}
+
+
+
+.container-itens {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-itens:not(.slide1 .container-itens) {
+    height: 100vh;
+}
+
+.item {
+    color: #abc7ff;
+    background: #21242a;
+    width: 80%;
+    min-height: 250px;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0px 0px 3px #abc7ff;
+    cursor: pointer;
+}
+
+.mg-10 {
+    margin: 10px;
+}

@@ -14,3 +14,6 @@ const pessoa = {
 console.log(pessoa.habilidades);
 pessoa.saudacao();
 pessoa.mostrarHablidades();
+pessoa.nacionalidade = "Japão";
+console.log(pessoa["nacionalidade"]);
+pessoa["mostrarHablidades"]();
