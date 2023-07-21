@@ -1,0 +1,39 @@
+ body {
+     background: #242424;
+     color: #fff;
+ }
+
+ .div-template-flex input {
+     max-width: 200px;
+     padding: 5px 10px;
+     background: #1b1b1b;
+     border: 0;
+     outline: 0;
+     color: #fff;
+ }
+
+ .div-template-flex {
+     display: flex;
+     gap: 20px;
+ }
+
+ #main {
+     display: grid;
+     gap: 20px;
+     justify-content: center;
+     align-content: center;
+ }
+
+ #main button {
+     cursor: pointer;
+     background: #1b1b1b;
+     border: 0;
+     padding: 5px 10px;
+     color: #fff;
+ }
+
+ #template-texto {
+     min-height: 300px;
+     max-height: 500px;
+     background-color: #1b1b1b;
+ }

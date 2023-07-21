@@ -1,0 +1,14 @@
+#cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.container {
+    width: 200px;
+    height: 200px;
+    background-color: #242424;
+    color: #f1f1f1;
+    padding: 20px;
+    border: 1px solid #fff;
+}

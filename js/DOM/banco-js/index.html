@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Banco</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./index.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Banco.js</h1>
+    </header>
+    <main>
+        <div class="saldo-container">
+            <h2>Saldo Atual: <span>R$</span> <span id="saldo">0.00</span> </h2>
+        </div>
+        <section>
+            <div class="acoes-container">
+                <h2>Adicionar ou Remover Saldo:</h2>
+                <div class="acoes">
+                    <div><label for="input">Valor:</label>
+                        <input type="text" name="input-valor" id="input" inputmode="numeric">
+                    </div>
+                    <div>
+                        <button id="add-saldo">Adicionar</button>
+                        <button id="remover-saldo">Remover</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="transacoes-container">
+                <h2>Transações:</h2>
+                <ul class="transacoes-lista">
+                </ul>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
