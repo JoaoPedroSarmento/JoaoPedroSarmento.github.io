@@ -1,0 +1,115 @@
+:root {
+    --bg-color: #242424;
+    --primary-color: #ffffff;
+    --secondary-color: #222222;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--primary-color);
+    font-family: Arial, sans-serif;
+}
+
+main {
+    text-align: center;
+    flex-direction: column;
+    gap: 40px;
+    padding: 20px;
+    border: 2px solid var(--secondary-color);
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+button {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+button:hover {
+    background-color: #444444;
+}
+
+button:focus {
+    outline: none;
+}
+
+input[type="text"] {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    width: 50%;
+    text-align: right;
+}
+
+#keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.key {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.key:hover {
+    background-color: #eeeeee;
+}
+
+#clear {
+    grid-column: 1 / span 2;
+}
+
+#igual {
+    grid-column: 2 / span 2;
+}
+
+section,
+header {
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+#copy {
+    cursor: default;
+    font-size: 1.3rem;
+    padding: 10px 20px;
+}
+
+.flex {
+    display: flex;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.align-center {
+    align-items: center;
+}
