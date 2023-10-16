@@ -226,6 +226,7 @@ main {
 
 .setas {
     display: flex;
+    cursor: pointer;
     flex-direction: column;
 }
 
@@ -235,12 +236,12 @@ main {
 
 .setas svg {
     width: 30px;
+    cursor: pointer;
     height: 10px;
 }
 
-.remove{
-    
-}
+.remove {}
+
 @media (max-width: 450px) {
     footer h2 {
         display: none;

@@ -6,12 +6,54 @@ function cancelarAdicionamentoDoProduto() {
         containerProduto.adicionarClasse("display-none")
     })
 }
-function removeProduto (ev){
-   const btn = ev.currentTarget; 
-   const  container = btn.parentNode;
-   const section = container.parentNode;
-   section.removeChild(container); 
+function removeProduto(ev) {
+    const btn = ev.currentTarget;
+    const container = btn.parentNode;
+    const section = container.parentNode;
+    section.removeChild(container);
 }
+
+function moverAlimentoParaInicio() {
+    const secaoAtiva = document.querySelector(".active");
+    const containers = Array.from(document.querySelectorAll(".active .container-flex"));
+    const alimentoInput = document.getElementById("nome-alimento-pesquisar");
+    const valorProcurado = alimentoInput.value.trim().toLowerCase();
+    console.log(valorProcurado);
+    const containerProcurado = containers.find((elem) => {
+        console.log(elem.dataset.produto.trim().toLowerCase());
+        return valorProcurado === elem.dataset.produto.trim().toLowerCase();
+    });
+    console.log(containerProcurado.dataset.produto);
+    if (containerProcurado) {
+        // Remove o container procurado do seu local atual
+        secaoAtiva.removeChild(containerProcurado);
+
+        // Insere o container procurado no início da seção ativa
+        secaoAtiva.insertBefore(containerProcurado, secaoAtiva.firstChild);
+    }
+}
+
+
+function ordenar() {
+    const activeContainer = document.querySelector(".active");
+
+
+    const elementosParaOrdenar = Array.from(activeContainer.querySelectorAll(".container-flex"));
+
+    elementosParaOrdenar.sort((a, b) => {
+        const produtoA = a.dataset.produto;
+        const produtoB = b.dataset.produto;
+        return produtoA.localeCompare(produtoB);
+    });
+
+    activeContainer.innerHTML = "";
+
+    elementosParaOrdenar.forEach(elemento => {
+        activeContainer.appendChild(elemento);
+    });
+}
+
+
 function adicionarProduto(containerProduto) {
     const sessaoAtiva = new ElementoHTML(".section-container.active");
     let clique = false
@@ -20,19 +62,22 @@ function adicionarProduto(containerProduto) {
         if (!clique) {
             const divContainer = document.createElement("div");
             const divInformacaoProduto = document.createElement("div");
-            const nomeAlimento = document.createElement("p");
-            const dataFabricacao = document.createElement("p");
-            const dataValidade = document.createElement("p")
+            const alimento = document.createElement("p");
+            const fabricacao = document.createElement("p");
+            const validade = document.createElement("p")
             const btnRemove = document.createElement("button");
+            const nomeProduto = new ElementoHTML("#nome-alimento");
+
             divContainer.classList.add("container-flex");
-            nomeAlimento.textContent = `Produto: ${new ElementoHTML("#nome-alimento").elemento.value}`;
-            dataFabricacao.textContent = `Data de fabricação: ${new ElementoHTML("#data-fabricacao").elemento.value}`;
-            dataValidade.textContent = `Data de validade: ${new ElementoHTML("#data-validade").elemento.value}`;
-            btnRemove.innerText = `Remover ${new ElementoHTML("#nome-alimento").elemento.value}`;
-            btnRemove.addEventListener("click" , removeProduto);
+            divContainer.dataset.produto = nomeProduto.elemento.value;
+            alimento.innerHTML = `Produto: <span class="produto">  ${nomeProduto.elemento.value} </span>`;
+            fabricacao.textContent = `Data de fabricação: ${new ElementoHTML("#data-fabricacao").elemento.value}`;
+            validade.textContent = `Data de validade: ${new ElementoHTML("#data-validade").elemento.value}`;
+            btnRemove.innerText = `Remover ${nomeProduto.elemento.value}`;
+            btnRemove.addEventListener("click", removeProduto);
             divInformacaoProduto.classList.add("informacoes-produto");
-            divInformacaoProduto.append(dataFabricacao, dataValidade);
-            divContainer.append(nomeAlimento, divInformacaoProduto , btnRemove)
+            divInformacaoProduto.append(fabricacao, validade);
+            divContainer.append(alimento, divInformacaoProduto, btnRemove)
             sessaoAtiva.elemento.appendChild(divContainer);
             containerProduto.adicionarClasse("display-none")
             clique = true;
@@ -55,4 +100,4 @@ function trocarAbaProduto() {
 
 }
 
-export {cancelarAdicionamentoDoProduto , adicionarProduto , trocarAbaProduto};
+export { cancelarAdicionamentoDoProduto, adicionarProduto, trocarAbaProduto, ordenar, moverAlimentoParaInicio };
