@@ -1,9 +1,10 @@
 import ElementoHTML from "../ElementoHTML/ElementoHTML.js"
-function cancelarAdicionamentoDoProduto() {
+function cancelarAdicionamentoDoProduto(sectionAtiva) {
     const cancelar = new ElementoHTML("#cancelar")
     cancelar.elemento.addEventListener("click", () => {
         const containerProduto = new ElementoHTML(".adicionar-produtos-e-informacoes");
         containerProduto.adicionarClasse("display-none")
+        sectionAtiva.adicionarClasse("active")
     })
 }
 function removeProduto(ev) {
@@ -54,8 +55,7 @@ function ordenar() {
 }
 
 
-function adicionarProduto(containerProduto) {
-    const sessaoAtiva = new ElementoHTML(".section-container.active");
+function adicionarProduto(containerProduto, sectionAtiva) {
     let clique = false
     const adicionarProduto = new ElementoHTML("#adicionar-produto");
     adicionarProduto.elemento.addEventListener("click", () => {
@@ -78,8 +78,10 @@ function adicionarProduto(containerProduto) {
             divInformacaoProduto.classList.add("informacoes-produto");
             divInformacaoProduto.append(fabricacao, validade);
             divContainer.append(alimento, divInformacaoProduto, btnRemove)
-            sessaoAtiva.elemento.appendChild(divContainer);
+            sectionAtiva.elemento.appendChild(divContainer);
+            sectionAtiva.adicionarClasse("active")
             containerProduto.adicionarClasse("display-none")
+            
             clique = true;
         }
     })
