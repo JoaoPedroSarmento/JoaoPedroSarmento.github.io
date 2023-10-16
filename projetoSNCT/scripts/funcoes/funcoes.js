@@ -104,8 +104,8 @@ function adicionarProduto(containerProduto, sectionAtiva) {
             divContainer.dataset.section = sectionAtiva.elemento.dataset.section;
             divContainer.dataset.indice = sectionAtiva.elemento.children.length;
             alimento.innerHTML = `Produto: <span class="produto">  ${nomeProduto.elemento.value} </span>`;
-            fabricacao.textContent = `Data de fabricação: ${new ElementoHTML("#data-fabricacao").elemento.value}`;
-            validade.textContent = `Data de validade: ${new ElementoHTML("#data-validade").elemento.value}`;
+            fabricacao.textContent = `Data de fabricação: ${new ElementoHTML("#data-fabricacao").elemento.value.split("-").reverse().join("-") }`;
+            validade.textContent = `Data de validade: ${new ElementoHTML("#data-validade").elemento.value.split("-").reverse().join("-")}`;
             btnRemove.innerText = `Remover ${nomeProduto.elemento.value}`;
             btnRemove.addEventListener("click", removeProduto)
             divInformacaoProduto.classList.add("informacoes-produto");
