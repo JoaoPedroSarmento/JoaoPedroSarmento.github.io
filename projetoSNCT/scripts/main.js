@@ -1,5 +1,5 @@
 import ElementoHTML from "../scripts/ElementoHTML/ElementoHTML.js"
-import { cancelarAdicionamentoDoProduto, adicionarProduto, trocarAbaProduto, ordenar, moverAlimentoParaInicio } from "../scripts/funcoes/funcoes.js"
+import { cancelarAdicionamentoDoProduto, adicionarProduto, trocarAbaProduto, ordenar, moverAlimentoParaInicio, cancelarCarregamento , trocarParaAbaLixeira } from "../scripts/funcoes/funcoes.js"
 document.getElementById("adicionar-alimento").addEventListener("click", () => {
     const containerProduto = new ElementoHTML(".adicionar-produtos-e-informacoes");
     if (containerProduto.elemento.classList.contains("display-none")) {
@@ -10,7 +10,9 @@ document.getElementById("adicionar-alimento").addEventListener("click", () => {
         adicionarProduto(containerProduto , sectionAtiva)
     }
 });
-new ElementoHTML("#pesquisar svg").elemento.addEventListener("click", moverAlimentoParaInicio)
-new ElementoHTML("#nome-alimento-pesquisar").elemento.addEventListener("change", moverAlimentoParaInicio)
-new ElementoHTML(".setas").elemento.addEventListener("click", ordenar)
-trocarAbaProduto()
+cancelarCarregamento();
+document.querySelector(".icon-lixeira").addEventListener("click" , trocarParaAbaLixeira)
+document.querySelector("#pesquisar svg").addEventListener("click", moverAlimentoParaInicio)
+document.getElementById("nome-alimento-pesquisar").addEventListener("change", moverAlimentoParaInicio)
+document.querySelector(".setas").addEventListener("click", ordenar)
+trocarAbaProduto();

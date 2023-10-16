@@ -7,11 +7,46 @@ function cancelarAdicionamentoDoProduto(sectionAtiva) {
         sectionAtiva.adicionarClasse("active")
     })
 }
+
+function adicionaProdutoNaLixeira(produto) {
+    const lixeira = document.querySelector(".lixeira");
+    lixeira.appendChild(produto);
+}
+function trocarParaAbaLixeira() {
+    const addAlimento = document.getElementById("adicionar-alimento");
+    addAlimento.classList.add("display-none");
+    const sectionAtiva = document.querySelector(".active");
+    sectionAtiva.classList.remove("active");
+    const lixeira = document.querySelector(".lixeira");
+    lixeira.classList.add("active");
+}
+
+function removerProdutoDaLixeira(produto) {
+    const lixeira = document.querySelector(".lixeira");
+    if (lixeira.children.item(produto.dataset.indice)) {
+        lixeira.removeChild(produto);
+    }
+}
+function recuperarProduto(ev) {
+    const btn = ev.currentTarget;
+    const container = btn.parentNode;
+    const nomeProduto = container.dataset.produto;
+    const section = document.querySelector(`.${container.dataset.section}`);
+    btn.innerText = `Remover ${nomeProduto}`;
+    btn.removeEventListener("click", recuperarProduto)
+    btn.addEventListener("click", removeProduto);
+    section.appendChild(container);
+    removerProdutoDaLixeira(container)
+}
 function removeProduto(ev) {
     const btn = ev.currentTarget;
     const container = btn.parentNode;
     const section = container.parentNode;
+    const nomeProduto = container.dataset.produto;
+    btn.innerText = `Recuperar ${nomeProduto}`;
+    btn.addEventListener("click", recuperarProduto);
     section.removeChild(container);
+    adicionaProdutoNaLixeira(container);
 }
 
 function moverAlimentoParaInicio() {
@@ -26,29 +61,25 @@ function moverAlimentoParaInicio() {
     });
     console.log(containerProcurado.dataset.produto);
     if (containerProcurado) {
-        // Remove o container procurado do seu local atual
         secaoAtiva.removeChild(containerProcurado);
-
-        // Insere o container procurado no início da seção ativa
         secaoAtiva.insertBefore(containerProcurado, secaoAtiva.firstChild);
     }
 }
 
+function cancelarCarregamento() {
+    const div = document.querySelector(".carregamento-inicial");
+    setTimeout(() => div.remove(), 1000)
+}
 
 function ordenar() {
     const activeContainer = document.querySelector(".active");
-
-
     const elementosParaOrdenar = Array.from(activeContainer.querySelectorAll(".container-flex"));
-
     elementosParaOrdenar.sort((a, b) => {
         const produtoA = a.dataset.produto;
         const produtoB = b.dataset.produto;
         return produtoA.localeCompare(produtoB);
     });
-
     activeContainer.innerHTML = "";
-
     elementosParaOrdenar.forEach(elemento => {
         activeContainer.appendChild(elemento);
     });
@@ -70,36 +101,44 @@ function adicionarProduto(containerProduto, sectionAtiva) {
 
             divContainer.classList.add("container-flex");
             divContainer.dataset.produto = nomeProduto.elemento.value;
+            divContainer.dataset.section = sectionAtiva.elemento.dataset.section;
+            divContainer.dataset.indice = sectionAtiva.elemento.children.length;
             alimento.innerHTML = `Produto: <span class="produto">  ${nomeProduto.elemento.value} </span>`;
             fabricacao.textContent = `Data de fabricação: ${new ElementoHTML("#data-fabricacao").elemento.value}`;
             validade.textContent = `Data de validade: ${new ElementoHTML("#data-validade").elemento.value}`;
             btnRemove.innerText = `Remover ${nomeProduto.elemento.value}`;
-            btnRemove.addEventListener("click", removeProduto);
+            btnRemove.addEventListener("click", removeProduto)
             divInformacaoProduto.classList.add("informacoes-produto");
             divInformacaoProduto.append(fabricacao, validade);
             divContainer.append(alimento, divInformacaoProduto, btnRemove)
             sectionAtiva.elemento.appendChild(divContainer);
             sectionAtiva.adicionarClasse("active")
             containerProduto.adicionarClasse("display-none")
-            
+
             clique = true;
         }
     })
     clique = false;
 }
-function trocarAbaProduto() {
+function trocarAbaProduto(ev) {
     const geladeira = new ElementoHTML("#geladeira");
     const ambitente = new ElementoHTML("#ambiente");
     const sessoes = document.querySelectorAll(".section-container");
+    const lixeira = document.querySelector(".lixeira")
+    const addAlimento = document.getElementById("adicionar-alimento");
     geladeira.elemento?.addEventListener("click", () => {
         sessoes[0].classList.add("active")
         sessoes[1].classList.remove("active")
+        lixeira.classList.remove("active");
+        addAlimento.classList.remove("display-none");
     })
     ambitente.elemento?.addEventListener("click", () => {
         sessoes[0].classList.remove("active")
+        lixeira.classList.remove("active");
+        addAlimento.classList.remove("display-none");
         sessoes[1].classList.add("active")
     })
 
 }
 
-export { cancelarAdicionamentoDoProduto, adicionarProduto, trocarAbaProduto, ordenar, moverAlimentoParaInicio };
+export { cancelarAdicionamentoDoProduto, adicionarProduto, trocarAbaProduto, ordenar, moverAlimentoParaInicio, cancelarCarregamento, trocarParaAbaLixeira };

@@ -4,6 +4,46 @@
     box-sizing: border-box;
 }
 
+body:has(.carregamento-inicial) *:not(.carregamento-inicial, .carregamento-inicial *) {
+    display: none;
+}
+
+.lixeira{
+    display: none;
+}
+
+.carregamento-inicial {
+    min-height: 100vh;
+    background: #ff8c00;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Bangers';
+    color: #530094;
+    font-size: larger;
+}
+
+.loader {
+    border: 8px solid #530094;
+    border-top: 8px solid #ff8c00;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
 
 /* vietnamese */
