@@ -280,7 +280,11 @@ main {
     height: 10px;
 }
 
-
+.align-left{
+   color: #530094;
+  padding: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 
 @media (max-width: 450px) {
     footer h2 {
