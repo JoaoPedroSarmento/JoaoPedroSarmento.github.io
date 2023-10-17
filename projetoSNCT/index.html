@@ -6,16 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Validity Eat</title>
     <link rel="stylesheet" href="./estilos/main.css" />
-    <script src="./scripts/main.js" type="module" defer></script>
+    <!-- <script src="./scripts/main.js" type="module" defer></script> -->
 </head>
 
 <body>
-    <div class="carregamento-inicial">
-        <h1>Validity Eat</h1>
 
-        <div class="loader"></div>
-
-    </div>
     <header>
         <div class="icon-user">
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -250,8 +245,16 @@
     </section>
     <main>
         <section class="lixeira"></section>
-        <section class="section-container geladeira active" data-section="geladeira"></section>
-        <section class="section-container ambiente" data-section="ambiente"></section>
+        <section class="section-container geladeira active" data-section="geladeira">
+            <div class="align-left">
+                <h1>Geladeira:</h1>
+            </div>
+        </section>
+        <section class="section-container ambiente" data-section="ambiente">
+            <div class="align-left">
+                <h1>Ambiente:</h1>
+            </div>
+        </section>
         <div class="adicionar-produtos-e-informacoes display-none">
             <label for="nome-alimento">Nome do alimento:</label>
             <input type="text" id="nome-alimento">
